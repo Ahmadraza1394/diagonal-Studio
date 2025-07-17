@@ -6,6 +6,7 @@ const AboutPage = () => {
     <div>
       <AboutHero />
       <CompanyInfo />
+      <CompanyInfo />
     </div>
   );
 };
