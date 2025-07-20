@@ -2,10 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ABC Monument Grotesk Font Family */
 @font-face {
-  font-family: "Monument Grotesk";
-  src: url("/fonts/MonumentGrotesk-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-Light-Trial.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
-/* ...repeat for other fonts */
+
+@font-face {
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-LightItalic-Trial.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-Regular-Trial.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-RegularItalic-Trial.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk";
+  src: url("/assets/fonts/ABCMonumentGrotesk-BoldItalic-Trial.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Monument Kaleidoscope Font Family */
+@font-face {
+  font-family: "Monument Kaleidoscope";
+  src: url("/assets/fonts/Monument-Kaleidoscope-Bold.02f8916b.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Kaleidoscope";
+  src: url("/assets/fonts/Monument-Kaleidoscope-Black.df6a10b0.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Kaleidoscope";
+  src: url("/assets/fonts/Monument-Kaleidoscope-Heavy.0b2231b0.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Supreme Font Family */
+@font-face {
+  font-family: "Supreme";
+  src: url("/assets/fonts/SupremeTrialTT-Jumbo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("/assets/fonts/SupremeTrialTT-JumboItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Cardinal Classic Font Family */
+@font-face {
+  font-family: "Cardinal Classic";
+  src: url("/assets/fonts/cardinalclassicmid-regular-TRIAL.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cardinal Classic";
+  src: url("/assets/fonts/cardinalclassicmid-italic-TRIAL.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

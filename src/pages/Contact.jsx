@@ -28,14 +28,14 @@ export default function Contact() {
         <div className="absolute inset-0" />
 
         <div className="relative z-10 w-full flex flex-col items-center justify-center md:justify-end pb-8 md:pb-32 px-4">
-          <h1 className="font-monument text-4xl sm:text-5xl md:text-6xl text-white text-center font-bold leading-tight tracking-tight max-w-5xl">
+          <h1 className="font-monument-extended text-4xl sm:text-5xl md:text-6xl text-white text-center font-bold leading-tight tracking-tight max-w-5xl">
             Ready to Transform
             <br />
             Your Vision Into
             <br />
             Reality?
           </h1>
-          <p className="mt-6 text-white/90 font-museo text-base sm:text-lg md:text-xl text-center max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="mt-6 text-white/90 font-abc-monument text-base sm:text-lg md:text-xl text-center max-w-2xl mx-auto leading-relaxed px-4">
             Let's create something extraordinary together. Reach out and start
             the conversation.
           </p>
@@ -48,7 +48,7 @@ export default function Contact() {
             <div className="font-monument text-xl md:text-2xl text-pantone-black uppercase mb-2">
               DIAGONAL STUDIO
             </div>
-            <div className="font-museo text-base md:text-lg text-pantone-black/90">
+            <div className="font-abc-monument text-base md:text-lg text-pantone-black/90">
               let's start a conversation
               <br />
               about how we can bring
@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
 
           <form
-            className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 font-museo"
+            className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 font-abc-monument"
             onSubmit={handleSubmit}
             autoComplete="off"
           >
@@ -147,7 +147,7 @@ export default function Contact() {
               </label>
               <button
                 type="submit"
-                className="w-full md:w-auto border border-pantone-black px-5 py-2 md:px-7 md:py-3 rounded font-museo font-semibold text-pantone-black text-base md:text-lg transition hover:bg-pantone-black hover:text-white"
+                className="w-full md:w-auto border border-pantone-black px-5 py-2 md:px-7 md:py-3 rounded font-abc-monument font-semibold text-pantone-black text-base md:text-lg transition hover:bg-pantone-black hover:text-white"
               >
                 SEND MY MESSAGE
               </button>

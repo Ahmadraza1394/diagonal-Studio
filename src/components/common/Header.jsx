@@ -33,26 +33,26 @@ export default function Header() {
             <a href="/" className="block w-[150px]">
               <img
                 src="/assets/images/Logos-01e.png"
-                alt="Diagonal Studio"
+                alt="Diagonal"
                 className="h-10 w-auto cursor-pointer hover:opacity-90 transition-opacity"
               />
             </a>
           </div>
           {/* Center: EST */}
           <div className="hidden md:flex-1 md:flex md:justify-center">
-            <span className="text-[#0055b8] font-museo font-semibold text-lg md:text-xl tracking-wide">
+            <span className="text-accent-purple font-cardinal font-semibold text-lg md:text-xl tracking-wide">
               EST – 1995
             </span>
           </div>
           {/* Right: Nav and Hamburger */}
           <div className="flex-1 flex justify-end items-center gap-4">
             {/* Desktop Nav */}
-            <div className="hidden md:flex gap-6 font-museo text-pantone-black text-lg font-semibold">
+            <div className="hidden md:flex gap-6 font-abc-monument text-pantone-black text-lg font-semibold">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="hover:text-[#0055b8] transition"
+                  className="hover:text-accent-purple transition"
                 >
                   {link.name}
                 </Link>
@@ -111,7 +111,7 @@ export default function Header() {
                     >
                       <Link
                         to={link.href}
-                        className="block text-3xl md:text-6xl font-monument font-light uppercase text-pantone-black hover:text-pantone-2935 transition"
+                        className="block text-3xl md:text-6xl font-monument font-bold uppercase text-pantone-black hover:text-accent-purple transition"
                         onClick={() => setMenuOpen(false)}
                       >
                         {link.name}
@@ -124,32 +124,32 @@ export default function Header() {
               <div className="flex-1 flex flex-col justify-end md:justify-center px-8 pb-16 md:pb-0 md:px-0">
                 <div className="space-y-6 md:space-y-10">
                   <div>
-                    <div className="text-pantone-7515 font-semibold mb-1 text-base md:text-lg opacity-70">
+                    <div className="text-pantone-7515 font-cardinal font-semibold mb-1 text-base md:text-lg opacity-70">
                       Contact
                     </div>
-                    <div className="font-medium text-pantone-black font-museo">
-                      info@diagonalstudio.com
+                    <div className="font-medium text-pantone-black font-abc-monument">
+                      info@diagonal.com
                     </div>
-                    <div className="font-medium text-pantone-black font-museo">
+                    <div className="font-medium text-pantone-black font-abc-monument">
                       +01 123 456 7890
                     </div>
-                    <div className="font-medium text-pantone-black font-museo">
+                    <div className="font-medium text-pantone-black font-abc-monument">
                       123 Main Avenue,
                       <br /> Karachi, Pakistan
                     </div>
                   </div>
                   <div>
-                    <div className="text-pantone-7515 font-semibold mb-1 text-base md:text-lg opacity-70">
+                    <div className="text-pantone-7515 font-cardinal font-semibold mb-1 text-base md:text-lg opacity-70">
                       Socials
                     </div>
-                    <div className="flex flex-col space-y-1 font-medium font-museo text-pantone-black">
-                      <a href="#" className="hover:text-pantone-2935">
+                    <div className="flex flex-col space-y-1 font-medium font-abc-monument text-pantone-black">
+                      <a href="#" className="hover:text-accent-purple">
                         Instagram
                       </a>
-                      <a href="#" className="hover:text-pantone-2935">
+                      <a href="#" className="hover:text-accent-purple">
                         Twitter
                       </a>
-                      <a href="#" className="hover:text-pantone-2935">
+                      <a href="#" className="hover:text-accent-purple">
                         LinkedIn
                       </a>
                     </div>

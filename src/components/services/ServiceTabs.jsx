@@ -4,37 +4,55 @@ import { motion, AnimatePresence } from "framer-motion";
 const services = [
   {
     name: "Architectural Design",
-    desc: "Aether's Architectural Design service transforms visionary concepts into enduring structures that leave a lasting impact. Our approach blends innovative thinking with technical precision to create spaces that are functional, aesthetically pleasing, and responsive to their environment.",
+    desc: "Comprehensive design solutions from concept to completion, creating spaces that inspire and endure. Our approach blends innovative thinking with technical precision to deliver functional, aesthetically pleasing, and environmentally responsive structures.",
     images: [
-      "/assets/images/3.jpg",
-      "/assets/images/3.jpg",
-      "/assets/images/3.jpg",
-    ],
-  },
-  {
-    name: "Interior Styling",
-    desc: "Interior Styling at Aether is about more than just decoration; it's about crafting meaningful spaces that tell a story. We specialize in designing interiors that merge aesthetics with function, creating environments that are both beautiful and livable.",
-    images: [
-      "/assets/images/3.jpg",
-      "/assets/images/3.jpg",
-      "/assets/images/3.jpg",
-    ],
-  },
-  {
-    name: "Cityscape Development",
-    desc: "Our Cityscape Development service focuses on reimagining urban landscapes to foster vibrant, sustainable communities. By integrating cutting-edge design techniques with thoughtful urban planning, we create cityscapes that prioritize livability, connectivity, and environmental harmony.",
-    images: [
-      "/assets/images/3.jpg",
-      "/assets/images/3.jpg",
+      "/assets/images/1.jpg",
+      "/assets/images/2.jpg",
       "/assets/images/3.jpg",
     ],
   },
   {
     name: "Eco-Friendly Design",
-    desc: "Sustainability is at the heart of our Eco-Friendly Design services. We innovate with green materials, energy-efficient solutions, and environmentally conscious practices to create spaces that have a minimal ecological footprint. Our team is passionate about designing buildings and landscapes that promote wellness and coexistence with nature.",
+    desc: "Sustainable architecture that harmonizes with the environment while reducing ecological impact. We innovate with green materials, energy-efficient solutions, and environmentally conscious practices to create spaces with minimal ecological footprint.",
+    images: [
+      "/assets/images/2.jpg",
+      "/assets/images/3.jpg",
+      "/assets/images/4.jpg",
+    ],
+  },
+  {
+    name: "Project Development",
+    desc: "End-to-end project coordination ensuring seamless execution from planning to final delivery. We manage every aspect of development to bring your architectural vision to life efficiently and effectively.",
     images: [
       "/assets/images/3.jpg",
+      "/assets/images/4.jpg",
+      "/assets/images/1.jpg",
+    ],
+  },
+  {
+    name: "Project Management",
+    desc: "Expert oversight and coordination to deliver projects on time, within budget, and to specification. Our experienced team ensures quality control and seamless communication throughout the entire project lifecycle.",
+    images: [
+      "/assets/images/4.jpg",
+      "/assets/images/1.jpg",
+      "/assets/images/2.jpg",
+    ],
+  },
+  {
+    name: "Interior Styling",
+    desc: "Thoughtful interior design that reflects your vision while maximizing functionality and aesthetics. We craft meaningful spaces that tell your story, merging beauty with livability in every detail.",
+    images: [
+      "/assets/images/1.jpg",
       "/assets/images/3.jpg",
+      "/assets/images/2.jpg",
+    ],
+  },
+  {
+    name: "Consulting",
+    desc: "Strategic architectural guidance and expert advice for complex design challenges and opportunities. Our consulting services provide valuable insights to help you make informed decisions throughout your project.",
+    images: [
+      "/assets/images/2.jpg",
+      "/assets/images/4.jpg",
       "/assets/images/3.jpg",
     ],
   },
@@ -83,7 +101,7 @@ export default function ServiceTabs() {
                   {i + 1}
                 </span>
                 <span
-                  className={`font-monument text-xl sm:text-2xl md:text-3xl text-pantone-black ${
+                  className={`font-monument-extended text-xl sm:text-2xl md:text-3xl text-pantone-black ${
                     i === active ? "font-bold" : "font-normal"
                   }`}
                 >
@@ -103,7 +121,7 @@ export default function ServiceTabs() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="space-y-6"
               >
-                <h3 className="font-monument text-2xl sm:text-3xl text-pantone-black font-semibold">
+                <h3 className="font-monument-extended text-2xl sm:text-3xl text-pantone-black font-bold">
                   {services[active].name}
                 </h3>
                 <p className="font-museo text-base sm:text-lg text-pantone-black/90">

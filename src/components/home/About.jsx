@@ -15,9 +15,9 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
-          <p className="text-pantone-black font-museo text-lg md:text-xl leading-normal">
-            Founded in 1995, Diagonal Studio embodies forward-thinking and
-            inspiring architectural design headquartered in Karachi.
+          <p className="text-pantone-black font-abc-monument text-lg md:text-xl leading-normal">
+            Founded in 1995, Diagonal embodies forward-thinking and inspiring
+            architectural design headquartered in Mexico.
           </p>
         </motion.div>
         {/* Right: Main about text */}
@@ -28,14 +28,13 @@ export default function About() {
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
           >
-            <h2 className="text-pantone-black font-monument text-2xl md:text-4xl leading-snug mb-8">
-              Welcome to Diagonal Studio, where visionary architecture meets
-              Mexican excellence. For over three decades, we have delivered
-              exceptional public and private projects across Mexico, blending
-              innovative design, advanced engineering, and sustainable
-              solutions.
+            <h2 className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-bold">
+              Welcome to Diagonal, where visionary architecture meets
+              excellence. For over three decades, we have delivered exceptional
+              public and private projects, blending innovative design, advanced
+              engineering, and sustainable solutions.
             </h2>
-            <p className="text-pantone-7515 font-cardinal text-2xl md:text-4xl leading-snug mb-8">
+            <p className="text-pantone-7515 font-abc-monument text-2xl md:text-4xl leading-snug mb-8">
               Our team of experts brings your ideas to life—on time, on budget,
               and with the highest quality.
             </p>
@@ -43,7 +42,7 @@ export default function About() {
           {/* Button */}
           <motion.a
             href="#"
-            className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-museo font-medium w-fit"
+            className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-accent-purple rounded transition hover:bg-accent-purple hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-accent-purple"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}

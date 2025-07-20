@@ -20,16 +20,16 @@ export default function Footer() {
         {/* Contact Column */}
         <div className="w-full md:w-1/3 flex flex-col gap-6">
           <div>
-            <div className="font-monument text-2xl uppercase tracking-tight mb-2">
-              DIAGONAL STUDIO
+            <div className="font-supreme text-2xl uppercase tracking-tight mb-2">
+              DIAGONAL
             </div>
-            <div className="font-museo text-base md:text-lg text-white/90 mb-6">
+            <div className="font-abc-monument text-base md:text-lg text-white/90 mb-6">
               Reach out to us, and we'll get back to you!
             </div>
           </div>
           <a
             href="contact"
-            className="inline-flex items-center border border-white px-7 py-3 rounded font-museo font-semibold text-white text-base transition hover:bg-white hover:text-pantone-black group w-fit"
+            className="inline-flex items-center border border-white px-7 py-3 rounded font-abc-monument font-semibold text-white text-base transition hover:bg-white hover:text-pantone-black group w-fit"
           >
             CONTACT US
             <span className="ml-2 group-hover:translate-x-1.5 transition-transform">
@@ -52,7 +52,7 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="w-full md:w-1/3 flex flex-col gap-1 mt-10 md:mt-0">
-          <div className="font-museo text-white/60 text-base mb-2">
+          <div className="font-monument text-white/60 text-base mb-2">
             Quick Links
           </div>
           <ul className="font-monument text-3xl md:text-4xl leading-tight space-y-2">
@@ -71,7 +71,9 @@ export default function Footer() {
 
         {/* Social Links */}
         <div className="w-full md:w-1/3 flex flex-col gap-1 mt-10 md:mt-0">
-          <div className="font-museo text-white/60 text-base mb-2">Socials</div>
+          <div className="font-monument text-white/60 text-base mb-2">
+            Socials
+          </div>
           <ul className="font-monument text-3xl md:text-4xl leading-tight space-y-2">
             {socialLinks.map((link) => (
               <li key={link.name}>
@@ -90,13 +92,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-16 border-t border-white/20 pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-white/80 font-museo text-lg">
+      <div className="mt-16 border-t border-white/20 pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-white/80 font-cardinal text-lg">
         <div className="w-full md:w-auto text-left">
-          ©{new Date().getFullYear()} Diagonal Studio
+          {new Date().getFullYear()} Diagonal Studio
         </div>
         <div className="w-full md:w-auto text-center">Privacy Policy</div>
         <div className="w-full md:w-auto text-right flex items-center gap-2">
-          <a href="#" className="hover:text-white font-museo transition">
+          <a href="#" className="hover:text-white font-cardinal transition">
             Back to top
           </a>
           <svg

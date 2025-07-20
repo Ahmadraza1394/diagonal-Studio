@@ -8,17 +8,16 @@ const CompanyInfo = () => {
         <div className="mb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-cardinal text-3xl md:text-4xl text-pantone-black mb-4">
-                Our History
+              <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
+                History
               </h2>
-              <p className="font-supreme text-base text-pantone-black/80 leading-relaxed">
-                Founded in 2010, Diagonal Studio started with a vision to
-                challenge conventional architecture. From a small team of
-                passionate designers, we have grown into a collective of
-                innovators and thinkers dedicated to creating spaces that
-                inspire. Our journey is marked by a commitment to excellence and
-                a portfolio of projects that speak to our unique design
-                philosophy.
+              <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
+                Founded in 2010, Diagonal started with a vision to challenge
+                conventional architecture. From a small team of passionate
+                designers, we have grown into a collective of innovators and
+                thinkers dedicated to creating spaces that inspire. Our journey
+                is marked by a commitment to excellence and a portfolio of
+                projects that speak to our unique design philosophy.
               </p>
             </div>
             <div className="order-first lg:order-last">
@@ -42,10 +41,10 @@ const CompanyInfo = () => {
               />
             </div>
             <div>
-              <h2 className="font-cardinal text-3xl md:text-4xl text-pantone-black mb-4">
-                Our Vision
+              <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
+                Vision
               </h2>
-              <p className="font-supreme text-base text-pantone-black/80 leading-relaxed">
+              <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
                 Our vision is to be a global leader in architectural design,
                 known for our sustainable and human-centric approach. We aim to
                 design buildings and spaces that not only meet the needs of
@@ -58,8 +57,8 @@ const CompanyInfo = () => {
 
         {/* Expertise Section */}
         <div>
-          <h2 className="font-cardinal text-3xl md:text-4xl text-pantone-black mb-8 text-center">
-            Our Expertise
+          <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-8 text-center font-bold">
+            Expertise
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-pantone-719/10 p-6 rounded-lg">
@@ -68,10 +67,10 @@ const CompanyInfo = () => {
                 alt="Architectural Design"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="font-monument text-pantone-7515 mb-2">
+              <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Architectural Design
               </h3>
-              <p className="font-supreme text-pantone-black/80">
+              <p className="font-abc-monument text-pantone-black/80">
                 From conceptual sketches to final construction, we provide
                 comprehensive architectural services.
               </p>
@@ -82,10 +81,10 @@ const CompanyInfo = () => {
                 alt="Interior Styling"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="font-monument text-pantone-7515 mb-2">
+              <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Interior Styling
               </h3>
-              <p className="font-supreme text-pantone-black/80">
+              <p className="font-abc-monument text-pantone-black/80">
                 We create bespoke interiors that reflect the personality and
                 needs of our clients.
               </p>
@@ -96,10 +95,10 @@ const CompanyInfo = () => {
                 alt="Sustainable Building"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="font-monument text-pantone-7515 mb-2">
+              <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Sustainable Building
               </h3>
-              <p className="font-supreme text-pantone-black/80">
+              <p className="font-abc-monument text-pantone-black/80">
                 Our commitment to the planet is reflected in our use of
                 eco-friendly materials and practices.
               </p>
@@ -110,10 +109,10 @@ const CompanyInfo = () => {
                 alt="Urban Planning"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="font-monument text-pantone-7515 mb-2">
+              <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Urban Planning
               </h3>
-              <p className="font-supreme text-pantone-black/80">
+              <p className="font-abc-monument text-pantone-black/80">
                 We design thoughtful urban spaces that foster community and
                 connectivity.
               </p>

@@ -5,10 +5,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        monument: ["Montserrat", "Arial", "sans-serif"], // Substitute for Monument Grotesk
-        museo: ["Montserrat", "Arial", "sans-serif"], // Substitute for Museo Intl
-        cardinal: ["Playfair Display", "serif"], // Substitute for Cardinal Classic
-        supreme: ["Montserrat", "Arial", "sans-serif"], // Substitute for Supreme Jumbo
+        // Main Titles / Hero Text
+        "monument-extended": ["Monument Kaleidoscope", "Arial", "sans-serif"], // Monument Extended Bold/Extra Bold
+        // Section Titles / Projects
+        monument: ["ABC Monument Grotesk", "Arial", "sans-serif"], // Monument Grotesk Bold
+        // Body Text / Paragraphs
+        "abc-monument": ["ABC Monument Grotesk", "Arial", "sans-serif"], // ABC Monument Grotesk Regular/Medium
+        // Footers / Captions / Secondary
+        cardinal: ["Cardinal Classic", "serif"], // Cardinal Classic Regular/Italic
+        // "Diagonal" logo references
+        supreme: ["Supreme", "Arial", "sans-serif"], // Supreme Regular (logo only)
+
+        // Legacy aliases for compatibility
+        museo: ["ABC Monument Grotesk", "Arial", "sans-serif"], // Map to ABC Monument for body text
       },
       colors: {
         "pantone-719": "#edc7a2",
@@ -16,6 +25,7 @@ export default {
         "pantone-283": "#92c0e9",
         "pantone-2935": "#0055b8",
         "pantone-black": "#222222",
+        "accent-purple": "#5C2F80", // New purple accent color for better contrast
       },
     },
   },
