@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import { projects } from "../data/projects";
 
 const ProjectDetailsPage = () => {
@@ -8,6 +9,7 @@ const ProjectDetailsPage = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const project = projects.find((p) => p.slug === slug);
+  const galleryImages = project ? project.images.slice(0, 5) : [];
 
   if (!project) {
     return (
@@ -18,7 +20,7 @@ const ProjectDetailsPage = () => {
           </h1>
           <Link
             to="/portfolio"
-            className="font-abc-monument text-[#5C2F80] hover:underline"
+            className="font-abc-monument text-pantone-black hover:underline"
           >
             Back to Portfolio
           </Link>
@@ -67,58 +69,57 @@ const ProjectDetailsPage = () => {
           </Link>
         </div>
       </section>
-
       {/* Project Details */}
-      <section className="py-20">
+      <section className="py-12 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
             {/* Project Information */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-4 order-2 lg:order-1">
               <motion.div
-                className="space-y-8"
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                className="sticky top-24 space-y-10"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
               >
                 {/* Project Details */}
-                <div>
-                  <h3 className="font-monument text-2xl text-pantone-black mb-6 font-bold">
+                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                  <h3 className="font-monument uppercase text-xl md:text-2xl text-pantone-black mb-6 font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-pantone-7515 after:mt-2">
                     Project Details
                   </h3>
 
-                  <div className="space-y-4">
-                    <div>
-                      <dt className="font-abc-monument text-pantone-black/70 text-sm uppercase tracking-wide">
+                  <div className="grid grid-cols-2 gap-y-6 gap-x-4">
+                    <div className="col-span-1">
+                      <dt className="font-monument text-pantone-black/70 text-xs uppercase tracking-wider">
                         Typology
                       </dt>
-                      <dd className="font-abc-monument text-pantone-black text-lg mt-1">
+                      <dd className="font-monument text-pantone-black text-base md:text-lg mt-1.5">
                         {project.typology}
                       </dd>
                     </div>
 
-                    <div>
-                      <dt className="font-abc-monument text-pantone-black/70 text-sm uppercase tracking-wide">
+                    <div className="col-span-1">
+                      <dt className="font-monument text-pantone-black/70 text-xs uppercase tracking-wider">
                         Area
                       </dt>
-                      <dd className="font-abc-monument text-pantone-black text-lg mt-1">
+                      <dd className="font-monument text-pantone-black text-base md:text-lg mt-1.5">
                         {project.area} m²
                       </dd>
                     </div>
 
-                    <div>
-                      <dt className="font-abc-monument text-pantone-black/70 text-sm uppercase tracking-wide">
+                    <div className="col-span-1">
+                      <dt className="font-monument text-pantone-black/70 text-xs uppercase tracking-wider">
                         Location
                       </dt>
-                      <dd className="font-abc-monument text-pantone-black text-lg mt-1">
+                      <dd className="font-monument text-pantone-black text-base md:text-lg mt-1.5">
                         {project.location}
                       </dd>
                     </div>
 
-                    <div>
-                      <dt className="font-abc-monument text-pantone-black/70 text-sm uppercase tracking-wide">
+                    <div className="col-span-1">
+                      <dt className="font-monument text-pantone-black/70 text-xs uppercase tracking-wider">
                         Year
                       </dt>
-                      <dd className="font-abc-monument text-pantone-black text-lg mt-1">
+                      <dd className="font-monument text-pantone-black text-base md:text-lg mt-1.5">
                         {project.year}
                       </dd>
                     </div>
@@ -126,54 +127,48 @@ const ProjectDetailsPage = () => {
                 </div>
 
                 {/* Description */}
-                <div>
-                  <h3 className="font-monument text-2xl text-pantone-black mb-4 font-bold">
+                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                  <h3 className="font-monument uppercase text-xl md:text-2xl text-pantone-black mb-4 font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-pantone-7515 after:mt-2">
                     Description
                   </h3>
-                  <p className="font-abc-monument text-pantone-black/80 leading-relaxed">
+                  <p className="font-abc-monument text-pantone-black/80 leading-relaxed text-sm md:text-base">
                     {project.description}
-                  </p>
-                </div>
-
-                {/* Concept */}
-                <div>
-                  <h3 className="font-monument text-2xl text-pantone-black mb-4 font-bold">
-                    Concept
-                  </h3>
-                  <p className="font-abc-monument text-pantone-black/80 leading-relaxed">
-                    {project.concept}
                   </p>
                 </div>
               </motion.div>
             </div>
 
             {/* Image Gallery */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-8 order-1 lg:order-2">
               <motion.div
-                className="space-y-8"
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                className="space-y-6 md:space-y-8"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
               >
                 {/* Main Image */}
-                <div className="aspect-[3/2] overflow-hidden bg-gray-100">
-                  <img
+                <div className="aspect-[16/10] overflow-hidden rounded-lg shadow-lg">
+                  <motion.img
                     src={project.images[selectedImageIndex]}
                     alt={`${project.title} - Image ${selectedImageIndex + 1}`}
                     className="w-full h-full object-cover"
+                    key={selectedImageIndex}
+                    initial={{ opacity: 0.8, scale: 1.03 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
                   />
                 </div>
 
                 {/* Image Thumbnails */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {project.images.map((image, index) => (
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 md:gap-4">
+                  {galleryImages.map((image, index) => (
                     <button
                       key={index}
                       onClick={() => setSelectedImageIndex(index)}
-                      className={`aspect-square overflow-hidden bg-gray-100 transition-opacity duration-300 ${
+                      className={`aspect-square overflow-hidden rounded-md transition-all duration-300 transform ${
                         selectedImageIndex === index
-                          ? "opacity-100 ring-2 ring-[#5C2F80]"
-                          : "opacity-70 hover:opacity-100"
+                          ? "ring-2 ring-pantone-7515 opacity-100 scale-[0.98]"
+                          : "opacity-70 hover:opacity-90 shadow-sm"
                       }`}
                     >
                       <img
@@ -194,7 +189,7 @@ const ProjectDetailsPage = () => {
       <section className="py-16 bg-pantone-719/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h3 className="font-monument text-3xl text-pantone-black font-bold">
+            <h3 className="font-monument uppercase text-3xl text-pantone-black font-bold">
               More Projects
             </h3>
           </div>
@@ -219,7 +214,7 @@ const ProjectDetailsPage = () => {
                   <h4 className="font-monument text-lg text-pantone-black font-bold group-hover:text-[#5C2F80] transition-colors duration-300">
                     {otherProject.title}
                   </h4>
-                  <p className="font-cardinal text-pantone-black/70 italic">
+                  <p className="font-abc-monument text-pantone-black/70 italic">
                     {otherProject.typology} {otherProject.year}
                   </p>
                 </Link>

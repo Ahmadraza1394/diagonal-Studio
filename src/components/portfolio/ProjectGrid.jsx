@@ -3,41 +3,18 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "../../data/projects";
 
-const categories = ["All", "Residential", "Commercial", "Urban Planning"];
-
 const ProjectGrid = () => {
-  const [filter, setFilter] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const filteredProjects =
-    filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <motion.button
-              key={category}
-              onClick={() => setFilter(category)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`font-museo text-lg px-8 py-3 rounded-lg transition-all border ${
-                filter === category
-                  ? "bg-pantone-black text-white border-pantone-black shadow-lg"
-                  : "bg-white text-pantone-black border-pantone-black/30 hover:bg-pantone-7515 hover:text-white hover:border-pantone-7515"
-              }`}
-            >
-              {category}
-            </motion.button>
-          ))}
-        </div>
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           layout
         >
           <AnimatePresence>
-            {filteredProjects.map((project) => (
+            {projects.map((project) => (
               <motion.div
                 key={project.id}
                 layout
@@ -60,10 +37,10 @@ const ProjectGrid = () => {
                 <Link to={`/portfolio/${project.slug}`}>
                   <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/80 via-pantone-black/40 to-transparent flex items-end p-8 transition-opacity hover:opacity-90">
                     <div className="text-white">
-                      <h3 className="font-cardinal text-3xl font-bold mb-2">
+                      <h3 className="font-monument text-3xl font-bold mb-2">
                         {project.title}
                       </h3>
-                      <p className="font-supreme text-lg opacity-90">
+                      <p className="font-abc-monument text-lg opacity-90">
                         {project.category}
                       </p>
                     </div>
@@ -88,6 +65,29 @@ const ProjectGrid = () => {
             alt="Enlarged view"
             className="max-w-full max-h-[90vh] object-contain rounded-lg"
           />
+          <motion.div
+            className="absolute top-2 right-2 bg-white p-2 rounded-full"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-pantone-black"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </motion.div>
           <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-4 right-4 text-white text-4xl"

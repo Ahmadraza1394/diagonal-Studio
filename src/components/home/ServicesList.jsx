@@ -2,35 +2,41 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const services = [
-  { 
-    name: "Architectural Design", 
+  {
+    name: "Architectural Design",
     slug: "architectural-design",
-    description: "Comprehensive design solutions from concept to completion, creating spaces that inspire and endure."
+    description:
+      "Comprehensive design solutions from concept to completion, creating spaces that inspire and endure.",
   },
-  { 
-    name: "Eco-Friendly Design", 
+  {
+    name: "Eco-Friendly Design",
     slug: "eco-friendly-design",
-    description: "Sustainable architecture that harmonizes with the environment while reducing ecological impact."
+    description:
+      "Sustainable architecture that harmonizes with the environment while reducing ecological impact.",
   },
-  { 
-    name: "Project Development", 
+  {
+    name: "Project Development",
     slug: "project-development",
-    description: "End-to-end project coordination ensuring seamless execution from planning to final delivery."
+    description:
+      "End-to-end project coordination ensuring seamless execution from planning to final delivery.",
   },
-  { 
-    name: "Project Management", 
+  {
+    name: "Project Management",
     slug: "project-management",
-    description: "Expert oversight and coordination to deliver projects on time, within budget, and to specification."
+    description:
+      "Expert oversight and coordination to deliver projects on time, within budget, and to specification.",
   },
-  { 
-    name: "Interior Styling", 
+  {
+    name: "Interior Styling",
     slug: "interior-styling",
-    description: "Thoughtful interior design that reflects your vision while maximizing functionality and aesthetics."
+    description:
+      "Thoughtful interior design that reflects your vision while maximizing functionality and aesthetics.",
   },
-  { 
-    name: "Consulting", 
+  {
+    name: "Consulting",
     slug: "consulting",
-    description: "Strategic architectural guidance and expert advice for complex design challenges and opportunities."
+    description:
+      "Strategic architectural guidance and expert advice for complex design challenges and opportunities.",
   },
 ];
 
@@ -59,7 +65,7 @@ export default function ServicesList() {
               </p>
               <Link
                 to="/services"
-                className="inline-flex items-center border border-accent-purple px-6 sm:px-7 py-2.5 sm:py-3 rounded-md font-abc-monument font-semibold text-accent-purple text-sm sm:text-base transition-all duration-300 hover:bg-accent-purple hover:text-white group w-fit"
+                className="inline-flex items-center border border-pantone-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-md font-cardinal font-semibold text-pantone-black text-sm sm:text-base transition-all duration-300 hover:bg-pantone-black hover:text-white group w-fit"
               >
                 EXPLORE SERVICES
                 <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">
@@ -79,7 +85,7 @@ export default function ServicesList() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-monument text-4xl sm:text-5xl md:text-7xl text-pantone-7515 leading-none mb-4 sm:mb-6 font-bold">
+              <h2 className="font-monument-extended text-4xl sm:text-5xl md:text-7xl text-pantone-7515 leading-none mb-4 sm:mb-6 font-bold">
                 Services
               </h2>
               <p className="font-abc-monument text-base sm:text-lg md:text-xl text-pantone-black/80 max-w-xl mb-12 sm:mb-16">

@@ -8,10 +8,10 @@ const CompanyInfo = () => {
         <div className="mb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
+              <h2 className="font-monument text-3xl uppercase md:text-4xl text-pantone-black mb-4 font-bold">
                 History
               </h2>
-              <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80 leading-relaxed">
                 Founded in 2010, Diagonal started with a vision to challenge
                 conventional architecture. From a small team of passionate
                 designers, we have grown into a collective of innovators and
@@ -41,10 +41,10 @@ const CompanyInfo = () => {
               />
             </div>
             <div>
-              <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
+              <h2 className="font-monument uppercase text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
                 Vision
               </h2>
-              <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80 leading-relaxed">
                 Our vision is to be a global leader in architectural design,
                 known for our sustainable and human-centric approach. We aim to
                 design buildings and spaces that not only meet the needs of
@@ -70,7 +70,7 @@ const CompanyInfo = () => {
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Architectural Design
               </h3>
-              <p className="font-abc-monument text-pantone-black/80">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
                 From conceptual sketches to final construction, we provide
                 comprehensive architectural services.
               </p>
@@ -84,7 +84,7 @@ const CompanyInfo = () => {
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Interior Styling
               </h3>
-              <p className="font-abc-monument text-pantone-black/80">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
                 We create bespoke interiors that reflect the personality and
                 needs of our clients.
               </p>
@@ -98,7 +98,7 @@ const CompanyInfo = () => {
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Sustainable Building
               </h3>
-              <p className="font-abc-monument text-pantone-black/80">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
                 Our commitment to the planet is reflected in our use of
                 eco-friendly materials and practices.
               </p>
@@ -112,7 +112,7 @@ const CompanyInfo = () => {
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
                 Urban Planning
               </h3>
-              <p className="font-abc-monument text-pantone-black/80">
+              <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
                 We design thoughtful urban spaces that foster community and
                 connectivity.
               </p>

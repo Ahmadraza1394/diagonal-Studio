@@ -2,18 +2,20 @@ import React from "react";
 
 const PortfolioHero = () => {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-pantone-black overflow-hidden">
+    <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
       <img
-        src="/assets/images/2.jpg" // Replace with a suitable hero image
+        src="/assets/images/4.jpg"
         alt="Diagonal Studio Portfolio"
-        className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-70"
+        className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-75"
+        style={{ filter: "brightness(0.8) contrast(1.1)" }}
         draggable={false}
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/60 via-pantone-black/40 to-transparent z-5"></div>
       <div className="relative z-10 px-4">
-        <h1 className="font-monument text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider">
+        <h1 className="font-monument-extended text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider text-white drop-shadow-lg">
           Our Portfolio
         </h1>
-        <p className="font-museo text-lg md:text-xl mt-4 max-w-3xl mx-auto">
+        <p className="font-abc-monument text-lg md:text-xl mt-4 max-w-3xl mx-auto text-white/90 drop-shadow-md">
           A showcase of our commitment to design excellence and innovation.
         </p>
       </div>

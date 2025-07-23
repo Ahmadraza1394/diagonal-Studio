@@ -56,7 +56,7 @@ export default function ServiceTabs() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="mb-10 md:mb-16"
         >
-          <h2 className="font-museo text-xl sm:text-2xl md:text-4xl text-pantone-black font-normal leading-snug">
+          <h2 className="font-abc-monument text-xl sm:text-2xl md:text-4xl text-pantone-black font-normal leading-snug">
             Our services go beyond traditional boundaries, blending creativity
             with precision to deliver extraordinary results. From visionary
             architecture and sustainable planning to tailored interior design,
@@ -106,7 +106,7 @@ export default function ServiceTabs() {
                 <h3 className="font-monument text-2xl sm:text-3xl text-pantone-black font-semibold">
                   {services[active].name}
                 </h3>
-                <p className="font-museo text-base sm:text-lg text-pantone-black/90">
+                <p className="font-abc-monument text-base sm:text-lg text-pantone-black/90">
                   {services[active].desc}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

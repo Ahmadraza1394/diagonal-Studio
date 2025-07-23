@@ -13,7 +13,7 @@ const PortfolioIntro = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <p className="font-museo text-base text-pantone-black/80 leading-relaxed">
+            <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
               We aim to craft spaces that inspire, challenge conventions, and
               enhance the lives of those who experience them.
             </p>
@@ -25,7 +25,7 @@ const PortfolioIntro = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
           >
-            <p className="font-cardinal text-3xl md:text-4xl text-pantone-black leading-snug">
+            <p className="font-abc-monument text-justify text-3xl md:text-4xl text-pantone-black leading-snug">
               We believe that architecture goes beyond buildings—it's about
               creating experiences. Every project we undertake is driven by a
               passion for innovation, timeless design, and sustainability. Our
