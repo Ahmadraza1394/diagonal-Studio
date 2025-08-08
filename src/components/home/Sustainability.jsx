@@ -4,26 +4,26 @@ import { useInView } from "react-intersection-observer";
 const stats = [
   {
     value: "40+",
-    label: "Completed Projects",
-    desc: "Across residential, commercial, hospitality, and public sectors—demonstrating our versatility and depth.",
+    label: "Proyectos Completados",
+    desc: "En sectores residenciales, comerciales, de hospitalidad y p blicos—demostrando nuestra versatilidad y profundidad.",
   },
   {
     value: "150+",
-    label: "Industry Experts",
-    desc: "A multidisciplinary team of experienced architects, designers, and engineers, dedicated to high-quality, innovative results.",
+    label: "Expertos en la Industria",
+    desc: "Un equipo multidisciplinario de arquitectos, dise adores y ingenieros experimentados, dedicados a resultados innovadores y de alta calidad.",
   },
   {
     value: "2B+",
-    label: "Project Value",
-    desc: "Expert management of high-budget, complex designs that deliver maximum value for our clients.",
+    label: "Valor de los Proyectos",
+    desc: "Administraci n experta de dise os complejos y de alta presupuesto que brindan el m ximo valor a nuestros clientes.",
   },
 ];
 
 const images = [
-  "/assets/images/1.jpg",
-  "/assets/images/6.jpg",
-  "/assets/images/3.jpg",
-  "/assets/images/4.jpg",
+  "/assets/images/muse.jpg",
+  "/assets/images/15.jpg",
+  "/assets/images/IMG_8980.jpg",
+  "/assets/images/a8646ee1-0abc-43b4-80e5-802bb8f43435.JPG",
   "/assets/images/5.jpg",
 ];
 
@@ -44,12 +44,15 @@ export default function Sustainability() {
           ref={ref}
         >
           <div>
-            <h3 className="font-monument text-lg sm:text-xl xl:text-2xl text-pantone-black uppercase leading-tight mb-2 sm:mb-3 tracking-tight">
-              Sustainability
+            {/* <h3 className="font-monument text-lg sm:text-xl xl:text-2xl text-pantone-black uppercase leading-tight mb-2 sm:mb-3 tracking-tight">
+              Sostenibilidad
+            </h3> */}
+            <h3 className="font-supreme text-base sm:text-lg text-pantone-2935 uppercase tracking-tight mb-3 sm:mb-4">
+              DIAGONAL
             </h3>
             <p className="font-abc-monument text-sm sm:text-base xl:text-lg text-pantone-black/85 leading-relaxed">
-              Our commitment to eco-conscious innovation drives everything we
-              do.
+              Nuestro compromiso con la innovaci n eco-amigable impulsa todo lo
+              que hacemos.
             </p>
           </div>
         </motion.div>

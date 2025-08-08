@@ -14,8 +14,9 @@ const PortfolioIntro = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
-              We aim to craft spaces that inspire, challenge conventions, and
-              enhance the lives of those who experience them.
+              Nuestro portafolio refleja décadas de experiencia desarrollando,
+              gestionando y ejecutando proyectos arquitectónicos e
+              infraestructura en los sectores público y privado.
             </p>
           </motion.div>
           <motion.div
@@ -26,11 +27,9 @@ const PortfolioIntro = () => {
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
           >
             <p className="font-abc-monument text-justify text-3xl md:text-4xl text-pantone-black leading-snug">
-              We believe that architecture goes beyond buildings—it's about
-              creating experiences. Every project we undertake is driven by a
-              passion for innovation, timeless design, and sustainability. Our
-              goal is to craft spaces that evoke emotion, foster connection, and
-              leave a lasting impact.
+              Desde residencias y edificios comerciales hasta hoteles, clubes y
+              espacios urbanos, cada proyecto es testimonio de nuestra técnica,
+              atención al detalle y compromiso con la satisfacción del cliente.
             </p>
           </motion.div>
         </div>

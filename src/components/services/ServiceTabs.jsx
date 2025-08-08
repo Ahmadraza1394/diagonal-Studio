@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-
 const services = [
   {
-    name: "Architectural Design",
-    desc: "Comprehensive design solutions from concept to completion, creating spaces that inspire and endure. Our approach blends innovative thinking with technical precision to deliver functional, aesthetically pleasing, and environmentally responsive structures.",
+    name: "Diseño Arquitectónico",
+    desc: "Soluciones integrales de diseño desde el concepto hasta la ejecución, creando espacios que inspiran y perduran. Nuestro enfoque combina innovación y precisión técnica para entregar estructuras funcionales, estéticamente atractivas y adaptadas al entorno.",
     images: [
       "/assets/images/1.jpg",
       "/assets/images/2.jpg",
@@ -13,8 +12,8 @@ const services = [
     ],
   },
   {
-    name: "Eco-Friendly Design",
-    desc: "Sustainable architecture that harmonizes with the environment while reducing ecological impact. We innovate with green materials, energy-efficient solutions, and environmentally conscious practices to create spaces with minimal ecological footprint.",
+    name: "Diseño Sostenible",
+    desc: "Arquitectura sustentable que armoniza con el entorno y reduce el impacto ecológico. Innovamos utilizando materiales verdes, soluciones energéticamente eficientes y prácticas responsables para crear espacios con una huella ambiental mínima.",
     images: [
       "/assets/images/2.jpg",
       "/assets/images/3.jpg",
@@ -22,8 +21,8 @@ const services = [
     ],
   },
   {
-    name: "Project Development",
-    desc: "End-to-end project coordination ensuring seamless execution from planning to final delivery. We manage every aspect of development to bring your architectural vision to life efficiently and effectively.",
+    name: "Desarrollo de Proyectos",
+    desc: "Coordinación integral de proyectos para asegurar una ejecución fluida desde la planificación hasta la entrega final. Gestionamos cada etapa del desarrollo para materializar tu visión arquitectónica de manera eficiente y eficaz.",
     images: [
       "/assets/images/3.jpg",
       "/assets/images/4.jpg",
@@ -31,8 +30,8 @@ const services = [
     ],
   },
   {
-    name: "Project Management",
-    desc: "Expert oversight and coordination to deliver projects on time, within budget, and to specification. Our experienced team ensures quality control and seamless communication throughout the entire project lifecycle.",
+    name: "Gestión de Proyectos",
+    desc: "Supervisión y coordinación experta para entregar proyectos a tiempo, dentro del presupuesto y según especificaciones. Nuestro equipo garantiza el control de calidad y una comunicación fluida durante todo el ciclo de vida del proyecto.",
     images: [
       "/assets/images/4.jpg",
       "/assets/images/1.jpg",
@@ -40,8 +39,8 @@ const services = [
     ],
   },
   {
-    name: "Interior Styling",
-    desc: "Thoughtful interior design that reflects your vision while maximizing functionality and aesthetics. We craft meaningful spaces that tell your story, merging beauty with livability in every detail.",
+    name: "Estilismo de Interiores",
+    desc: "Diseño interior cuidadoso que refleja tu visión y maximiza funcionalidad y estética. Creamos espacios significativos que cuentan tu historia, fusionando belleza y habitabilidad en cada detalle.",
     images: [
       "/assets/images/1.jpg",
       "/assets/images/3.jpg",
@@ -49,8 +48,8 @@ const services = [
     ],
   },
   {
-    name: "Consulting",
-    desc: "Strategic architectural guidance and expert advice for complex design challenges and opportunities. Our consulting services provide valuable insights to help you make informed decisions throughout your project.",
+    name: "Consultoría",
+    desc: "Asesoría estratégica y orientación experta para resolver desafíos complejos de diseño y aprovechar oportunidades. Nuestros servicios de consultoría te ofrecen información valiosa para tomar decisiones informadas en cada etapa de tu proyecto.",
     images: [
       "/assets/images/2.jpg",
       "/assets/images/4.jpg",
@@ -77,9 +76,12 @@ export default function ServiceTabs() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
+              <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
+                DIAGONAL
+              </h3>
               <p className="font-abc-monument text-base sm:text-lg text-pantone-black/80 leading-relaxed">
-                We aim to craft spaces that inspire, challenge conventions, and
-                enhance the lives of those who experience them.
+                Nuestro objetivo es crear espacios que inspiren, desafíen lo
+                convencional y mejoren la vida de quienes los experimentan.
               </p>
             </motion.div>
             <motion.div
@@ -90,11 +92,11 @@ export default function ServiceTabs() {
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
             >
               <p className="font-abc-monument text-justify text-2xl sm:text-3xl md:text-4xl text-pantone-black leading-snug">
-                We believe that architecture goes beyond buildings—it's about
-                creating experiences. Every project we undertake is driven by a
-                passion for innovation, timeless design, and sustainability. Our
-                goal is to craft spaces that evoke emotion, foster connection,
-                and leave a lasting impact.
+                Creemos que la arquitectura va más allá de los edificios—se
+                trata de crear experiencias. Cada proyecto que realizamos está
+                impulsado por la innovación, el diseño atemporal y la
+                sostenibilidad. Nuestra meta es diseñar espacios que despierten
+                emociones, fomenten la conexión y dejen una huella duradera.
               </p>
             </motion.div>
           </div>
@@ -168,8 +170,8 @@ export default function ServiceTabs() {
 
       <div className="flex flex-col items-center mt-12 md:mt-16 lg:mt-20 mb-8 md:mb-12 px-4">
         <p className="font-abc-monument text-base sm:text-lg text-pantone-black/80 mb-4 sm:mb-6 max-w-2xl text-center">
-          Ready to transform your space? Our team of experts is here to bring
-          your vision to life.
+          Listo para transformar tu espacio? Nuestro equipo de expertos está
+          aquí para traer tu visión a vida.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <motion.div
@@ -182,7 +184,7 @@ export default function ServiceTabs() {
               to="/contact"
               className="bg-pantone-black text-white py-2 sm:py-3 px-6 sm:px-8 rounded-md font-monument text-base sm:text-lg hover:bg-white hover:text-pantone-black hover:border-pantone-black hover:border transition-colors flex items-center gap-2"
             >
-              Get in Touch
+              Contactanos
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

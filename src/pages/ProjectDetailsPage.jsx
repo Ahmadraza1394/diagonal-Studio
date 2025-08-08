@@ -9,7 +9,7 @@ const ProjectDetailsPage = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const project = projects.find((p) => p.slug === slug);
-  const galleryImages = project ? project.images.slice(0, 5) : [];
+  const galleryImages = project ? project.images.slice(0, 10) : [];
 
   if (!project) {
     return (
@@ -56,17 +56,6 @@ const ProjectDetailsPage = () => {
               {project.typology} {project.year}
             </p>
           </motion.div>
-        </div>
-
-        {/* Back Button */}
-        <div className="absolute top-8 left-8 z-20">
-          <Link
-            to="/portfolio"
-            className="inline-flex items-center space-x-2 font-abc-monument text-white hover:text-[#5C2F80] transition-colors duration-300"
-          >
-            <span className="text-xl">←</span>
-            <span>Back to Portfolio</span>
-          </Link>
         </div>
       </section>
       {/* Project Details */}

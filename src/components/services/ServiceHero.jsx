@@ -21,7 +21,7 @@ export default function ServiceHero() {
             className="font-monument-extended text-white text-right leading-[1.1] drop-shadow-xl 
             text-4xl sm:text-5xl uppercase md:text-6xl lg:text-7xl xl:text-8xl font-bold"
           >
-            Exceptional Services
+            Servicios Exceptionales
             <br />
           </h1>
         </div>
@@ -34,7 +34,7 @@ export default function ServiceHero() {
               px-6 py-3 rounded shadow-lg transition-colors duration-300 ease-in-out
               text-sm sm:text-base md:text-lg whitespace-nowrap"
           >
-            Contact us
+            Contactanos
           </a>
         </div>
       </div>

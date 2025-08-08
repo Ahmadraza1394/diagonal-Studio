@@ -26,17 +26,17 @@ const PortfolioPage = () => {
             viewport={{ once: true }}
           >
             <h3 className="font-monument text-3xl text-pantone-black mb-6 font-bold">
-              Ready to Start Your Project?
+              Listo para Iniciar tu Proyecto?
             </h3>
             <p className="font-abc-monument text-pantone-black/80 text-lg mb-8 leading-relaxed">
-              Let's discuss how we can bring your architectural vision to life
-              with innovative design and exceptional craftsmanship.
+              Hagamos que tu visín arquitect́ica se haga realidad con diseño
+              innovador y ejecucíon excepcional.
             </p>
             <Link
               to="/contact"
               className="inline-flex items-center space-x-3 border border-pantone-black text-pantone-black px-8 py-4 font-cardinal font-semibold  hover:bg-pantone-black hover:text-white transition-colors duration-300"
             >
-              <span>Get In Touch</span>
+              <span>Contáctanos</span>
               <span className="text-xl">→</span>
             </Link>
           </motion.div>

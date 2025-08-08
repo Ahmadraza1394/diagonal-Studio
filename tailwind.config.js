@@ -22,7 +22,7 @@ export default {
       colors: {
         "pantone-719": "#edc7a2",
         "pantone-7515": "#c68b66",
-        "pantone-283": "#92c0e9",
+        "pantone-283": "#0055b8", // This is the blue color
         "pantone-2935": "#0055b8",
         "pantone-black": "#222222",
         "accent-purple": "#5C2F80", // New purple accent color for better contrast

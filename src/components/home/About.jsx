@@ -16,8 +16,9 @@ export default function About() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <p className="text-pantone-black font-normal text-justify font-abc-monument text-lg md:text-xl leading-normal">
-            Founded in 1995, Diagonal embodies forward-thinking and inspiring
-            architectural design headquartered in Mexico.
+            La flexibilidad de nuestro equipo nos permite manejar proyectos de
+            acuerdo a su tamaño y complejidad, manteniendo siempre la
+            responsabilidad total y la dedicación al cliente.
           </p>
         </motion.div>
         {/* Right: Main about text */}
@@ -29,14 +30,16 @@ export default function About() {
             transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
           >
             <h2 className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Welcome to Diagonal, where visionary architecture meets
-              excellence. For over three decades, we have delivered exceptional
-              public and private projects, blending innovative design, advanced
-              engineering, and sustainable solutions.
+              Con más de 35 años de experiencia, Diagonal Studio es un despacho
+              de arquitectura dedicado a satisfacer las necesidades del mercado
+              en el desarrollo de proyectos arquitectónicos y la ejecución de
+              obras, tanto públicas como privadas, siempre con la más alta
+              calidad.
             </h2>
             <p className="text-pantone-7515 font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Our team of experts brings your ideas to life—on time, on budget,
-              and with the highest quality.
+              Desarrollamos soluciones específicas para cada proyecto, de la
+              mano de personal calificado y con los conocimientos técnicos
+              necesarios para ejercer nuestra actividad de forma confiable.
             </p>
           </motion.div>
           {/* Button */}

@@ -9,15 +9,12 @@ const CompanyInfo = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-monument text-3xl uppercase md:text-4xl text-pantone-black mb-4 font-bold">
-                History
+                Misión
               </h2>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80 leading-relaxed">
-                Founded in 2010, Diagonal started with a vision to challenge
-                conventional architecture. From a small team of passionate
-                designers, we have grown into a collective of innovators and
-                thinkers dedicated to creating spaces that inspire. Our journey
-                is marked by a commitment to excellence and a portfolio of
-                projects that speak to our unique design philosophy.
+                Desarrollar proyectos integrales con un servicio personalizado,
+                mejorando la calidad de vida de nuestros clientes de acuerdo a
+                sus necesidades.
               </p>
             </div>
             <div className="order-first lg:order-last">
@@ -42,14 +39,13 @@ const CompanyInfo = () => {
             </div>
             <div>
               <h2 className="font-monument uppercase text-3xl md:text-4xl text-pantone-black mb-4 font-bold">
-                Vision
+                VISIÓN
               </h2>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80 leading-relaxed">
-                Our vision is to be a global leader in architectural design,
-                known for our sustainable and human-centric approach. We aim to
-                design buildings and spaces that not only meet the needs of
-                today but also anticipate the challenges of tomorrow, creating a
-                lasting legacy of positive impact.
+                Ser un referente en el ámbito arquitectónico, reconocidos por la
+                calidad en el proceso, los resultados y el enfoque humano. Nos
+                enfocamos en la eficiencia del diseño, el uso de la energía y la
+                tecnología de vanguardia para alcanzar la excelencia.
               </p>
             </div>
           </div>
@@ -58,7 +54,7 @@ const CompanyInfo = () => {
         {/* Expertise Section */}
         <div>
           <h2 className="font-monument text-3xl md:text-4xl text-pantone-black mb-8 text-center font-bold">
-            Expertise
+            EXPERTIS
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-pantone-719/10 p-6 rounded-lg">
@@ -68,53 +64,52 @@ const CompanyInfo = () => {
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
-                Architectural Design
+                Diseño arquitectónico
               </h3>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
-                From conceptual sketches to final construction, we provide
-                comprehensive architectural services.
+                Soluciones integrales desde el concepto inicial hasta la
+                construcción final.
               </p>
             </div>
             <div className="bg-pantone-719/10 p-6 rounded-lg">
               <img
                 src="/assets/images/3.jpg"
-                alt="Interior Styling"
+                alt="Desarrollo de espacios urbanos"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
-                Interior Styling
+                Desarrollo de espacios urbanos
               </h3>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
-                We create bespoke interiors that reflect the personality and
-                needs of our clients.
+                Creación de espacios urbanos vibrantes y funcionales.
               </p>
             </div>
             <div className="bg-pantone-719/10 p-6 rounded-lg">
               <img
                 src="/assets/images/2.jpg"
-                alt="Sustainable Building"
+                alt="Proyectos de ingeniería"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
-                Sustainable Building
+                Proyectos de ingeniería
               </h3>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
-                Our commitment to the planet is reflected in our use of
-                eco-friendly materials and practices.
+                Experiencia en ingeniería estructural, hidrosanitaria, eléctrica
+                e hidráulica.
               </p>
             </div>
             <div className="bg-pantone-719/10 p-6 rounded-lg">
               <img
                 src="/assets/images/1.jpg"
-                alt="Urban Planning"
+                alt="Gestión de proyectos"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="font-monument text-pantone-7515 mb-2 font-bold">
-                Urban Planning
+                Gestión de proyectos
               </h3>
               <p className="font-abc-monument text-lg md:text-xl text-pantone-black/80">
-                We design thoughtful urban spaces that foster community and
-                connectivity.
+                Supervisión, presupuestación y programación para proyectos de
+                cualquier tamaño.
               </p>
             </div>
           </div>

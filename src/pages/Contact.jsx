@@ -76,15 +76,15 @@ export default function Contact() {
 
         <div className="relative z-10 w-full flex flex-col items-center justify-center md:justify-end pb-8 md:pb-32 px-4">
           <h1 className="font-monument-extended text-4xl sm:text-5xl md:text-7xl text-white text-center font-bold leading-tight tracking-tight max-w-5xl">
-            Ready to Transform
+            Listo para Transformar
             <br />
-            Your Vision Into
+            Tu Visión en
             <br />
-            Reality?
+            Realidad?
           </h1>
           <p className="mt-6 text-white/90 font-abc-monument-grotesk text-base sm:text-lg md:text-2xl text-center max-w-2xl mx-auto leading-relaxed px-4">
-            Let's create something extraordinary together. Reach out and start
-            the conversation.
+            Vamos a crear algo extraordinario juntos. Contáctanos y comienza la
+            conversación.
           </p>
         </div>
       </section>
@@ -92,15 +92,15 @@ export default function Contact() {
       <section className="w-full py-8 md:py-16" id="contact-form">
         <div className="max-w-[1420px] mx-auto flex flex-col md:flex-row gap-8 px-4 md:px-6">
           <div className="w-full md:w-1/4">
-            <div className="font-monument-grotesk text-xl md:text-2xl text-pantone-black uppercase mb-2 font-bold">
-              <span className="font-supreme">DIAGONAL</span>
-            </div>
+            <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
+              DGNL
+            </h3>
             <div className="font-abc-monument-grotesk text-base md:text-lg text-pantone-black/90">
-              let's start a conversation
+              Vamos a iniciar una conversación
               <br />
-              about how we can bring
+              sobre cómo podemos traer
               <br />
-              your vision to life.
+              tu visión a vida.
             </div>
           </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
                       value={form[field]}
                       onChange={handleChange}
                     >
-                      <option value="">{`Select a ${field}`}</option>
+                      <option value="">{`Selecciona un ${field}`}</option>
                       {field === "region"
                         ? ["Asia", "Europe", "America"].map((opt) => (
                             <option key={opt} value={opt}>
@@ -134,9 +134,9 @@ export default function Contact() {
                             </option>
                           ))
                         : [
-                            "General Inquiry",
-                            "Collaboration",
-                            "Project Proposal",
+                            "Consulta General",
+                            "Colaboración",
+                            "Propuesta de Proyecto",
                           ].map((opt) => (
                             <option key={opt} value={opt}>
                               {opt}
@@ -150,8 +150,8 @@ export default function Contact() {
                       required={field !== "org"}
                       placeholder={
                         field === "email"
-                          ? "your@email.com"
-                          : `Enter your ${field}`
+                          ? "tu@email.com"
+                          : `Introduce tu ${field}`
                       }
                       className="w-full border-b border-pantone-black bg-transparent text-lg md:text-xl py-2 focus:outline-none placeholder:text-pantone-black/40"
                       value={form[field]}
@@ -164,13 +164,13 @@ export default function Contact() {
 
             <div className="md:col-span-2">
               <label className="block mb-2 text-pantone-black font-medium">
-                Message*
+                Mensaje*
               </label>
               <textarea
                 name="message"
                 required
                 rows={3}
-                placeholder="My message is..."
+                placeholder="Mi mensaje es..."
                 className="w-full border-b border-pantone-black bg-transparent text-lg md:text-xl py-2 focus:outline-none placeholder:text-pantone-black/40 resize-none"
                 value={form.message}
                 onChange={handleChange}
@@ -188,8 +188,8 @@ export default function Contact() {
                   className="mr-3 accent-pantone-719 w-4 h-4 mt-1 md:mt-0"
                 />
                 <span className="font-cardinal-classic">
-                  You agree to our terms and conditions and acknowledge that you
-                  have read our privacy policy.
+                  Estoy de acuerdo con los términos y condiciones y reconozco
+                  que he leído la política de privacidad.
                 </span>
               </label>
               <button
@@ -210,8 +210,8 @@ export default function Contact() {
                 }`}
               >
                 {submitStatus === "success"
-                  ? "Thank you! Your message has been sent successfully. You will receive a confirmation email shortly."
-                  : "Sorry, there was an error sending your message. Please try again or contact us directly."}
+                  ? "Gracias! Tu mensaje ha sido enviado correctamente. Recibirás un correo de confirmación pronto."
+                  : "Lo siento, hubo un error al enviar tu mensaje. Por favor, intenta de nuevo o contáctanos directamente."}
               </div>
             )}
           </form>

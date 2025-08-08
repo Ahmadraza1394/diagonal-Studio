@@ -6,6 +6,7 @@ import ServicesList from "../components/home/ServicesList";
 import Sustainability from "../components/home/Sustainability";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import TrustedPartners from "../components/home/TrustedPartners";
 
 export default function Home() {
   const [ref, inView] = useInView({
@@ -40,9 +41,14 @@ export default function Home() {
       <motion.div variants={sectionVariants}>
         <Hero />
       </motion.div>
+
+      <motion.div variants={sectionVariants}>
+        <TrustedPartners />
+      </motion.div>
       <motion.div variants={sectionVariants} ref={ref}>
         <About />
       </motion.div>
+
       <motion.div variants={sectionVariants}>
         <ShowcaseImage imageUrl="/assets/images/10.jpg" />
       </motion.div>

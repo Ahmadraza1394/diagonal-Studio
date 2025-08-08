@@ -11,8 +11,8 @@ const FeaturedProjects = () => {
     <section className="bg-white py-12 sm:py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <h2 className="font-monument-extended uppercase text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-pantone-black font-bold">
-          Featured Projects
+        <h2 className="font-monument-extended uppercase text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-pantone-7515 font-bold">
+          PORTAFOLIO DESTACADO
         </h2>
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end my-8 sm:my-12 md:my-16">
           <div className="mb-8 lg:mb-0 w-full lg:w-1/2">
@@ -22,12 +22,14 @@ const FeaturedProjects = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-supreme text-pantone-black text-base sm:text-lg mb-2">
+              <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
                 DIAGONAL
               </h3>
               <p className="font-abc-monument text-pantone-black/80 text-sm sm:text-base md:text-lg max-w-xl mb-4">
-                We redefine how people experience and interact with the places
-                they call home or work.
+                Desarrollamos proyectos integrales con un servicio
+                personalizado, siempre buscando mejorar la calidad de vida de
+                nuestros clientes mediante un diseño y ejecución innovadores y
+                de alta calidad.
               </p>
               <motion.a
                 href="/portfolio"
@@ -38,7 +40,7 @@ const FeaturedProjects = () => {
                 transition={{ duration: 0.85, delay: 0.3, ease: "easeOut" }}
                 whileHover={{ scale: 1.04 }}
               >
-                View All Projects
+                Ver todos los proyectos
                 <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
                   <svg
                     className="w-4 h-4"
@@ -59,12 +61,12 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="hidden sm:flex items-center space-x-4">
-            <span className="font-supreme text-pantone-black text-base sm:text-lg">
-              DIAGONAL
+            <span className="font-supreme text-pantone-2935 text-base sm:text-lg">
+              DGNL
             </span>
             <div className="w-8 sm:w-12 h-px bg-pantone-black"></div>
             <span className="font-cardinal text-pantone-black/70 italic text-sm sm:text-base">
-              Selected Works
+              Obras Seleccionadas
             </span>
           </div>
         </div>
@@ -91,7 +93,7 @@ const FeaturedProjects = () => {
                 </div>
 
                 <div className="space-y-1 sm:space-y-2">
-                  <h3 className="font-monument text-base sm:text-lg md:text-xl text-pantone-black font-bold group-hover:text-[#5C2F80] transition-colors duration-300">
+                  <h3 className="font-monument text-base sm:text-lg md:text-xl text-pantone-black font-bold group-hover:text-pantone-2935 transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="font-cardinal text-sm sm:text-base text-pantone-black/70 italic">

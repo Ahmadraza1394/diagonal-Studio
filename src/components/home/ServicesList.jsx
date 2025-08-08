@@ -1,42 +1,41 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 const services = [
   {
-    name: "Architectural Design",
+    name: "Diseño Arquitectónico",
     slug: "architectural-design",
     description:
-      "Comprehensive design solutions from concept to completion, creating spaces that inspire and endure.",
+      "Soluciones integrales de diseño desde el concepto hasta la ejecución, creando espacios que inspiran y perduran.",
   },
   {
-    name: "Eco-Friendly Design",
+    name: "Diseño Ecológico",
     slug: "eco-friendly-design",
     description:
-      "Sustainable architecture that harmonizes with the environment while reducing ecological impact.",
+      "Arquitectura sustentable que armoniza con el entorno mientras reduce el impacto ecológico.",
   },
   {
-    name: "Project Development",
+    name: "Desarrollo de Proyectos",
     slug: "project-development",
     description:
-      "End-to-end project coordination ensuring seamless execution from planning to final delivery.",
+      "Coordinación integral de proyectos para asegurar una ejecución fluida desde la planificación hasta la entrega final.",
   },
   {
-    name: "Project Management",
+    name: "Gestión de Proyectos",
     slug: "project-management",
     description:
-      "Expert oversight and coordination to deliver projects on time, within budget, and to specification.",
+      "Supervisión y coordinación experta para entregar proyectos a tiempo, dentro del presupuesto y según especificaciones.",
   },
   {
-    name: "Interior Styling",
+    name: "Estilismo de Interiores",
     slug: "interior-styling",
     description:
-      "Thoughtful interior design that reflects your vision while maximizing functionality and aesthetics.",
+      "Diseño interior cuidadoso que refleja tu visión mientras maximiza funcionalidad y estética.",
   },
   {
-    name: "Consulting",
+    name: "Consultoría",
     slug: "consulting",
     description:
-      "Strategic architectural guidance and expert advice for complex design challenges and opportunities.",
+      "Asesoría estratégica y orientación experta para resolver desafíos complejos de diseño y aprovechar oportunidades.",
   },
 ];
 
@@ -56,18 +55,18 @@ export default function ServicesList() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="font-supreme text-base sm:text-lg text-pantone-black uppercase tracking-tight mb-3 sm:mb-4">
+              <h3 className="font-supreme text-base sm:text-lg text-pantone-2935 uppercase tracking-tight mb-3 sm:mb-4">
                 DIAGONAL
               </h3>
               <p className="font-abc-monument text-sm sm:text-base text-pantone-black/80 mb-6 sm:mb-8 leading-relaxed">
-                Transforming environments into thoughtfully designed,
-                future-ready spaces that inspire and endure.
+                Transformando entornos en espacios dise ados con pensamiento,
+                futuristas y que inspiran y perduran.
               </p>
               <Link
                 to="/services"
                 className="inline-flex items-center border border-pantone-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-md font-cardinal font-semibold text-pantone-black text-sm sm:text-base transition-all duration-300 hover:bg-pantone-black hover:text-white group w-fit"
               >
-                EXPLORE SERVICES
+                EXPLORAR SERVICIOS
                 <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
@@ -86,11 +85,13 @@ export default function ServicesList() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="font-monument-extended text-4xl sm:text-5xl md:text-7xl text-pantone-7515 leading-none mb-4 sm:mb-6 font-bold">
-                Services
+                SERVICIOS
               </h2>
               <p className="font-abc-monument text-base sm:text-lg md:text-xl text-pantone-black/80 max-w-xl mb-12 sm:mb-16">
-                Creating innovative solutions that blend aesthetics with
-                functionality for tomorrow's architectural challenges.
+                Combinamos experiencia, conocimiento técnico y atención al
+                detalle en cada servicio, desde estudios preliminares y diseño
+                conceptual hasta gestión de obra y mantenimiento. Cada solución
+                se adapta a tus necesidades y a los requisitos de tu proyecto.
               </p>
             </motion.div>
 

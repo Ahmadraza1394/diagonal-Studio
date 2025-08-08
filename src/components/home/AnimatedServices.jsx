@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 // Example service items
 const services = [
-  "Architectural Design",
-  "Interior Styling",
-  "Cityscape Development",
-  "Eco-Friendly Design",
-  "Restoration & Upgrades",
-  "Project Viability Analysis",
+  "Dise o Arquitect nico",
+  "Estilismo de Interiores",
+  "Desarrollo de Paisajes Urbanos",
+  "Dise o Ecol gico",
+  "Restauraci n y Mejora",
+  "An lisis de Viabilidad de Proyectos",
 ];
 
 export default function AnimatedServices() {

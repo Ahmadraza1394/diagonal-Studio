@@ -22,10 +22,10 @@ export default function Hero() {
           transition={{ duration: 1.2 }}
         >
           <motion.img
-            src="/assets/images/3.jpg"
+            src="/assets/images/18.jpeg"
             alt="Diagonal Building"
             className="w-full h-full object-cover object-center"
-            style={{ filter: "contrast(1.15) brightness(1.1)" }}
+            style={{ filter: "contrast(1) brightness(1)" }}
             draggable={false}
             initial={{ scale: 1.05 }}
             animate={isLoaded ? { scale: 1 } : {}}
@@ -51,6 +51,14 @@ export default function Hero() {
             diagonal
           </span>
         </motion.h1>
+        <motion.p
+          className="text-white font-monument  text-xl md:text-2xl mt-4 mb-8 text-center max-w-3xl mx-auto font-light tracking-wider opacity-90"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isLoaded ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+        >
+          Arquitectura Supermodernista
+        </motion.p>
       </div>
     </section>
   );
