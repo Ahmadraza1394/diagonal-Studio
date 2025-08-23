@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_CONFIG } from "../config/emailjs";
 
@@ -64,27 +65,29 @@ export default function Contact() {
 
   return (
     <div className="w-full bg-white min-h-screen">
-      <section className="relative w-full min-h-screen flex items-center justify-center md:items-end md:justify-end overflow-hidden bg-pantone-719">
+      <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
         <img
-          src="/assets/images/3.jpg"
-          alt="Contact Background"
-          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          src="/assets/images/contactHero.JPG"
+          alt="Diagonal Contacto"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-75"
           draggable={false}
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/60 via-pantone-black/65 to-transparent z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/60 via-pantone-black/40 to-transparent z-5"></div>
 
-        <div className="relative z-10 w-full flex flex-col items-center justify-center md:justify-end pb-8 md:pb-32 px-4">
-          <h1 className="font-monument-extended text-4xl sm:text-5xl md:text-7xl text-white text-center font-bold leading-tight tracking-tight max-w-5xl">
-            Listo para Transformar
-            <br />
-            Tu Visión en
-            <br />
-            Realidad?
-          </h1>
-          <p className="mt-6 text-white/90 font-abc-monument-grotesk text-base sm:text-lg md:text-2xl text-center max-w-2xl mx-auto leading-relaxed px-4">
-            Vamos a crear algo extraordinario juntos. Contáctanos y comienza la
-            conversación.
+        <div className="relative z-10 px-4">
+          <motion.h1
+            className="w-full text-center text-[clamp(40px,8vw,180px)] sm:text-[clamp(50px,10vw,200px)] font-extrabold uppercase tracking-tight font-monument-extended leading-[1.05] text-white"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+          >
+            <span className="not-italic block md:inline text-shadow-lg font-supreme">
+              Contacto
+            </span>
+          </motion.h1>
+          <p className="font-abc-monument text-lg md:text-xl mt-4 max-w-3xl mx-auto text-white/90 drop-shadow-md">
+            {/* */}
           </p>
         </div>
       </section>
@@ -92,9 +95,13 @@ export default function Contact() {
       <section className="w-full py-8 md:py-16" id="contact-form">
         <div className="max-w-[1420px] mx-auto flex flex-col md:flex-row gap-8 px-4 md:px-6">
           <div className="w-full md:w-1/4">
-            <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
+            {/* <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
               DGNL
-            </h3>
+            </h3> */}
+            <span className="font-supreme text-pantone-2935 text-base sm:text-lg">
+              <span className="italic">DG</span>
+              <span className="">NL</span>
+            </span>
             <div className="font-abc-monument-grotesk text-base md:text-lg text-pantone-black/90">
               Vamos a iniciar una conversación
               <br />

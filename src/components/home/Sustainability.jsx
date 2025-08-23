@@ -47,10 +47,14 @@ export default function Sustainability() {
             {/* <h3 className="font-monument text-lg sm:text-xl xl:text-2xl text-pantone-black uppercase leading-tight mb-2 sm:mb-3 tracking-tight">
               Sostenibilidad
             </h3> */}
-            <h3 className="font-supreme text-base sm:text-lg text-pantone-2935 uppercase tracking-tight mb-3 sm:mb-4">
+            {/* <h3 className="font-supreme text-base sm:text-lg text-pantone-2935 uppercase tracking-tight mb-3 sm:mb-4">
               DIAGONAL
-            </h3>
-            <p className="font-abc-monument text-sm sm:text-base xl:text-lg text-pantone-black/85 leading-relaxed">
+            </h3> */}
+            <span className="font-supreme text-pantone-2935 text-base sm:text-lg">
+              <span className="italic">DG</span>
+              <span className="">NL</span>
+            </span>
+            <p className="font-abc-monument text-justify text-sm sm:text-base xl:text-lg text-pantone-black/85 leading-relaxed">
               Nuestro compromiso con la innovaci n eco-amigable impulsa todo lo
               que hacemos.
             </p>
@@ -63,7 +67,7 @@ export default function Sustainability() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
           >
-            <h2 className="font-monument-extended text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-pantone-7515 leading-tight mb-4 tracking-tight font-bold">
+            <h2 className="font-monument text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-pantone-7515 leading-tight mb-4 tracking-tight font-bold">
               Our Strength in Numbers
             </h2>
           </motion.div>
@@ -88,7 +92,7 @@ export default function Sustainability() {
                   <h4 className="font-abc-monument text-base sm:text-lg md:text-xl text-pantone-black mb-1 sm:mb-2 font-medium">
                     {item.label}
                   </h4>
-                  <p className="font-abc-monument text-sm sm:text-base xl:text-lg text-pantone-black/80 leading-relaxed">
+                  <p className="font-abc-monument text-justify text-sm sm:text-base xl:text-lg text-pantone-black/80 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

@@ -36,7 +36,7 @@ export default function About() {
               obras, tanto públicas como privadas, siempre con la más alta
               calidad.
             </h2>
-            <p className="text-pantone-7515 font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
+            <p className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
               Desarrollamos soluciones específicas para cada proyecto, de la
               mano de personal calificado y con los conocimientos técnicos
               necesarios para ejercer nuestra actividad de forma confiable.

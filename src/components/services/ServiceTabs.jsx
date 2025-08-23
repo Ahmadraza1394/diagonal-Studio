@@ -12,7 +12,7 @@ const services = [
     ],
   },
   {
-    name: "Diseño Sostenible",
+    name: "Diseño Ecológico",
     desc: "Arquitectura sustentable que armoniza con el entorno y reduce el impacto ecológico. Innovamos utilizando materiales verdes, soluciones energéticamente eficientes y prácticas responsables para crear espacios con una huella ambiental mínima.",
     images: [
       "/assets/images/2.jpg",
@@ -22,7 +22,7 @@ const services = [
   },
   {
     name: "Desarrollo de Proyectos",
-    desc: "Coordinación integral de proyectos para asegurar una ejecución fluida desde la planificación hasta la entrega final. Gestionamos cada etapa del desarrollo para materializar tu visión arquitectónica de manera eficiente y eficaz.",
+    desc: "Nuestro servicio de desarrollo de proyectos arquitectónicos abarca desde la conceptualización inicial hasta la entrega del proyecto ejecutivo completo, integrando diseño, funcionalidad, normativas y viabilidad técnica.",
     images: [
       "/assets/images/3.jpg",
       "/assets/images/4.jpg",
@@ -30,8 +30,8 @@ const services = [
     ],
   },
   {
-    name: "Gestión de Proyectos",
-    desc: "Supervisión y coordinación experta para entregar proyectos a tiempo, dentro del presupuesto y según especificaciones. Nuestro equipo garantiza el control de calidad y una comunicación fluida durante todo el ciclo de vida del proyecto.",
+    name: "Gerencia de Proyectos",
+    desc: "Nos enfocamos en la planificación, coordinación, supervisión y control integral de cada etapa de un proyecto arquitectónico o de construcción. Nuestro objetivo es asegurar que los proyectos se ejecuten en tiempo, forma y presupuesto, manteniendo la calidad esperada y alineándose con los objetivos del cliente.",
     images: [
       "/assets/images/4.jpg",
       "/assets/images/1.jpg",
@@ -39,8 +39,8 @@ const services = [
     ],
   },
   {
-    name: "Estilismo de Interiores",
-    desc: "Diseño interior cuidadoso que refleja tu visión y maximiza funcionalidad y estética. Creamos espacios significativos que cuentan tu historia, fusionando belleza y habitabilidad en cada detalle.",
+    name: "Diseño de Interiores",
+    desc: "Transformamos espacios a través de soluciones de diseño que combinan estética, funcionalidad y confort. Nuestro equipo trabaja en estrecha colaboración con los clientes para crear ambientes que reflejen su identidad, optimicen el uso del espacio y mejoren la experiencia de quienes habitan o visitan esos lugares.",
     images: [
       "/assets/images/1.jpg",
       "/assets/images/3.jpg",
@@ -48,8 +48,8 @@ const services = [
     ],
   },
   {
-    name: "Consultoría",
-    desc: "Asesoría estratégica y orientación experta para resolver desafíos complejos de diseño y aprovechar oportunidades. Nuestros servicios de consultoría te ofrecen información valiosa para tomar decisiones informadas en cada etapa de tu proyecto.",
+    name: "Consultoría y Planificación",
+    desc: "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones. Ofrecemos información valiosa en cada etapa del proyecto.",
     images: [
       "/assets/images/2.jpg",
       "/assets/images/4.jpg",
@@ -76,11 +76,15 @@ export default function ServiceTabs() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <h3 className="font-supreme text-pantone-2935 text-base sm:text-lg mb-2">
+              {/* <h3 className="font-monument-extended text-pantone-2935 text-base sm:text-lg mb-2">
                 DIAGONAL
-              </h3>
-              <p className="font-abc-monument text-base sm:text-lg text-pantone-black/80 leading-relaxed">
-                Nuestro objetivo es crear espacios que inspiren, desafíen lo
+              </h3> */}
+              <span className="font-supreme text-pantone-2935 text-base sm:text-lg">
+                <span className="italic">DG</span>
+                <span className="">NL</span>
+              </span>
+              <p className="font-abc-monument text-justify text-base sm:text-lg text-pantone-black/80 leading-relaxed">
+                Nuestro objetivo es crear espacios que inspiran, desafíen lo
                 convencional y mejoren la vida de quienes los experimentan.
               </p>
             </motion.div>
@@ -109,7 +113,7 @@ export default function ServiceTabs() {
             {services.map((service, i) => (
               <div
                 key={service.name}
-                className={`flex items-center font-monument p-3 sm:p-4 md:p-6 cursor-pointer border-b border-pantone-black/20 transition-colors
+                className={`flex items-center p-3 sm:p-4 md:p-6 cursor-pointer border-b border-pantone-black/20 transition-colors
                   ${
                     i === active
                       ? "bg-pantone-black text-white"
@@ -117,11 +121,11 @@ export default function ServiceTabs() {
                   }`}
                 onClick={() => setActive(i)}
               >
-                <span className="font-monument text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-pantone-black/50 mr-3 sm:mr-4 md:mr-6">
+                <span className="font-cardinal text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-pantone-black/50 mr-3 sm:mr-4 md:mr-6">
                   {i + 1}
                 </span>
                 <span
-                  className={`font-monument text-lg sm:text-xl md:text-2xl lg:text-3xl ${
+                  className={`font-monument-extended text-lg sm:text-xl md:text-2xl lg:text-3xl ${
                     i === active ? "text-white" : "text-pantone-black"
                   } ${
                     i === active ? "font-bold" : "font-normal font-monument"
@@ -143,7 +147,7 @@ export default function ServiceTabs() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="space-y-4 sm:space-y-6"
               >
-                <h3 className="font-monument text-xl sm:text-2xl md:text-3xl text-pantone-black font-bold">
+                <h3 className="font-monument-extended text-xl sm:text-2xl md:text-3xl text-pantone-black font-bold">
                   {services[active].name}
                 </h3>
                 <p className="font-abc-monument text-justify text-lg sm:text-xl md:text-2xl lg:text-3xl text-pantone-black/90">

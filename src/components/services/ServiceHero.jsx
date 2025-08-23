@@ -1,42 +1,32 @@
+import { motion } from "framer-motion";
+
 export default function ServiceHero() {
   return (
-    <section className="relative w-full min-h-[100vh] flex items-end justify-end overflow-hidden">
+    <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
       {/* Background Image */}
       <img
-        src="/assets/images/4.jpg"
-        alt="Service Background"
-        className="absolute inset-0 w-full h-full object-cover object-center z-0"
+        src="/assets/images/serviceHero.jpg"
+        alt="Diagonal Servicios"
+        className="absolute inset-0 w-full h-full object-cover object-center z-0 "
         draggable={false}
         loading="eager"
       />
 
-      {/* Gradient Overlay - Darker for better readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/70 via-pantone-black/50 to-pantone-black/30 z-0" />
+      {/* Gradient Overlay (match portfolio hero) */}
+      <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/60 via-pantone-black/40 to-transparent z-5"></div>
 
-      {/* Content Container */}
-      <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 lg:px-12 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
-        {/* Hero Text */}
-        <div className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[70%] ml-auto">
-          <h1
-            className="font-monument-extended text-white text-right leading-[1.1] drop-shadow-xl 
-            text-4xl sm:text-5xl uppercase md:text-6xl lg:text-7xl xl:text-8xl font-bold"
-          >
-            Servicios Exceptionales
-            <br />
-          </h1>
-        </div>
-
-        {/* CTA Button */}
-        <div className="absolute left-4 sm:left-6 md:left-8 lg:left-12 bottom-12 sm:bottom-16 md:bottom-20 lg:bottom-24">
-          <a
-            href="/contact"
-            className="inline-block uppercase bg-white hover:bg-pantone-black hover:text-white text-pantone-black font-museo 
-              px-6 py-3 rounded shadow-lg transition-colors duration-300 ease-in-out
-              text-sm sm:text-base md:text-lg whitespace-nowrap"
-          >
-            Contactanos
-          </a>
-        </div>
+      {/* Centered Title */}
+      <div className="relative z-10 px-4">
+        <motion.h1
+          className="w-full text-center text-[clamp(40px,8vw,180px)] sm:text-[clamp(50px,10vw,200px)] font-extrabold uppercase tracking-tight font-monument-extended leading-[1.05] text-white"
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+        >
+          <span className="not-italic block md:inline text-shadow-lg font-supreme">
+            Servicios
+          </span>
+        </motion.h1>
       </div>
     </section>
   );

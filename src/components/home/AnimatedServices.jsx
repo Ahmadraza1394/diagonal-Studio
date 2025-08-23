@@ -28,7 +28,7 @@ export default function AnimatedServices() {
         </motion.h2>
         {/* Subtitle */}
         <motion.p
-          className="font-museo text-xl sm:text-2xl text-pantone-black/80 mb-12 text-center"
+          className="font-abc-monument text-xl sm:text-2xl text-pantone-black/80 mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.13, ease: "easeOut" }}
@@ -50,7 +50,7 @@ export default function AnimatedServices() {
                 ease: "easeOut",
               }}
             >
-              <span className="font-museo text-pantone-283 text-base md:text-lg w-10 text-right mr-6 select-none">
+              <span className="font-cardinal text-pantone-283 text-base md:text-lg w-10 text-right mr-6 select-none">
                 {i + 1}.
               </span>
               <span className="font-monument text-2xl sm:text-3xl md:text-4xl text-pantone-black">

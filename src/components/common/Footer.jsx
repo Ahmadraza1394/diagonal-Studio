@@ -10,13 +10,13 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: "Instagram", href: "https://instagram.com/" },
-    { name: "Twitter", href: "https://twitter.com/" },
-    { name: "LinkedIn", href: "https://linkedin.com/company/" },
+    { name: "Instagram", href: "https://instagram.com/diagonal_studio" },
+    // { name: "Twitter", href: "https://twitter.com/" },
+    // { name: "LinkedIn", href: "https://linkedin.com/company/" },
   ];
 
   return (
-    <footer className="bg-pantone-black text-white pt-16 pb-8 px-6 select-none">
+    <footer className="bg-black text-white pt-16 pb-8 px-6 select-none">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-start">
         {/* Contact Column */}
         <div className="w-full md:w-1/3 flex flex-col gap-6">
@@ -28,7 +28,7 @@ export default function Footer() {
               Contáctanos y te responderemos pronto!
             </div>
             <div className="font-abc-monument text-sm text-white/80 space-y-1">
-              <p>info@diagonal.com</p>
+              <p>hola@diagonalstudio.mx</p>
               <p>+52 (55)5507 6330</p>
               <p>Ciudad de México y Riviera Maya</p>
             </div>
@@ -80,7 +80,7 @@ export default function Footer() {
           <div className="font-monument-grotesk text-white/60 text-base mb-2">
             Redes Sociales
           </div>
-          <ul className="font-monument-extended font-bold text-3xl md:text-4xl leading-tight space-y-2">
+          <ul className="font-monument-extended font-bold text-2xl md:text-4xl leading-tight space-y-2">
             {socialLinks.map((link) => (
               <li key={link.name}>
                 <a

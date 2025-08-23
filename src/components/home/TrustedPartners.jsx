@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  "/assets/images/companiesLogo/300px-LOGO_BJ - Edited.png",
-  "/assets/images/companiesLogo/453-4539969_sunglass-hut-logo-hd-png-download - Edited.png",
-  "/assets/images/companiesLogo/Comunicado - Edited.png",
-  "/assets/images/companiesLogo/LOGO-VC - Edited.png",
-  "/assets/images/companiesLogo/Logo-INM - Edited.png",
-  "/assets/images/companiesLogo/Logo_Petróleos_Mexicanos.svg - Edited.png",
-  "/assets/images/companiesLogo/Logo_Secretaría_del_Trabajo_y_de_Previsión_Social_México_Actual - Edited.png",
-  "/assets/images/companiesLogo/Logo_del_FONATUR.svg - Edited.png",
-  "/assets/images/companiesLogo/Logoedomex.png",
-  "/assets/images/companiesLogo/Logotipo-grupo-idinsa - Edited.png",
-  "/assets/images/companiesLogo/SEGOB - Edited.png",
-  "/assets/images/companiesLogo/iztacalco_nav - Edited.png",
-  "/assets/images/companiesLogo/luxottica-vector-logo-11574254816cesmfwpoqx - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/300px-LOGO_BJ - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/369-3698095_escudo-del-estado-de-mexico-png-escudo-del - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Comunicado - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/LOGO-VC - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Logo-INM - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Logo_Petróleos_Mexicanos.svg - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Logo_Secretaría_del_Trabajo_y_de_Previsión_Social_México_Actual - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Logo_del_FONATUR.svg - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/Logotipo-grupo-idinsa - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/SEGOB - Edited - Edited (1).png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/el-colegio-de-mexico-logo-png_seeklogo-450938 - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/iztacalco_nav - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/logo-bfeb1add - Edited - Edited.png",
+  "/assets/Diagonal fotos/Home Page/Logos BW/luxottica-vector-logo-11574254816cesmfwpoqx - Edited - Edited.png",
 ];
 
 function LogosRow({ speed = 30, reverse = false }) {
@@ -60,17 +61,16 @@ export default function TrustedPartners() {
     <section className="py-8 sm:py-10 md:py-16 lg:py-20 bg-white ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <p className="text-xs uppercase tracking-widest text-pantone-7515 mb-1 sm:mb-2">
+          <p className="font-monument-extended text-xs uppercase tracking-widest text-pantone-7515 mb-1 sm:mb-2">
             Confían en nosotros
           </p>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-pantone-black">
+          <h2 className="font-monument-extended text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-pantone-black">
             Colaboramos con empresas destacadas
           </h2>
         </div>
 
         <div className="space-y-4 sm:space-y-6 md:space-y-8">
           <LogosRow speed={50} />
-          <LogosRow speed={50} reverse />
         </div>
       </div>
     </section>

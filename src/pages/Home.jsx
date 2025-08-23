@@ -50,19 +50,19 @@ export default function Home() {
       </motion.div>
 
       <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/10.jpg" />
+        <ShowcaseImage imageUrl="/assets/images/secondsection.jpg" />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <FeaturedProjects />
       </motion.div>
       <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/12.jpg" />
+        <ShowcaseImage imageUrl="/assets/images/3rdsection.jpeg" />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <ServicesList />
       </motion.div>
       <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/13.jpg" />
+        <ShowcaseImage imageUrl="/assets/images/4thsection.jpg" />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <Sustainability />
