@@ -49,7 +49,7 @@ export const projects = [
       "Un proyecto que busca la armonía con la naturaleza para crear un espacio de lujo en el corazón de la selva de Tulum.",
     images: [
       "/assets/images/bejuco/IMG_2992.JPG",
-      // "/assets/images/bejuco/3515be74-811a-43fd-b33d-e36619b1a6e3.JPG",
+
       // "/assets/images/bejuco/6ec938c3-64b8-4daa-bcbd-c35b6338bfd5.JPG",
       // "/assets/images/bejuco/83c26166-672d-4ff1-a8d8-dcaf1e53a65f.JPG",
       "/assets/images/bejuco/9099262f-b1ab-406b-8006-360f304f335b.JPG",
