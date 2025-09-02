@@ -17,8 +17,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
         <motion.div
           className="w-full h-full overflow-hidden"
-          initial={{ opacity: 0 }}
-          animate={isLoaded ? { opacity: 1 } : {}}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
           <motion.img
@@ -27,14 +27,9 @@ export default function Hero() {
             className="w-full h-full object-cover object-center"
             style={{ filter: "contrast(1) brightness(1)" }}
             draggable={false}
-            initial={{ scale: 1.1 }}
-            animate={isLoaded ? { scale: 1 } : {}}
-            transition={{
-              duration: 6,
-              ease: [0.25, 0.1, 0.25, 1],
-              opacity: { duration: 1.5 },
-              delay: 0.7, // Delay the animation to make it last longer
-            }}
+            initial={{ scale: 1.1, y: 0 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 4, ease: "easeOut" }}
             onLoad={() => setIsLoaded(true)}
           />
         </motion.div>

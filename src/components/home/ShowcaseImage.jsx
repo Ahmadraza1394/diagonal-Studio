@@ -18,14 +18,18 @@ export default function ShowcaseImage({ imageUrl = "/assets/images/3.jpg" }) {
   }, [inViewRef, controls]);
 
   const imageVariants = {
-    hidden: { scale: 1.1 },
+    hidden: { scale: 1 },
     visible: {
-      scale: inView ? 1.05 : 1.1,
+      scale: inView ? 1.1 : 1,
       transition: {
         duration: 1.2,
         ease: "easeOut",
         delay: inView ? 0.2 : 0,
       },
+    },
+    hover: {
+      scale: inView ? 1.2 : 1,
+      transition: { duration: 0.8 },
     },
   };
 
@@ -46,6 +50,8 @@ export default function ShowcaseImage({ imageUrl = "/assets/images/3.jpg" }) {
           delay: inView ? 0.2 : 0,
         }}
         exit={{ y: 64, opacity: 0, transition: { duration: 0.8 } }}
+        onHoverStart={() => controls.start("hover")}
+        onHoverEnd={() => controls.start("visible")}
       >
         <motion.img
           src={imageUrl}
