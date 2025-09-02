@@ -21,7 +21,10 @@ const FeaturedProjects = () => {
     .filter(Boolean);
 
   return (
-    <section className="bg-white py-12 sm:py-16 md:py-20">
+    <section
+      className="bg-white py-12 sm:py-16 md:py-20 "
+      id="featuredProjects"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <h2 className="font-monument uppercase text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-pantone-7515 font-bold">
@@ -93,7 +96,6 @@ const FeaturedProjects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {featuredProjects.map((project, index) => (
             <motion.div
-              key={project.id}
               className="group cursor-pointer"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -108,10 +110,12 @@ const FeaturedProjects = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   {/* Title overlay on top of the image, no background box */}
-                  <div className="absolute top-0 left-0 right-0 z-10 p-4">
-                    <h3 className="font-monument uppercase tracking-wide text-white text-lg sm:text-xl md:text-2xl font-bold">
-                      {project.title}
-                    </h3>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative z-20 text-center">
+                      <h3 className="text-center text-white font-supreme uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl font-bold px-4">
+                        {project.title}
+                      </h3>
+                    </div>
                   </div>
                   {/* Subtle hover overlay for focus, not a box behind the text */}
                   {/* <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div> */}

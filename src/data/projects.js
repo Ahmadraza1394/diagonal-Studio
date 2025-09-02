@@ -342,4 +342,139 @@ export const projects = [
       { label: "Status", value: "Completed" },
     ],
   },
+  {
+    id: 12,
+    slug: "casa-bak",
+    title: "Casa Bak",
+    typology: "Residential",
+    category: "Residential",
+    year: "Por definir",
+    area: "Por definir",
+    location: "Tulum",
+    image: "/assets/Diagonal fotos/Portafolio/Bak Casa/Copy of IMG_1696.JPG",
+    description:
+      "Residencia unifamiliar que integra materiales naturales, ventilación cruzada y una relación íntima con la vegetación. Espacios luminosos y funcionales pensados para la vida cotidiana en clima tropical.",
+    concept:
+      "Crear un refugio contemporáneo que conecte con la naturaleza mediante texturas honestas y una geometría sobria.",
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Bak Casa/Copy of 2 (1).jpg",
+      "/assets/Diagonal fotos/Portafolio/Bak Casa/Copy of IMG_1696.JPG",
+      "/assets/Diagonal fotos/Portafolio/Bak Casa/Copy of IMG_1698.JPG",
+      "/assets/Diagonal fotos/Portafolio/Bak Casa/Copy of IMG_1701 2.JPG",
+    ],
+    details: [
+      { label: "Client", value: "Privado" },
+      { label: "Location", value: "Tulum" },
+      { label: "Year", value: "Por definir" },
+      { label: "Status", value: "En desarrollo" },
+    ],
+  },
+  {
+    id: 13,
+    slug: "brava-towers",
+    title: "Brava Towers",
+    typology: "Residential",
+    category: "Residential",
+    year: "Por definir",
+    area: "Por definir",
+    location: "Por definir",
+    image:
+      "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5826.jpg",
+    description:
+      "Desarrollo vertical con amenities de alta gama y un lenguaje arquitectónico contemporáneo. Enfoque en eficiencia espacial, vistas y confort climático.",
+    concept:
+      "Elevar la vida urbana con una propuesta esbelta, eficiente y estéticamente atemporal.",
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5826.jpg",
+      "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5824.jpg",
+      "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5825.jpg",
+    ],
+    details: [
+      { label: "Client", value: "Brava" },
+      { label: "Location", value: "Por definir" },
+      { label: "Year", value: "Por definir" },
+      { label: "Status", value: "Planeación" },
+    ],
+  },
+  {
+    id: 14,
+    slug: "caphe-ha",
+    title: "Caphe-Ha",
+    typology: "Commercial",
+    category: "Commercial",
+    year: "Por definir",
+    area: "Por definir",
+    location: "Por definir",
+    image:
+      "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of 801718b9-ec7d-47d4-bd1e-14ecfcfbcc74.JPG",
+    description:
+      "Cafetería boutique inspirada en el agua y la calma del entorno. Materialidad cálida, iluminación puntual y un recorrido sensorial para el visitante.",
+    concept:
+      "Diseñar un espacio comercial acogedor donde el tiempo transcurra con suavidad y cada detalle invite a permanecer.",
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of 801718b9-ec7d-47d4-bd1e-14ecfcfbcc74.JPG",
+      "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of c6a1154a-a91b-4873-ae2e-ccde4b123c82 2.JPG",
+      "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of f66a8622-332e-4f90-ba17-3a2c6e1113f2 (1).jpg",
+      "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of f7de5319-6d7a-4175-94ca-fce0be62752a (1).jpg",
+    ],
+    details: [
+      { label: "Client", value: "Caphe-Ha" },
+      { label: "Location", value: "Por definir" },
+      { label: "Year", value: "Por definir" },
+      { label: "Status", value: "En desarrollo" },
+    ],
+  },
+  {
+    id: 15,
+    slug: "kai-hotel",
+    title: "Kai Hotel",
+    typology: "Commercial",
+    category: "Commercial",
+    year: "Por definir",
+    area: "Por definir",
+    location: "Riviera Maya",
+    image: "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_8980.jpg",
+    description:
+      "Proyecto hotelero de baja densidad que privilegia la experiencia del huésped: privacidad, confort térmico y contacto directo con la naturaleza.",
+    concept:
+      "Arquitectura hospitalaria sustentable, con soluciones pasivas y un carácter sofisticado y sereno.",
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_8980.jpg",
+      "/assets/Diagonal fotos/Portafolio/Kai Hotel/10D2C15F-5DC9-4C94-A00A-0CAD71819532.JPG",
+      "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_2422.jpg",
+      "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_2430.jpg",
+    ],
+    details: [
+      { label: "Client", value: "Kai" },
+      { label: "Location", value: "Riviera Maya" },
+      { label: "Year", value: "Por definir" },
+      { label: "Status", value: "Concepto" },
+    ],
+  },
+  {
+    id: 16,
+    slug: "mya",
+    title: "Mya",
+    typology: "Residential",
+    category: "Residential",
+    year: "Por definir",
+    area: "Por definir",
+    location: "Tulum",
+    image: "/assets/Diagonal fotos/Portafolio/Mya/IMG_9695.jpg",
+    description:
+      "Conjunto residencial de líneas limpias y atmósferas cálidas. Espacios flexibles, integración interior–exterior y selección cuidada de materiales.",
+    concept:
+      "Habitar la simplicidad con elegancia: menos elementos, más experiencias significativas.",
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Mya/IMG_9695.jpg",
+      "/assets/Diagonal fotos/Portafolio/Mya/IMG_5813.jpg",
+      "/assets/Diagonal fotos/Portafolio/Mya/IMG_5815.jpg",
+      "/assets/Diagonal fotos/Portafolio/Mya/IMG_5818.jpg",
+    ],
+    details: [
+      { label: "Location", value: "Tulum" },
+      { label: "Year", value: "Por definir" },
+      { label: "Status", value: "En desarrollo" },
+    ],
+  },
 ];

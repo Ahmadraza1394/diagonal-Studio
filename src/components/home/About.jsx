@@ -9,16 +9,20 @@ export default function About() {
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24 px-6">
         {/* Left: Short intro */}
         <motion.div
-          className="md:col-span-1 flex items-start"
+          className="md:col-span-1 flex flex-col justify-between"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
-          <p className="text-pantone-black font-normal text-justify font-abc-monument text-lg md:text-xl leading-normal">
-            La flexibilidad de nuestro equipo nos permite manejar proyectos de
-            acuerdo a su tamaño y complejidad, manteniendo siempre la
-            responsabilidad total y la dedicación al cliente.
+          <p className="text-pantone-black font-normal  font-abc-monument text-justify text-lg md:text-xl leading-normal">
+            En
+            <span className="font-supreme px-1 text-pantone-2935 text-base sm:text-lg">
+              DIAGONAL
+            </span>
+            desarrollamos soluciones específicas para cada proyecto, de la mano
+            de personal calificado y con los conocimientos técnicos necesarios
+            para ejercer nuestra actividad de forma confiable.
           </p>
         </motion.div>
         {/* Right: Main about text */}
@@ -30,11 +34,11 @@ export default function About() {
             transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
           >
             <h2 className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Con más de 35 años de experiencia, Diagonal Studio es un despacho
-              de arquitectura dedicado a satisfacer las necesidades del mercado
+              Somos un estudio de arquitectura con mas de 40 años de
+              experiencia, con el fin de satisfacer las necesidades del mercado
               en el desarrollo de proyectos arquitectónicos y la ejecución de
-              obras, tanto públicas como privadas, siempre con la más alta
-              calidad.
+              obra, tanto pública como privada y de infraestructura con la más
+              alta calidad.
             </h2>
             <p className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
               Desarrollamos soluciones específicas para cada proyecto, de la
@@ -52,7 +56,7 @@ export default function About() {
             transition={{ duration: 0.85, delay: 0.3, ease: "easeOut" }}
             whileHover={{ scale: 1.04 }}
           >
-            MORE ABOUT US
+            mas acerca de nosotros
             <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
               <svg
                 className="w-4 h-4"

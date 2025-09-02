@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const services = [
   {
     name: "Diseño Arquitectónico",
-    desc: "Soluciones integrales de diseño desde el concepto hasta la ejecución, creando espacios que inspiran y perduran. Nuestro enfoque combina innovación y precisión técnica para entregar estructuras funcionales, estéticamente atractivas y adaptadas al entorno.",
+    desc: "Nuestro servicio de desarrollo de proyectos arquitectónicos abarca desde la conceptualización inicial, hasta la entrega del proyecto ejecutivo completo, integrando diseño, funcionalidad, normativas y viabilidad técnica.",
     images: [
       "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of 1-7bf0cc6b.jpg",
       "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of IMG_2992.JPG",
@@ -22,7 +22,7 @@ const services = [
   },
   {
     name: "Desarrollo de Proyectos",
-    desc: "Nuestro servicio de desarrollo de proyectos arquitectónicos abarca desde la conceptualización inicial hasta la entrega del proyecto ejecutivo completo, integrando diseño, funcionalidad, normativas y viabilidad técnica.",
+    desc: "Nos enfocamos en garantizar que todos los aspectos del proyecto se lleven a cabo conforme al diseño aprobado, dentro de los plazos establecidos y respetando los más altos estándares de calidad. A través de un control riguroso, la gestión efectiva de recursos y una comunicación constante con los equipos de trabajo, aseguramos el éxito de cada proyecto, minimizando riesgos y optimizando costos.",
     images: [
       "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/562b6b31.jpg",
       "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/5998a032-d08e-4abf-b533-4eb762163417.JPG",
@@ -31,7 +31,7 @@ const services = [
   },
   {
     name: "Gerencia de Proyectos",
-    desc: "Nos enfocamos en la planificación, coordinación, supervisión y control integral de cada etapa de un proyecto arquitectónico o de construcción. Nuestro objetivo es asegurar que los proyectos se ejecuten en tiempo, forma y presupuesto, manteniendo la calidad esperada y alineándose con los objetivos del cliente.",
+    desc: "Nos especializamos en la planificación, coordinación, supervisión y control integral de todas las etapas de un proyecto arquitectónico o de construcción. Nuestro compromiso es garantizar que cada proyecto se ejecute en tiempo, forma y presupuesto, manteniendo los más altos estándares de calidad y siempre alineados con los objetivos y visión del cliente.",
     images: [
       "/assets/Diagonal fotos/Servicios/Gestion de proyectos/Copy of IMG_9487.jpg",
       "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG-20250221-WA0041.jpg",

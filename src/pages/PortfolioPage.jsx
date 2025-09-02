@@ -29,8 +29,8 @@ const PortfolioPage = () => {
               Listo para Iniciar tu Proyecto?
             </h3>
             <p className="font-abc-monument text-pantone-black/80 text-lg mb-8 leading-relaxed">
-              Hagamos que tu visín arquitect́ica se haga realidad con diseño
-              innovador y ejecucíon excepcional.
+              Hagamos que tu visón arquitectónica se haga realidad con diseño
+              innovador y ejecución excepcional
             </p>
             <Link
               to="/contact"

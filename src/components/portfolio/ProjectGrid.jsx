@@ -5,16 +5,46 @@ import { projects } from "../../data/projects";
 
 const ProjectGrid = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  // Only show the requested projects
+  const allowedTitles = [
+    "Casa Bak",
+    "Casa Romeo",
+    "Brava Towers",
+    "Caphe-Ha",
+    "Casa Imox",
+    "Kai Hotel",
+    "Mya",
+    // The dataset uses "Tienda UJO" for Ujo Tulum
+    "Tienda UJO",
+  ];
+  const filteredProjects = projects
+    .filter((p) => allowedTitles.includes(p.title))
+    .sort(
+      (a, b) => allowedTitles.indexOf(a.title) - allowedTitles.indexOf(b.title)
+    );
 
   return (
     <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <div className="mb-8 text-center">
+          <Link to="/#featuredProjects">
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
+            >
+              <span className="italic">Ver nuestro</span> portafolio destacado
+            </motion.button>
+          </Link>
+        </div>
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           layout
         >
           <AnimatePresence>
-            {projects.map((project) => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 layout
@@ -35,15 +65,10 @@ const ProjectGrid = () => {
                   />
                 </div>
                 <Link to={`/portfolio/${project.slug}`}>
-                  <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/80 via-pantone-black/40 to-transparent flex items-end p-8 transition-opacity hover:opacity-90">
-                    <div className="text-white">
-                      <h3 className="font-monument text-3xl font-bold mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="font-abc-monument text-lg opacity-90">
-                        {project.category}
-                      </p>
-                    </div>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
+                    <h3 className="text-center text-white font-supreme uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl font-bold px-4">
+                      {project.title}
+                    </h3>
                   </div>
                 </Link>
               </motion.div>

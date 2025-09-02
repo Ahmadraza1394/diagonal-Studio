@@ -66,12 +66,15 @@ export default function Contact() {
   return (
     <div className="w-full bg-white min-h-screen">
       <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
-        <img
-          src="/assets/images/contactHero.JPG"
+        <motion.img
+          src="/assets/images/contactHero.jpg"
           alt="Diagonal Contacto"
           className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-75"
           draggable={false}
           loading="eager"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-pantone-black/60 via-pantone-black/40 to-transparent z-5"></div>
 

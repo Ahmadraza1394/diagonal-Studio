@@ -4,12 +4,15 @@ export default function ServiceHero() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
       {/* Background Image */}
-      <img
+      <motion.img
         src="/assets/images/serviceHero.jpg"
         alt="Diagonal Servicios"
         className="absolute inset-0 w-full h-full object-cover object-center z-0 "
         draggable={false}
         loading="eager"
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 2, ease: "easeOut" }}
       />
 
       {/* Gradient Overlay (match portfolio hero) */}

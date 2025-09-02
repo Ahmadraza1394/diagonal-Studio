@@ -60,7 +60,7 @@ export default function ServicesList() {
                 <span className="">NL</span>
               </span>
               <p className="font-abc-monument text-sm sm:text-base text-pantone-black/80 mb-6 sm:mb-8 leading-relaxed text-justify">
-                Transformando entornos en espacios dise ados con pensamiento,
+                Transformando entornos en espacios diseñados con pensamiento,
                 futuristas y que inspiran y perduran.
               </p>
               <Link

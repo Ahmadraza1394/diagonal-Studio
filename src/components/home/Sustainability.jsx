@@ -68,7 +68,7 @@ export default function Sustainability() {
             transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
           >
             <h2 className="font-monument text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-pantone-7515 leading-tight mb-4 tracking-tight font-bold">
-              Our Strength in Numbers
+              Nuestra fuerza en números
             </h2>
           </motion.div>
 
