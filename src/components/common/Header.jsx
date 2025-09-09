@@ -52,11 +52,15 @@ export default function Header() {
           {/* Left: Brand */}
           <div className="flex-1">
             <a href="/" className="block w-[120px] sm:w-[150px]">
-              <img
+              {/* <img
                 src="/assets/images/Logos-01e.png"
                 alt="Diagonal"
                 className="h-8 sm:h-10 w-auto cursor-pointer hover:opacity-90 transition-opacity"
-              />
+              /> */}
+              <span className="font-supreme text-pantone-2935 text-base sm:text-lg">
+                <span className="italic">DG</span>
+                <span className="">NL</span>
+              </span>
             </a>
           </div>
           {/* Center: EST */}

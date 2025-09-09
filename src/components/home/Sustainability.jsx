@@ -5,17 +5,17 @@ const stats = [
   {
     value: "40+",
     label: "Proyectos Completados",
-    desc: "En sectores residenciales, comerciales, de hospitalidad y p blicos—demostrando nuestra versatilidad y profundidad.",
+    desc: "En sectores residenciales, comerciales, de hospitalidad y públicos—demostrando nuestra versatilidad y profundidad.",
   },
   {
     value: "150+",
     label: "Expertos en la Industria",
-    desc: "Un equipo multidisciplinario de arquitectos, dise adores y ingenieros experimentados, dedicados a resultados innovadores y de alta calidad.",
+    desc: "Un equipo multidisciplinario de arquitectos, diseñadores e ingenieros experimentados, dedicados a resultados innovadores y de alta calidad.",
   },
   {
     value: "2B+",
     label: "Valor de los Proyectos",
-    desc: "Administraci n experta de dise os complejos y de alta presupuesto que brindan el m ximo valor a nuestros clientes.",
+    desc: "Administración experta de diseños complejos y de alto presupuesto que brindan el máximo valor a nuestros clientes.",
   },
 ];
 

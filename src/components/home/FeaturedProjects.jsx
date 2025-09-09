@@ -13,7 +13,6 @@ const FeaturedProjects = () => {
     "Kauil Tulum",
     "Allure",
   ];
-
   const featuredProjects = desiredOrder
     .map((name) =>
       projects.find((p) => p.title.toLowerCase() === name.toLowerCase())

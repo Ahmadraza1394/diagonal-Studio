@@ -38,7 +38,7 @@ export default function Hero() {
       {/* Content with increased width */}
       <div className="relative z-20 flex flex-col items-center w-full max-w-[1600px] px-4 pt-20 md:pt-32">
         <motion.h1
-          className="w-full text-center text-[clamp(40px,8vw,180px)] sm:text-[clamp(50px,10vw,200px)] font-extrabold uppercase tracking-tight font-monument-extended leading-[1.05] text-pantone-2935"
+          className="w-full text-center text-[clamp(40px,8vw,180px)] sm:text-[clamp(50px,10vw,200px)] font-extrabold uppercase tracking-tight font-monument-extended leading-[1.05] text-white"
           initial={{ opacity: 0, y: 60 }}
           animate={isLoaded ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
@@ -48,7 +48,7 @@ export default function Hero() {
           </span>
         </motion.h1>
         <motion.p
-          className="text-white font-supreme text-xl md:text-2xl  mb-8 text-center max-w-3xl mx-auto font-light tracking-wider opacity-90"
+          className="text-white font-supreme text-base md:text-2xl  mb-8 text-center max-w-3xl mx-auto font-light tracking-wider opacity-90"
           initial={{ opacity: 0, y: 30 }}
           animate={isLoaded ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}

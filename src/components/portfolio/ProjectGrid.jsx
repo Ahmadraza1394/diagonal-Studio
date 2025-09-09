@@ -15,7 +15,7 @@ const ProjectGrid = () => {
     "Kai Hotel",
     "Mya",
     // The dataset uses "Tienda UJO" for Ujo Tulum
-    "Tienda UJO",
+    "UJO",
   ];
   const filteredProjects = projects
     .filter((p) => allowedTitles.includes(p.title))

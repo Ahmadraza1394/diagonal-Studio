@@ -34,7 +34,7 @@ export default function About() {
             transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
           >
             <h2 className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Somos un estudio de arquitectura con mas de 40 años de
+              Somos un estudio de arquitectura con más de 40 años de
               experiencia, con el fin de satisfacer las necesidades del mercado
               en el desarrollo de proyectos arquitectónicos y la ejecución de
               obra, tanto pública como privada y de infraestructura con la más
@@ -56,7 +56,7 @@ export default function About() {
             transition={{ duration: 0.85, delay: 0.3, ease: "easeOut" }}
             whileHover={{ scale: 1.04 }}
           >
-            mas acerca de nosotros
+            más acerca de nosotros
             <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
               <svg
                 className="w-4 h-4"

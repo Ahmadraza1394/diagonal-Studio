@@ -319,7 +319,7 @@ export const projects = [
   {
     id: 11,
     slug: "tienda-ujo",
-    title: "Tienda UJO",
+    title: "UJO",
     typology: "Commercial",
     category: "Commercial",
     year: "2023",

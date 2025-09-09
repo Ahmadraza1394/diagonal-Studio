@@ -9,26 +9,39 @@ const CompanyInfo = () => {
         </h2>
         <div className="space-y-5">
           <p className="font-abc-monument text-justify text-base md:text-lg text-pantone-black/80 leading-relaxed">
-            Somos un estudio de arquitectura con más de 40 años de experiencia, especializado en el desarrollo de proyectos arquitectónicos y la ejecución de obra pública, privada e infraestructura con la más alta calidad.
+            Somos un estudio de arquitectura con más de 40 años de experiencia,
+            especializado en el desarrollo de proyectos arquitectónicos y la
+            ejecución de obra pública, privada e infraestructura con la más alta
+            calidad.
           </p>
           <p className="font-abc-monument text-justify text-base md:text-lg text-pantone-black/80 leading-relaxed">
-            Desarrollamos soluciones específicas para cada proyecto, con un equipo calificado y flexible que se adapta al tamaño y complejidad, manteniendo siempre la responsabilidad total.
+            Desarrollamos soluciones específicas para cada proyecto, con un
+            equipo calificado y flexible que se adapta al tamaño y complejidad,
+            manteniendo siempre la responsabilidad total.
           </p>
           <p className="font-abc-monument text-justify text-base md:text-lg text-pantone-black/80 leading-relaxed">
-            Ejecutamos con control y calidad, visión integral y diseño con propósito: proyectos que funcionan, responden al contexto y generan valor a largo plazo.
+            Ejecutamos con control y calidad, visión integral y diseño con
+            propósito: proyectos que funcionan, responden al contexto y generan
+            valor a largo plazo.
           </p>
         </div>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="font-cardinal text-pantone-black/70 text-center">
-            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">40+ años</span>
+            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">
+              40+ años
+            </span>
             <span className="block text-sm">de experiencia</span>
           </div>
           <div className="font-cardinal text-pantone-black/70 text-center">
-            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">10,000 m²</span>
+            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">
+              100,000 m²
+            </span>
             <span className="block text-sm">construidos (últimos 5 años)</span>
           </div>
           <div className="font-cardinal text-pantone-black/70 text-center">
-            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">Ejecución</span>
+            <span className="block text-2xl md:text-3xl font-bold text-pantone-black">
+              Ejecución
+            </span>
             <span className="block text-sm">técnica con control y calidad</span>
           </div>
         </div>
