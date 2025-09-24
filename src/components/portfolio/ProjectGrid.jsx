@@ -7,15 +7,15 @@ const ProjectGrid = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   // Only show the requested projects
   const allowedTitles = [
-    "Casa Bak",
+    "Beach Club",
+    "Rouge Zama",
     "Casa Romeo",
-    "Brava Towers",
+    "Casa Bak",
     "Caphe-Ha",
     "Casa Imox",
-    "Kai Hotel",
-    "Mya",
-    // The dataset uses "Tienda UJO" for Ujo Tulum
     "UJO",
+    "Parque Lineal",
+    "Prime Burgers",
   ];
   const filteredProjects = projects
     .filter((p) => allowedTitles.includes(p.title))

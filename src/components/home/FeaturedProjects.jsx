@@ -123,24 +123,6 @@ const FeaturedProjects = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* View All Link */}
-        {/* <motion.div
-          className="text-center mt-10 sm:mt-12 md:mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <Link
-            to="/portfolio"
-            className="inline-flex items-center space-x-2 sm:space-x-3 font-abc-monument text-sm sm:text-base text-pantone-black hover:text-[#5C2F80] transition-colors duration-300 group"
-          >
-            <span>View All Projects</span>
-            <div className="w-6 sm:w-8 h-px bg-pantone-black group-hover:bg-[#5C2F80] transition-colors duration-300"></div>
-            <span className="text-lg sm:text-xl">→</span>
-          </Link>
-        </motion.div> */}
       </div>
     </section>
   );

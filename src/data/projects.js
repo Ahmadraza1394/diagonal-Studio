@@ -111,7 +111,8 @@ export const projects = [
     year: "2022",
     area: "950",
     location: "Aldea Zamá, Tulum",
-    image: "/assets/Diagonal fotos/Portafolio/giada towers/Giada-04-scaled.jpeg",
+    image:
+      "/assets/Diagonal fotos/Portafolio/giada towers/Giada-04-scaled.jpeg",
     description:
       "Un conjunto vertical moderno que resalta con líneas puras y acabados sofisticados. Cada torre cuenta con amenidades de primer nivel, ideal para quienes buscan estilo de vida premium en Tulum.",
     concept:
@@ -486,12 +487,16 @@ export const projects = [
     year: "Por definir",
     area: "Por definir",
     location: "Por definir",
-    image: "",
+    image: "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
     description:
       "Proyecto por definir. Este es un texto de demostración que será reemplazado con la información real del proyecto Rouge Zama.",
     concept:
       "Concepto por definir. Se integrará una descripción conceptual del proyecto una vez que esté disponible.",
-    images: [],
+    images: [
+      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4111.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4116.jpg",
+    ],
     details: [
       { label: "Client", value: "Por definir" },
       { label: "Location", value: "Por definir" },
@@ -508,12 +513,17 @@ export const projects = [
     year: "Por definir",
     area: "Por definir",
     location: "Por definir",
-    image: "",
+    image: "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3823-2.jpg",
     description:
       "Proyecto por definir. Este es un texto de demostración que será reemplazado con la información real del Parque Lineal.",
     concept:
       "Concepto por definir. Se agregará información del concepto de diseño cuando esté lista.",
-    images: [],
+    images: [
+      "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3823-2.jpg",
+      "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3888.jpg",
+      "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/Copy of IMG_3614.jpg",
+      "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_0011.JPG",
+    ],
     details: [
       { label: "Client", value: "Por definir" },
       { label: "Location", value: "Por definir" },
@@ -530,12 +540,17 @@ export const projects = [
     year: "Por definir",
     area: "Por definir",
     location: "Por definir",
-    image: "",
+    image: "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0412.jpg",
     description:
       "Proyecto por definir. Este es un texto de demostración que será reemplazado con la información real de Prime Burgers.",
     concept:
       "Concepto por definir. Se detallará la propuesta conceptual cuando esté disponible.",
-    images: [],
+    images: [
+      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0412.jpg",
+      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0410 (1).jpg",
+      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/A161D37C-AE04-4DF8-966A-39C82F049DA2.JPG",
+      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_6808.PNG",
+    ],
     details: [
       { label: "Client", value: "Por definir" },
       { label: "Location", value: "Por definir" },
