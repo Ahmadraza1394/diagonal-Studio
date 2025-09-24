@@ -20,10 +20,10 @@ const stats = [
 ];
 
 const images = [
-  "/assets/images/muse.jpg",
-  "/assets/images/15.jpg",
-  "/assets/images/IMG_8980.jpg",
-  "/assets/images/a8646ee1-0abc-43b4-80e5-802bb8f43435.JPG",
+  "/assets/Diagonal fotos/Home Page/Last sections pics/2-7bf0cc6b.jpg",
+  "/assets/Diagonal fotos/Home Page/Last sections pics/Copy of Copy of IMG_3614.jpg",
+  "/assets/Diagonal fotos/Home Page/Last sections pics/DJI_0159-Editar.jpg",
+  "/assets/Diagonal fotos/Home Page/Last sections pics/ef6370a9.webp",
   "/assets/images/5.jpg",
 ];
 

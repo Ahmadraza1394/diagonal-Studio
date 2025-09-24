@@ -14,7 +14,9 @@ const PortfolioPage = () => {
       <PortfolioIntro />
 
       {/* Projects Grid */}
-      <ProjectGrid />
+      <section id="portfolioProjects">
+        <ProjectGrid />
+      </section>
 
       {/* Call to Action */}
       <section className="py-16 bg-pantone-719/10">

@@ -101,7 +101,7 @@ const FeaturedProjects = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={`/portfolio/${project.slug}`}>
+              <Link to={`/portfolio/${project.slug}`} state={{ from: "featured" }}>
                 <div className="relative overflow-hidden bg-gray-100 aspect-[4/5]">
                   <img
                     src={project.image}

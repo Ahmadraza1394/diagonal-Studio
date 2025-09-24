@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { projects } from "../data/projects";
@@ -7,6 +7,25 @@ import { projects } from "../data/projects";
 const ProjectDetailsPage = () => {
   const { slug } = useParams();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleBack = () => {
+    const from = location.state?.from;
+    if (from === "featured") {
+      navigate("/#featuredProjects");
+      return;
+    }
+    if (from === "portfolio") {
+      navigate("/portfolio#portfolioProjects");
+      return;
+    }
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/portfolio");
+    }
+  };
 
   const project = projects.find((p) => p.slug === slug);
   const galleryImages = project ? project.images.slice(0, 10) : [];
@@ -58,6 +77,16 @@ const ProjectDetailsPage = () => {
           </motion.div>
         </div>
       </section>
+      {/* Back Button (below hero, easy to spot) */}
+      <div className="px-4 sm:px-6 lg:px-8 mt-4 md:mt-6">
+        <button
+          type="button"
+          onClick={handleBack}
+          className="px-5 py-3 rounded-md bg-pantone-7515 text-white font-monument text-xs md:text-sm uppercase tracking-wide shadow hover:opacity-95 transition"
+        >
+          ← Volver a Proyectos
+        </button>
+      </div>
       {/* Project Details */}
       <section className="py-12 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

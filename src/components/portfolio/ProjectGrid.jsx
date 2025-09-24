@@ -64,7 +64,7 @@ const ProjectGrid = () => {
                     className="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <Link to={`/portfolio/${project.slug}`}>
+                <Link to={`/portfolio/${project.slug}`} state={{ from: "portfolio" }}>
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                     <h3 className="text-center text-white font-supreme uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl font-bold px-4">
                       {project.title}
