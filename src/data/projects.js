@@ -551,7 +551,7 @@ export const projects = [
       "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0412.jpg",
       "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0410 (1).jpg",
       "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/A161D37C-AE04-4DF8-966A-39C82F049DA2.JPG",
-      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_6808.PNG",
+      "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/4.png",
     ],
     details: [
       { label: "Client", value: "Por definir" },
