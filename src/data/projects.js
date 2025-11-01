@@ -113,6 +113,9 @@ export const projects = [
     location: "Aldea Zamá, Tulum",
     image:
       "/assets/Diagonal fotos/Portafolio/giada towers/Giada-04-scaled.jpeg",
+    reference: {
+      title: "Destacado por sus torres gemelas unidas por un puente y una alberca central, simbolizando la armonía entre la arquitectura y el paisaje tropical."
+    },
     description:
       "Un conjunto vertical moderno que resalta con líneas puras y acabados sofisticados. Cada torre cuenta con amenidades de primer nivel, destacando la piscina conectada por un puente que une ambas estructuras. Ideal para quienes buscan estilo de vida premium en Tulum.",
     concept:
@@ -143,6 +146,9 @@ export const projects = [
     location: "Tulum, Selva Zamá",
     image:
       "/assets/Diagonal fotos/Portafolio/amira district/DJI_0159-Editar.jpg",
+    reference: {
+      title: "Reconocido por su diseño innovador que conecta dos torres residenciales mediante una alberca elevada, fusionando la arquitectura moderna con el entorno natural de Tulum."
+    },
     description:
       "Conjunto de residencias de lujo con arquitectura vanguardista. Espacios amplios, integración con la naturaleza y materiales de alta calidad. Destacan las dos torres conectadas por una piscina central que crea un ambiente único. En una de las zonas con mayor plusvalía de Tulum.",
     concept:
