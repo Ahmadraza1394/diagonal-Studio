@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { projects } from "../data/projects";
+import ProjectReference from "../components/portfolio/ProjectReference";
 
 const ProjectDetailsPage = () => {
   const { slug } = useParams();
@@ -153,6 +154,11 @@ const ProjectDetailsPage = () => {
                     {project.description}
                   </p>
                 </div>
+
+                {/* Project Reference */}
+                {project.reference && (
+                  <ProjectReference reference={project.reference} />
+                )}
               </motion.div>
             </div>
 

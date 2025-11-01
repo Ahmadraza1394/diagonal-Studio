@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectReference from "./ProjectReference";
 
 const ProjectInfo = ({ project }) => {
   return (
@@ -8,9 +9,16 @@ const ProjectInfo = ({ project }) => {
           <h2 className="font-cardinal text-3xl md:text-4xl text-pantone-black mb-4">
             Información del Proyecto
           </h2>
-          <p className="font-supreme text-base text-pantone-black/80 leading-relaxed">
+          <p className="font-abc-monument text-justify text-base text-pantone-black/80 leading-relaxed mb-6">
             {project.description}
           </p>
+          
+          {/* Project Reference */}
+          {project.reference && (
+            <div className="mt-6">
+              <ProjectReference reference={project.reference} />
+            </div>
+          )}
         </div>
         <div>
           <h2 className="font-cardinal text-3xl md:text-4xl text-pantone-black mb-4">

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -47,32 +48,34 @@ export default function About() {
             </p>
           </motion.div>
           {/* Button */}
-          <motion.a
-            href="#"
-            className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
+          <motion.div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.85, delay: 0.3, ease: "easeOut" }}
-            whileHover={{ scale: 1.04 }}
           >
-            más acerca de nosotros
-            <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
-          </motion.a>
+            <Link
+              to="/portfolio"
+              className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
+            >
+              Nuestro Portafolio
+              <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </span>
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>

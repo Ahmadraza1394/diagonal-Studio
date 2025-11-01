@@ -110,7 +110,7 @@ export default function Contact() {
               <br />
               sobre cómo podemos traer
               <br />
-              tu visión a vida.
+              tu visión a la vida.
             </div>
           </div>
 
