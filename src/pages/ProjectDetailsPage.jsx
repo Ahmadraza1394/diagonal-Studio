@@ -148,7 +148,7 @@ const ProjectDetailsPage = () => {
                 {/* Description */}
                 <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
                   <h3 className="font-monument uppercase text-xl md:text-2xl text-pantone-black mb-4 font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-pantone-7515 after:mt-2">
-                    Description
+                    Descripción
                   </h3>
                   <p className="font-abc-monument text-pantone-black/80 leading-relaxed text-sm md:text-base">
                     {project.description}
@@ -214,7 +214,7 @@ const ProjectDetailsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h3 className="font-monument uppercase text-3xl text-pantone-black font-bold">
-              More Projects
+              Más Proyectos
             </h3>
           </div>
 

@@ -145,7 +145,7 @@ export default function ServicesList() {
                 {/* Footer CTAs */}
                 <div className="mt-auto pt-4 border-t border-pantone-black/10 flex items-center justify-between gap-3">
                   <Link
-                    to={`/services#${service.slug}`}
+                    to={`/services`}
                     aria-label={`Ver más sobre ${service.name}`}
                     className="inline-flex items-center gap-2 text-[#5C2F80] hover:text-pantone-black transition-colors font-abc-monument text-sm"
                   >

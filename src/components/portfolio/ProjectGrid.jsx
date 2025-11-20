@@ -16,6 +16,9 @@ const ProjectGrid = () => {
     "UJO",
     "Parque Lineal Rio Mixcoac",
     "Prime Burgers",
+    "Rouge Zama",
+    "Restaurante Xibak",
+    "Kai Hotel & Beach Club",
   ];
   const filteredProjects = projects
     .filter((p) => allowedTitles.includes(p.title))
@@ -35,7 +38,7 @@ const ProjectGrid = () => {
               transition={{ duration: 0.3 }}
               className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
             >
-              <span className="italic">Ver nuestro</span> portafolio destacado
+              <span className="italic">Ver nuestro portafolio destacado</span>
             </motion.button>
           </Link>
         </div>
@@ -49,7 +52,10 @@ const ProjectGrid = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={`/portfolio/${project.slug}`} state={{ from: "portfolio" }}>
+              <Link
+                to={`/portfolio/${project.slug}`}
+                state={{ from: "portfolio" }}
+              >
                 <div className="relative overflow-hidden bg-gray-100 aspect-[4/5] rounded-lg shadow-lg">
                   <img
                     src={project.image}
@@ -60,17 +66,17 @@ const ProjectGrid = () => {
                       setSelectedImage(project.image);
                     }}
                   />
-                  
+
                   {/* Gradient overlay for better text readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-                  
+
                   {/* Title overlay */}
                   <div className="absolute inset-0 flex items-center justify-center p-4">
                     <div className="text-center">
                       <h3 className="text-white font-supreme uppercase tracking-wide text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
                         {project.title}
                       </h3>
-                      
+
                       {/* Project metadata */}
                       <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p className="text-white/80 font-cardinal text-xs sm:text-sm italic">
@@ -84,7 +90,7 @@ const ProjectGrid = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Reference indicator */}
                   {project.reference && (
                     <div className="absolute top-3 right-3 w-6 h-6 sm:w-8 sm:h-8 bg-pantone-7515 rounded-full flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
@@ -150,7 +156,7 @@ const ProjectGrid = () => {
                 alt="Enlarged view"
                 className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
               />
-              
+
               {/* Close button */}
               <button
                 onClick={() => setSelectedImage(null)}
@@ -171,7 +177,7 @@ const ProjectGrid = () => {
                   />
                 </svg>
               </button>
-              
+
               {/* Instructions */}
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-2 rounded-full text-xs sm:text-sm font-abc-monument backdrop-blur-sm">
                 Haz clic fuera para cerrar

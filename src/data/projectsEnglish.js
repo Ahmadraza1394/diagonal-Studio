@@ -1,18 +1,18 @@
-export const projects = [
+export const projectsEnglish = [
   {
     id: 1,
     slug: "kauil-tulum",
     title: "Kauil Tulum",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2022",
     area: "10,860",
-    location: "Región 15, Tulum",
+    location: "Region 15, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/kauil/_MG_8474-Editar.jpg",
     description:
-      "Edificio de departamentos boutique con estética minimalista y acabados de lujo. Cada unidad ha sido diseñada para ofrecer confort, privacidad y armonía con el entorno selvático. Ideal para inversión o residencia permanente en la Riviera Maya.",
+      "Boutique apartment building with a minimalist aesthetic and luxury finishes. Each unit is designed to offer comfort, privacy, and harmony with the jungle surroundings. Ideal for investment or permanent residence in the Riviera Maya.",
     concept:
-      "Un proyecto que fusiona diseño contemporáneo con la naturaleza para crear espacios de lujo en el corazón de la selva de Tulum.",
+      "A project that merges contemporary design with nature to create luxury spaces in the heart of the Tulum jungle.",
     images: [
       "/assets/Diagonal fotos/Portafolio/kauil/1-7bf0cc6b.jpg",
       "/assets/Diagonal fotos/Portafolio/kauil/2-7bf0cc6b.jpg",
@@ -34,7 +34,7 @@ export const projects = [
     ],
     details: [
       { label: "Client", value: "Kauil Tulum" },
-      { label: "Location", value: "Región 15, Tulum" },
+      { label: "Location", value: "Region 15, Tulum" },
       { label: "Year", value: "2022" },
       { label: "Status", value: "Completed" },
     ],
@@ -43,17 +43,17 @@ export const projects = [
     id: 2,
     slug: "casa-bejuco",
     title: "Casa Bejuco",
-    typology: "Residencial–Hotelero",
+    typology: "Residential–Hospitality",
     category: "Residential",
     year: "2023",
     area: "960",
-    location: "Zona Hotelera, Tulum",
+    location: "Hotel Zone, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Bejuco/IMG_2992.JPG",
 
     description:
-      "Una residencia inmersa en la selva de Tulum que fusiona diseño contemporáneo con materiales naturales. La estructura de madera bejuco, muros de concreto expuesto y amplias aperturas la conectan con el entorno. Espacios abiertos y ventilación cruzada para un estilo de vida tropical.",
+      "A residence immersed in the jungle of Tulum that blends contemporary design with natural materials. The bejuco wood structure, exposed concrete walls, and large openings connect it to the environment. Open spaces and cross ventilation support a tropical lifestyle.",
     concept:
-      "Un proyecto que busca la armonía con la naturaleza para crear un espacio de lujo en el corazón de la selva de Tulum.",
+      "A project that seeks harmony with nature to create a luxury space in the heart of the Tulum jungle.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Bejuco/IMG_2992.JPG",
       "/assets/Diagonal fotos/Portafolio/Bejuco/IMG_2974.JPG",
@@ -64,49 +64,16 @@ export const projects = [
     ],
     details: [
       { label: "Client", value: "Casa Bejuco" },
-      { label: "Location", value: "Zona Hotelera, Tulum" },
+      { label: "Location", value: "Hotel Zone, Tulum" },
       { label: "Year", value: "2023" },
       { label: "Status", value: "Completed" },
     ],
   },
-  // {
-  //   id: 3,
-  //   slug: "moonlight-tulum",
-  //   title: "Moonlight Tulum",
-  //   typology: "Residential",
-  //   category: "Residential",
-  //   year: "2022",
-  //   area: "680",
-  //   location: "Aldea Zamá, Tulum",
-  //   image: "/assets/images/Moonlight/4E217DE1-16FF-4903-BCB7-705E261DFBBA.JPG",
-  //   description:
-  //     "Un proyecto de vivienda de lujo en el corazón de Aldea Zamá. Fachadas limpias, diseño funcional y elegancia moderna en cada espacio. El balance perfecto entre comodidad y diseño arquitectónico.",
-  //   concept:
-  //     "Un proyecto que busca la perfección en cada detalle para crear un espacio de lujo en el corazón de Aldea Zamá, Tulum.",
-  //   images: [
-  //     "/assets/images/Moonlight/4E217DE1-16FF-4903-BCB7-705E261DFBBA.JPG",
-  //     "/assets/images/Moonlight/50E58CBB-23B4-4E74-BD8D-FFF4649920EE.JPG",
-  //     "/assets/images/Moonlight/639563F2-4206-4EFD-9962-2950B31E1556.JPG",
-  //     "/assets/images/Moonlight/8FC1C21C-D6D5-4C5F-82AB-8D090FA1810F.jpg",
-  //     "/assets/images/Moonlight/97CF2C0B-D2B4-4F57-8D6F-F967BF98A536.JPG",
-  //     "/assets/images/Moonlight/B3EB5616-0EC1-49E0-A40D-7B29E414EDA4.JPG",
-  //     "/assets/images/Moonlight/IMG_4140.JPG",
-  //     "/assets/images/Moonlight/IMG_4448.JPG",
-  //     "/assets/images/Moonlight/IMG_4449.JPG",
-  //     "/assets/images/Moonlight/639563F2-4206-4EFD-9962-2950B31E1556.JPG",
-  //   ],
-  //   details: [
-  //     { label: "Client", value: "Moonlight Tulum" },
-  //     { label: "Location", value: "Aldea Zamá, Tulum" },
-  //     { label: "Year", value: "2022" },
-  //     { label: "Status", value: "Completed" },
-  //   ],
-  // },
   {
     id: 4,
     slug: "giada-towers",
     title: "Giada Towers",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2021",
     area: "11,800",
@@ -115,12 +82,12 @@ export const projects = [
       "/assets/Diagonal fotos/Portafolio/giada towers/Giada-04-scaled.jpeg",
     reference: {
       title:
-        "Destacado por sus torres gemelas unidas por un puente y una alberca central, simbolizando la armonía entre la arquitectura y el paisaje tropical.",
+        "Notable for its twin towers joined by a bridge and a central pool, symbolizing harmony between architecture and the tropical landscape.",
     },
     description:
-      "Un conjunto vertical moderno que resalta con líneas puras y acabados sofisticados. Cada torre cuenta con amenidades de primer nivel, destacando la piscina conectada por un puente que une ambas estructuras. Ideal para quienes buscan estilo de vida premium en Tulum.",
+      "A modern vertical complex that stands out with clean lines and sophisticated finishes. Each tower has top-tier amenities, highlighted by the pool connected by a bridge that links both structures. Ideal for those seeking a premium lifestyle in Tulum.",
     concept:
-      "Un proyecto que busca la excelencia en cada detalle para crear un espacio de lujo en el corazón de Aldea Zamá, Tulum.",
+      "A project that pursues excellence in every detail to create a luxury space in the heart of Aldea Zamá, Tulum.",
     images: [
       "/assets/Diagonal fotos/Portafolio/giada towers/Giada-04-scaled.jpeg",
       "/assets/Diagonal fotos/Portafolio/giada towers/Giada-20-scaled.jpeg",
@@ -140,7 +107,7 @@ export const projects = [
     id: 5,
     slug: "amira-district",
     title: "Amira District",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2022",
     area: "32,750",
@@ -149,12 +116,12 @@ export const projects = [
       "/assets/Diagonal fotos/Portafolio/amira district/DJI_0159-Editar.jpg",
     reference: {
       title:
-        "Reconocido por su diseño innovador que conecta dos torres residenciales mediante una alberca elevada, fusionando la arquitectura moderna con el entorno natural de Tulum.",
+        "Recognized for its innovative design that connects two residential towers through an elevated pool, merging modern architecture with Tulum’s natural environment.",
     },
     description:
-      "Conjunto de residencias de lujo con arquitectura vanguardista. Espacios amplios, integración con la naturaleza y materiales de alta calidad. Destacan las dos torres conectadas por una piscina central que crea un ambiente único. En una de las zonas con mayor plusvalía de Tulum.",
+      "A luxury residential complex with avant-garde architecture. Generous spaces, integration with nature, and high-quality materials. The two towers connected by a central pool create a unique atmosphere in one of Tulum’s highest-value areas.",
     concept:
-      "Un proyecto que busca la innovación y la calidad para crear un espacio de lujo en el corazón de Tulum.",
+      "A project that aims for innovation and quality to create a luxury space in the heart of Tulum.",
     images: [
       "/assets/Diagonal fotos/Portafolio/amira district/DJI_0159-Editar.jpg",
       "/assets/Diagonal fotos/Portafolio/amira district/IMG_6268 (1).jpg",
@@ -181,7 +148,7 @@ export const projects = [
     id: 6,
     slug: "casa-romeo",
     title: "Casa Romeo",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2025",
     area: "320",
@@ -189,9 +156,9 @@ export const projects = [
     image:
       "/assets/Diagonal fotos/Portafolio/Casa Romeo/cf5a7232-c719-4ee5-bd00-512bd251e589.JPG",
     description:
-      "Residencia privada ubicada en la nueva zona habitacional de Tulum. Se ejecuta con rapidez, cuidando cada detalle constructivo. Agradecimiento especial a Paradigma Studio por los renders del diseño.",
+      "Private residence located in Tulum’s new residential area. The project is executed quickly while carefully attending to every construction detail. Special thanks to Paradigma Studio for the design renderings.",
     concept:
-      "Un proyecto que busca la rapidez y la calidad para crear un espacio de lujo en el corazón de la zona 11 de Tulum.",
+      "A project that balances speed and quality to create a luxury space in the heart of Tulum’s Zone 11.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Casa Romeo/cf5a7232-c719-4ee5-bd00-512bd251e589.JPG",
       "/assets/Diagonal fotos/Portafolio/Casa Romeo/748ff41f-afd4-4322-a2c3-b1f15d276f70.JPG",
@@ -209,7 +176,7 @@ export const projects = [
     id: 7,
     slug: "bamoa",
     title: "Bamoa",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2018",
     area: "8,677",
@@ -217,9 +184,9 @@ export const projects = [
     image: "/assets/Diagonal fotos/Portafolio/bamoa/6b3a563b.jpg",
 
     description:
-      "Proyecto habitacional de alto nivel ubicado en una de las zonas más exclusivas de Playa del Carmen. Arquitectura sobria, moderna y funcional, pensada para el confort absoluto.",
+      "High-end residential project located in one of the most exclusive areas of Playa del Carmen. Sober, modern, and functional architecture designed for absolute comfort.",
     concept:
-      "Un proyecto que busca la calidad y la funcionalidad para crear un espacio de lujo en el corazón de Playacar.",
+      "A project that seeks quality and functionality to create a luxury space in the heart of Playacar.",
     images: [
       "/assets/Diagonal fotos/Portafolio/bamoa/6b3a563b.jpg",
       "/assets/Diagonal fotos/Portafolio/bamoa/04285d64.jpeg",
@@ -243,17 +210,18 @@ export const projects = [
     id: 8,
     slug: "beach-club",
     title: "Puerto Aventuras Hotel and Beach Club",
-    typology: "Comercial",
+    typology: "Commercial",
     category: "Commercial",
     year: "2024",
     area: "4,200",
     location: "Puerto Aventuras",
-    image: "/assets/Diagonal fotos/Portafolio/Beach Club/11.jpg",
+    image:
+      "/assets/Diagonal fotos/Portafolio/Beach Club/Copy of IMG-20250221-WA0040.jpg",
 
     description:
-      "Proyecto de renovación total de uno de los clubes de playa más icónicos de Puerto Aventuras. Diseño fresco, materiales resistentes a la salinidad, y una propuesta moderna para el turismo de alto nivel.",
+      "Comprehensive renovation of one of the most iconic beach clubs in Puerto Aventuras. Fresh design, materials resistant to salinity, and a modern proposal for high-level tourism.",
     concept:
-      "Un espacio de lujo y exclusividad en el corazón de Puerto Aventuras, pensado para brindar un servicio de alta calidad a los propietarios y visitantes del complejo.",
+      "A space of luxury and exclusivity in the heart of Puerto Aventuras, designed to provide high-quality service to both property owners and visitors.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Beach Club/Copy of IMG-20250221-WA0040.jpg",
       "/assets/Diagonal fotos/Portafolio/Beach Club/Copy of IMG-20250210-WA0373.jpg",
@@ -271,15 +239,15 @@ export const projects = [
     id: 9,
     slug: "allure",
     title: "Allure",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2023",
     area: "360",
     location: "Puerto Cancún",
     image: "/assets/Diagonal fotos/Portafolio/allure/DSC00573 2.jpg",
-    description: "Proyecto de remodelación e interiorismo.",
+    description: "Remodeling and interior design project.",
     concept:
-      "Crear un oasis de serenidad y lujo, donde la arquitectura moderna y la naturaleza coexisten en perfecta armonía.",
+      "To create an oasis of serenity and luxury where modern architecture and nature coexist in perfect harmony.",
     images: [
       "/assets/Diagonal fotos/Portafolio/allure/DSC00573 2.jpg",
       "/assets/Diagonal fotos/Portafolio/allure/DSC00661.jpg",
@@ -304,16 +272,16 @@ export const projects = [
     id: 10,
     slug: "casa-imox",
     title: "Casa Imox",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2018",
     area: "4,000",
-    location: "Región 15, Veleta, Tulum",
+    location: "Region 15, Veleta, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Casa Imox/facade.jpg",
     description:
-      "Una residencia privada que celebra la artesanía local y el diseño sostenible. Materiales orgánicos y espacios abiertos crean un refugio de paz y elegancia en medio de la selva.",
+      "A private residence that celebrates local craftsmanship and sustainable design. Organic materials and open spaces create a peaceful and elegant retreat in the middle of the jungle.",
     concept:
-      "Un diálogo entre la arquitectura y el entorno, diseñado para ofrecer una experiencia de vida auténtica y conectada con las raíces de Tulum.",
+      "A dialogue between architecture and the environment, designed to offer an authentic living experience connected to the roots of Tulum.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Casa Imox/facade.jpg",
       "/assets/Diagonal fotos/Portafolio/Casa Imox/IMG_3006.JPG",
@@ -322,7 +290,7 @@ export const projects = [
     ],
     details: [
       { label: "Client", value: "Casa Imox" },
-      { label: "Location", value: "Región 15, Veleta, Tulum" },
+      { label: "Location", value: "Region 15, Veleta, Tulum" },
       { label: "Year", value: "2018" },
       { label: "Status", value: "Completed" },
     ],
@@ -331,15 +299,15 @@ export const projects = [
     id: 11,
     slug: "tienda-ujo",
     title: "UJO",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2023",
     area: "680",
     location: "Tulum Centro",
     image: "/assets/Diagonal fotos/Portafolio/Ujo Tulum/01UJO.jpg",
-    description: "Edificio boutique de 9 unidades",
+    description: "Boutique building with 9 units.",
     concept:
-      "Fusionar moda y arquitectura en un espacio que no solo vende productos, sino que también ofrece una experiencia de marca inmersiva y memorable.",
+      "To merge fashion and architecture in a space that not only sells products but also offers an immersive and memorable brand experience.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Ujo Tulum/01UJO.jpg",
       "/assets/Diagonal fotos/Portafolio/Ujo Tulum/34UJO.jpg",
@@ -357,16 +325,16 @@ export const projects = [
     id: 12,
     slug: "casa-bak-90-91",
     title: "Casa Bak 90-91",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2023",
     area: "250",
     location: "Bak, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Casa Bak/IMG_1701 2.JPG",
     description:
-      "Residencia unifamiliar que integra materiales naturales, ventilación cruzada y una relación íntima con la vegetación. Espacios luminosos y funcionales pensados para la vida cotidiana en clima tropical.",
+      "Single-family residence that integrates natural materials, cross ventilation, and an intimate relationship with the vegetation. Bright and functional spaces designed for daily life in a tropical climate.",
     concept:
-      "Crear un refugio contemporáneo que conecte con la naturaleza mediante texturas honestas y una geometría sobria.",
+      "To create a contemporary retreat that connects with nature through honest textures and sober geometry.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Casa Bak/2 (1).jpg",
       "/assets/Diagonal fotos/Portafolio/Casa Bak/5 (1).jpg",
@@ -374,10 +342,10 @@ export const projects = [
       "/assets/Diagonal fotos/Portafolio/Casa Bak/IMG_1701 2.JPG",
     ],
     details: [
-      { label: "Client", value: "Privado" },
+      { label: "Client", value: "Private" },
       { label: "Location", value: "Bak, Tulum" },
       { label: "Year", value: "2023" },
-      { label: "Status", value: "En desarrollo" },
+      { label: "Status", value: "In development" },
     ],
   },
   {
@@ -386,15 +354,15 @@ export const projects = [
     title: "Brava Towers",
     typology: "Residential",
     category: "Residential",
-    year: "Por definir",
-    area: "Por definir",
-    location: "Por definir",
+    year: "To be defined",
+    area: "To be defined",
+    location: "To be defined",
     image:
       "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5826.jpg",
     description:
-      "Desarrollo vertical con amenities de alta gama y un lenguaje arquitectónico contemporáneo. Enfoque en eficiencia espacial, vistas y confort climático.",
+      "Vertical development with high-end amenities and a contemporary architectural language. Focused on spatial efficiency, views, and climatic comfort.",
     concept:
-      "Elevar la vida urbana con una propuesta esbelta, eficiente y estéticamente atemporal.",
+      "To elevate urban living with a slender, efficient, and timeless architectural proposal.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5826.jpg",
       "/assets/Diagonal fotos/Portafolio/Brava Towers/Copy of IMG_5824.jpg",
@@ -402,26 +370,26 @@ export const projects = [
     ],
     details: [
       { label: "Client", value: "Brava" },
-      { label: "Location", value: "Por definir" },
-      { label: "Year", value: "Por definir" },
-      { label: "Status", value: "Planeación" },
+      { label: "Location", value: "To be defined" },
+      { label: "Year", value: "To be defined" },
+      { label: "Status", value: "Planning" },
     ],
   },
   {
     id: 14,
     slug: "caphe-ha",
     title: "Caphe-Ha",
-    typology: "Residencial",
+    typology: "Residential",
     category: "Residential",
     year: "2021",
     area: "1,750",
-    location: "Reserva de Sian Ka'an, Tulum",
+    location: "Sian Ka'an Reserve, Tulum",
     image:
       "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of 801718b9-ec7d-47d4-bd1e-14ecfcfbcc74.JPG",
     description:
-      "Cafetería boutique inspirada en el agua y la calma del entorno. Materialidad cálida, iluminación puntual y un recorrido sensorial para el visitante.",
+      "Boutique café inspired by water and the calm of its surroundings. Warm materials, focused lighting, and a sensory journey for visitors.",
     concept:
-      "Diseñar un espacio comercial acogedor donde el tiempo transcurra con suavidad y cada detalle invite a permanecer.",
+      "To design a welcoming commercial space where time flows gently and every detail invites you to stay.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of 801718b9-ec7d-47d4-bd1e-14ecfcfbcc74.JPG",
       "/assets/Diagonal fotos/Portafolio/Caphe-Ha/Copy of c6a1154a-a91b-4873-ae2e-ccde4b123c82 2.JPG",
@@ -430,9 +398,9 @@ export const projects = [
     ],
     details: [
       { label: "Client", value: "Caphe-Ha" },
-      { label: "Location", value: "Reserva de Sian Ka'an, Tulum" },
+      { label: "Location", value: "Sian Ka'an Reserve, Tulum" },
       { label: "Year", value: "2021" },
-      { label: "Status", value: "En desarrollo" },
+      { label: "Status", value: "In development" },
     ],
   },
   {
@@ -441,14 +409,14 @@ export const projects = [
     title: "Kai Hotel",
     typology: "Commercial",
     category: "Commercial",
-    year: "Por definir",
-    area: "Por definir",
+    year: "To be defined",
+    area: "To be defined",
     location: "Riviera Maya",
     image: "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_8980.jpg",
     description:
-      "Proyecto hotelero de baja densidad que privilegia la experiencia del huésped: privacidad, confort térmico y contacto directo con la naturaleza.",
+      "Low-density hotel project that prioritizes the guest experience: privacy, thermal comfort, and direct contact with nature.",
     concept:
-      "Arquitectura hospitalaria sustentable, con soluciones pasivas y un carácter sofisticado y sereno.",
+      "Sustainable hospitality architecture with passive solutions and a sophisticated, serene character.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Kai Hotel/IMG_8980.jpg",
       "/assets/Diagonal fotos/Portafolio/Kai Hotel/10D2C15F-5DC9-4C94-A00A-0CAD71819532.JPG",
@@ -456,8 +424,8 @@ export const projects = [
     details: [
       { label: "Client", value: "Kai" },
       { label: "Location", value: "Riviera Maya" },
-      { label: "Year", value: "Por definir" },
-      { label: "Status", value: "Concepto" },
+      { label: "Year", value: "To be defined" },
+      { label: "Status", value: "Concept" },
     ],
   },
   {
@@ -466,14 +434,14 @@ export const projects = [
     title: "Mya",
     typology: "Residential",
     category: "Residential",
-    year: "Por definir",
-    area: "Por definir",
+    year: "To be defined",
+    area: "To be defined",
     location: "Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Mya/IMG_5813.jpg",
     description:
-      "Conjunto residencial de líneas limpias y atmósferas cálidas. Espacios flexibles, integración interior–exterior y selección cuidada de materiales.",
+      "Residential complex with clean lines and warm atmospheres. Flexible spaces, indoor–outdoor integration, and a carefully curated material palette.",
     concept:
-      "Habitar la simplicidad con elegancia: menos elementos, más experiencias significativas.",
+      "To inhabit simplicity with elegance: fewer elements, more meaningful experiences.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Mya/IMG_5813.jpg",
       "/assets/Diagonal fotos/Portafolio/Mya/IMG_5815.jpg",
@@ -481,24 +449,24 @@ export const projects = [
     ],
     details: [
       { label: "Location", value: "Tulum" },
-      { label: "Year", value: "Por definir" },
-      { label: "Status", value: "En desarrollo" },
+      { label: "Year", value: "To be defined" },
+      { label: "Status", value: "In development" },
     ],
   },
   {
     id: 17,
     slug: "rouge-hunab",
     title: "Rouge Hunab",
-    typology: "Comercial",
+    typology: "Commercial",
     category: "Commercial",
     year: "2023",
     area: "35",
     location: "Plaza Hunab, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
     description:
-      "Rouge Hunab es un proyecto de desarrollo residencial que busca definir un nuevo estándar de calidad y confort en el corazón de Cancún. Este proyecto se caracteriza por su diseño moderno y elegante, con una atmósfera que combina la naturaleza y la tecnología. En Rouge Hunab encontrarás un espacio privado y seguro para vivir tu vida en familia o como un independiente.",
+      "Rouge Hunab is a residential development project that aims to set a new standard of quality and comfort in the heart of Cancún. The project is distinguished by its modern and elegant design, with an atmosphere that combines nature and technology. Rouge Hunab offers a private and secure space to live, whether with family or independently.",
     concept:
-      "Rouge Hunab es un proyecto que busca ofrecer una experiencia única en el mercado inmobiliario cancunero. Nuestro enfoque se centra en ofrecer una arquitectura moderna y eficiente, combinada con tecnologías de punta para garantizar la comodidad y la seguridad de nuestros residentes. En Rouge Hunab encontrarás un ambiente que se destaca por su diseño sostenible y su compromiso con el medio ambiente.",
+      "Rouge Hunab seeks to offer a unique experience in the Cancún real estate market. Our focus is on delivering modern, efficient architecture combined with cutting-edge technologies to guarantee comfort and security for residents. Rouge Hunab stands out for its sustainable design and commitment to the environment.",
     images: [
       "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
       "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4111.jpg",
@@ -508,27 +476,27 @@ export const projects = [
       { label: "Client", value: "Rouge Hunab" },
       { label: "Location", value: "Plaza Hunab, Tulum" },
       { label: "Year", value: "2023" },
-      { label: "Status", value: "En desarrollo" },
+      { label: "Status", value: "In development" },
     ],
   },
   {
     id: 18,
     slug: "parque-lineal",
     title: "Parque Lineal Rio Mixcoac",
-    typology: "Obra Pública",
+    typology: "Public Works",
     category: "Public Works",
     year: "2017",
     area: "50,000",
-    location: "Insurgentes–Río Mixcoac, CDMX",
+    location: "Insurgentes–Río Mixcoac, Mexico City",
     image: "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3823-2.jpg",
     reference: {
       title: "Parque Lineal y Glorieta Río Mixcoac-Insurgentes",
       url: "https://arquitecturapanamericana.com/parque-lineal-y-glorieta-rio-mixcoac-insurgentes/",
     },
     description:
-      "Proyecto de espacio público que integra infraestructura verde y movilidad urbana. El parque lineal conecta diferentes zonas de la ciudad mediante un corredor ecológico que incluye áreas de recreación, senderos peatonales y ciclistas, y espacios de convivencia comunitaria.",
+      "Public space project that integrates green infrastructure and urban mobility. The linear park connects different areas of the city through an ecological corridor that includes recreational zones, pedestrian and cycling paths, and community gathering spaces.",
     concept:
-      "Concepto por definir. Se agregará información del concepto de diseño cuando esté lista.",
+      "Concept to be defined. The design concept information will be added once it is ready.",
     images: [
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3823-2.jpg",
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3888.jpg",
@@ -536,8 +504,8 @@ export const projects = [
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_0011.JPG",
     ],
     details: [
-      { label: "Client", value: "Gobierno CDMX" },
-      { label: "Location", value: "Insurgentes–Río Mixcoac, CDMX" },
+      { label: "Client", value: "Mexico City Government" },
+      { label: "Location", value: "Insurgentes–Río Mixcoac, Mexico City" },
       { label: "Year", value: "2017" },
       { label: "Status", value: "Completed" },
     ],
@@ -546,16 +514,16 @@ export const projects = [
     id: 19,
     slug: "prime-burgers",
     title: "Prime Burgers",
-    typology: "Comercial",
+    typology: "Commercial",
     category: "Commercial",
     year: "2021",
     area: "480",
     location: "Aldea Zamá, Tulum",
     image: "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0412.jpg",
     description:
-      "Proyecto por definir. Este es un texto de demostración que será reemplazado con la información real de Prime Burgers.",
+      "Project to be defined. This is a placeholder text that will be replaced with the real information for Prime Burgers.",
     concept:
-      "Concepto por definir. Se detallará la propuesta conceptual cuando esté disponible.",
+      "Concept to be defined. The conceptual proposal will be detailed once it is available.",
     images: [
       "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0412.jpg",
       "/assets/Diagonal fotos/Portafolio/PRIME BURGERS/IMG_0410 (1).jpg",

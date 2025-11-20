@@ -50,7 +50,7 @@ export default function Home() {
       </motion.div>
 
       <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/secondSection.jpg" />
+        <ShowcaseImage imageUrl="/assets/images/11.jpg" />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <FeaturedProjects />

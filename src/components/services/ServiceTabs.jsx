@@ -52,7 +52,7 @@ const services = [
     desc: "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones. Ofrecemos información valiosa en cada etapa del proyecto.",
     images: [
       "/assets/Diagonal fotos/Servicios/Consultoria/4a187380-2ede-4c8f-b169-4e6a59f07b40.JPG",
-      "/assets/Diagonal fotos/Servicios/Consultoria/Captura de Pantalla 2020-03-18 a la(s) 13.10.27.png",
+      "/assets/Diagonal fotos/Servicios/Consultoria/33.jpeg",
       "/assets/Diagonal fotos/Servicios/Consultoria/IMG-20250320-WA0017.jpg",
     ],
   },
