@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { projects } from "../data/projects";
 import ProjectReference from "../components/portfolio/ProjectReference";
+import { useProjectTranslation } from "../hooks/useProjectTranslation";
 
 const ProjectDetailsPage = () => {
+  const { t } = useTranslation("portfolio");
+  const { getTranslatedProject, getTranslatedDetails } =
+    useProjectTranslation();
   const { slug } = useParams();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const navigate = useNavigate();
@@ -29,6 +34,10 @@ const ProjectDetailsPage = () => {
   };
 
   const project = projects.find((p) => p.slug === slug);
+  const translatedProject = project ? getTranslatedProject(project) : null;
+  const translatedDetails = project
+    ? getTranslatedDetails(project.details)
+    : [];
   const galleryImages = project ? project.images.slice(0, 10) : [];
 
   if (!project) {
@@ -70,10 +79,10 @@ const ProjectDetailsPage = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-monument-extended text-4xl md:text-6xl lg:text-7xl text-white mb-4 font-bold">
-              {project.title}
+              {translatedProject.title}
             </h1>
             <p className="font-cardinal text-white/90 text-xl italic">
-              {project.typology} {project.year}
+              {translatedProject.typology} {project.year}
             </p>
           </motion.div>
         </div>
@@ -85,7 +94,7 @@ const ProjectDetailsPage = () => {
           onClick={handleBack}
           className="px-5 py-3 rounded-md bg-pantone-7515 text-white font-monument text-xs md:text-sm uppercase tracking-wide shadow hover:opacity-95 transition"
         >
-          ← Volver a Proyectos
+          ← {t("projectDetails.backToPortfolio")}
         </button>
       </div>
       {/* Project Details */}
@@ -103,7 +112,7 @@ const ProjectDetailsPage = () => {
                 {/* Project Details */}
                 <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
                   <h3 className="font-monument uppercase text-xl md:text-2xl text-pantone-black mb-6 font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-pantone-7515 after:mt-2">
-                    Project Details
+                    {t("projectDetails.projectDetails")}
                   </h3>
 
                   <div className="grid grid-cols-2 gap-y-6 gap-x-4">
@@ -112,7 +121,7 @@ const ProjectDetailsPage = () => {
                         Typology
                       </dt>
                       <dd className="font-monument text-pantone-black text-base md:text-lg mt-1.5">
-                        {project.typology}
+                        {translatedProject.typology}
                       </dd>
                     </div>
 
@@ -148,10 +157,10 @@ const ProjectDetailsPage = () => {
                 {/* Description */}
                 <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
                   <h3 className="font-monument uppercase text-xl md:text-2xl text-pantone-black mb-4 font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-pantone-7515 after:mt-2">
-                    Descripción
+                    {t("projectDetails.description")}
                   </h3>
                   <p className="font-abc-monument text-pantone-black/80 leading-relaxed text-sm md:text-base">
-                    {project.description}
+                    {translatedProject.description}
                   </p>
                 </div>
 

@@ -3,38 +3,45 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const serviceImages = {
-  "Diseño Arquitectónico": [
+// Service images organized by index to work with both Spanish and English
+const serviceImages = [
+  // 0: Diseño Arquitectónico / Architectural Design
+  [
     "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of 1-7bf0cc6b.jpg",
     "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of IMG_2992.JPG",
     "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of d60148c7-aafa-4bc3-8810-060595e8784c.jpg",
   ],
-  "Diseño Ecológico": [
+  // 1: Diseño Ecológico / Ecological Design
+  [
     "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of _MG_8530-Editar.jpg",
     "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of ad3.avif",
     "/assets/Diagonal fotos/Servicios/Diseño sostenible/IMG_3008.JPG",
   ],
-  "Desarrollo de Proyectos": [
+  // 2: Desarrollo de Proyectos / Project Development
+  [
     "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/562b6b31.jpg",
     "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/5998a032-d08e-4abf-b533-4eb762163417.JPG",
     "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/AEREA.png",
   ],
-  "Gerencia de Proyectos": [
+  // 3: Gerencia de Proyectos / Project Management
+  [
     "/assets/Diagonal fotos/Servicios/Gestion de proyectos/Copy of IMG_9487.jpg",
     "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG-20250221-WA0041.jpg",
     "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG_3614.jpg",
   ],
-  "Diseño de Interiores": [
+  // 4: Diseño de Interiores / Interior Design
+  [
     "/assets/Diagonal fotos/Servicios/Diseño de interiores/27UJO.jpg",
     "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_2970.JPG",
     "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_6591.JPG",
   ],
-  "Consultoría y Planificación": [
+  // 5: Consultoría y Planificación / Consulting and Planning
+  [
     "/assets/Diagonal fotos/Servicios/Consultoria/4a187380-2ede-4c8f-b169-4e6a59f07b40.JPG",
     "/assets/Diagonal fotos/Servicios/Consultoria/33.jpeg",
     "/assets/Diagonal fotos/Servicios/Consultoria/IMG-20250320-WA0017.jpg",
   ],
-};
+];
 
 export default function ServiceTabs() {
   const { t } = useTranslation("serviceTabs");
@@ -129,7 +136,7 @@ export default function ServiceTabs() {
                   {services[active]?.desc}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-                  {serviceImages[services[active]?.name]?.map((img, j) => (
+                  {serviceImages[active]?.map((img, j) => (
                     <motion.img
                       key={img}
                       src={img}

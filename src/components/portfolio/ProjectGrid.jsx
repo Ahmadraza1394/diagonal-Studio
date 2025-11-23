@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { projects } from "../../data/projects";
+import { useProjectTranslation } from "../../hooks/useProjectTranslation";
 
 const ProjectGrid = () => {
   const { t } = useTranslation("portfolio");
+  const { getTranslatedProject } = useProjectTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
   // Only show the requested projects
   const allowedTitles = [
@@ -130,7 +132,8 @@ const ProjectGrid = () => {
                 </div>
               </Link>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
