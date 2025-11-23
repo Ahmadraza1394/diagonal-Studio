@@ -1,0 +1,21 @@
+{
+  "brand": "DIAGONAL",
+  "contactUs": "Contact us and we'll get back to you soon!",
+  "email": "hola@diagonalstudio.mx",
+  "phone": "+52 (55)5507 6330",
+  "location": "Mexico City and Riviera Maya",
+  "contactButton": "CONTACT US",
+  "quickLinks": "Quick Links",
+  "socialLinks": "Social Links",
+  "copyright": "© {{year}} Diagonal. All rights reserved.",
+  "privacyPolicy": "Privacy Policy",
+  "backToTop": "Back to top",
+  "instagram": "Instagram",
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "brand": "DIAGONAL",
+  "contactUs": "Contáctanos y te responderemos pronto!",
+  "email": "hola@diagonalstudio.mx",
+  "phone": "+52 (55)5507 6330",
+  "location": "Ciudad de México y Riviera Maya",
+  "contactButton": "CONTÁCTANOS",
+  "quickLinks": "Enlaces Rápidos",
+  "socialLinks": "Redes Sociales",
+  "copyright": "© {{year}} Diagonal. Todos los derechos reservados.",
+  "privacyPolicy": "Política de Privacidad",
+  "backToTop": "Volver arriba",
+  "instagram": "Instagram",
+  "nav": {
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "services": "Servicios",
+    "about": "Sobre",
+    "contact": "Contacto"
+  }
+}

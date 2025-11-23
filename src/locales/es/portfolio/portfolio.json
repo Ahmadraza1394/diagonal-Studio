@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Portafolio"
+  },
+  "intro": {
+    "sidebarDescription": "Nuestro portafolio refleja décadas de experiencia desarrollando, gestionando y ejecutando proyectos arquitectónicos e infraestructura en los sectores público y privado.",
+    "mainDescription": "Desde residencias y edificios comerciales hasta hoteles, clubes y espacios urbanos, cada proyecto es testimonio de nuestra técnica, atención al detalle y compromiso con la satisfacción del cliente."
+  },
+  "grid": {
+    "filterAll": "Todos",
+    "filterResidential": "Residencial",
+    "filterCommercial": "Comercial",
+    "filterPublicWorks": "Obra Pública",
+    "viewFeaturedPortfolio": "Ver nuestro portafolio destacado"
+  },
+  "projectCard": {
+    "viewProject": "Ver Proyecto"
+  },
+  "cta": {
+    "title": "Listo para Iniciar tu Proyecto?",
+    "description": "Hagamos que tu visión arquitectónica se haga realidad con diseño innovador y ejecución excepcional",
+    "buttonText": "Contáctanos"
+  },
+  "projectDetails": {
+    "backToPortfolio": "Volver al Portafolio",
+    "nextProject": "Siguiente Proyecto",
+    "previousProject": "Proyecto Anterior",
+    "projectDetails": "Detalles del Proyecto",
+    "concept": "Concepto",
+    "description": "Descripción",
+    "gallery": "Galería"
+  }
+}

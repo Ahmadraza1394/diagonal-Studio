@@ -1,0 +1,10 @@
+{
+  "brand": "DGNL",
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

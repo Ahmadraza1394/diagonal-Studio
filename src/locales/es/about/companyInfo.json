@@ -1,0 +1,22 @@
+{
+  "title": "Nosotros",
+  "paragraphs": [
+    "Somos un estudio de arquitectura con más de 40 años de experiencia, especializado en el desarrollo de proyectos arquitectónicos y la ejecución de obra pública, privada e infraestructura con la más alta calidad.",
+    "Desarrollamos soluciones específicas para cada proyecto, con un equipo calificado y flexible que se adapta al tamaño y complejidad, manteniendo siempre la responsabilidad total.",
+    "Ejecutamos con control y calidad, visión integral y diseño con propósito: proyectos que funcionan, responden al contexto y generan valor a largo plazo."
+  ],
+  "stats": [
+    {
+      "value": "40+ años",
+      "label": "de experiencia"
+    },
+    {
+      "value": "100,000 m²",
+      "label": "construidos (últimos 5 años)"
+    },
+    {
+      "value": "Ejecución",
+      "label": "técnica con control y calidad"
+    }
+  ]
+}

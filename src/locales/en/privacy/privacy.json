@@ -1,0 +1,27 @@
+{
+  "title": "PRIVACY POLICY",
+  "lastUpdated": "Last Updated",
+  "intro": "At Diagonal Studio, your privacy is our priority. We are committed to protecting your personal information and only use it as described below.",
+  "sections": [
+    {
+      "title": "1. Information We Collect",
+      "content": "We may collect personal information such as your name, email address and organization when you complete our contact form. We also collect non-personal information, such as browser type, operating system and web pages visited to help us manage our website."
+    },
+    {
+      "title": "2. Use of Your Information",
+      "content": "We use the information we collect to respond to your inquiries, provide our services and improve our website. We will not share your personal information with third parties without your consent, except when required by law."
+    },
+    {
+      "title": "3. Security of Your Information",
+      "content": "We use administrative, technical and physical security measures to protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please note that despite our efforts, no security measure is perfect or impenetrable."
+    },
+    {
+      "title": "4. Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We recommend that you review this Privacy Policy periodically to be aware of any changes."
+    },
+    {
+      "title": "5. Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us through our contact form."
+    }
+  ]
+}

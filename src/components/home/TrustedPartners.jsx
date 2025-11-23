@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const logos = [
   "/assets/Diagonal fotos/Home Page/Logos BW/300px-LOGO_BJ - Edited - Edited.png",
@@ -57,15 +58,17 @@ function LogosRow({ speed = 30, reverse = false }) {
 }
 
 export default function TrustedPartners() {
+  const { t } = useTranslation("trustedPartners");
+
   return (
     <section className="py-8 sm:py-10 md:py-16 lg:py-20 bg-white ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
           <p className="font-monument-extended text-xs uppercase tracking-widest text-pantone-7515 mb-1 sm:mb-2">
-            Confían en nosotros
+            {t("subtitle")}
           </p>
           <h2 className="font-monument-extended text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-pantone-black">
-            Colaboramos con empresas destacadas
+            {t("title")}
           </h2>
         </div>
 

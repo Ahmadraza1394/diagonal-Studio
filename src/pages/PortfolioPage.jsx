@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import ProjectGrid from "../components/portfolio/ProjectGrid";
 import PortfolioIntro from "../components/portfolio/PortfolioIntro";
 import PortfolioHero from "../components/portfolio/PortfolioHero";
 
 const PortfolioPage = () => {
+  const { t } = useTranslation("portfolio");
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -28,17 +30,16 @@ const PortfolioPage = () => {
             viewport={{ once: true }}
           >
             <h3 className="font-monument text-3xl text-pantone-black mb-6 font-bold">
-              Listo para Iniciar tu Proyecto?
+              {t("cta.title")}
             </h3>
             <p className="font-abc-monument text-pantone-black/80 text-lg mb-8 leading-relaxed">
-              Hagamos que tu visión arquitectónica se haga realidad con diseño
-              innovador y ejecución excepcional
+              {t("cta.description")}
             </p>
             <Link
               to="/contact"
               className="inline-flex items-center space-x-3 border border-pantone-black text-pantone-black px-8 py-4 font-cardinal font-semibold  hover:bg-pantone-black hover:text-white transition-colors duration-300"
             >
-              <span>Contáctanos</span>
+              <span>{t("cta.buttonText")}</span>
               <span className="text-xl">→</span>
             </Link>
           </motion.div>

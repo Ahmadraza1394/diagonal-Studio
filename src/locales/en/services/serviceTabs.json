@@ -1,0 +1,33 @@
+{
+  "brand": "DGNL",
+  "sidebarDescription": "Our goal is to create spaces that inspire, challenge the conventional and improve the lives of those who experience them.",
+  "mainDescription": "We believe that architecture goes beyond buildings—it's about creating experiences. Every project we undertake is driven by innovation, timeless design and sustainability. Our goal is to design spaces that awaken emotions, foster connection and leave a lasting impact.",
+  "services": [
+    {
+      "name": "Architectural Design",
+      "desc": "Our architectural project development service encompasses everything from initial conceptualization to the delivery of the complete executive project, integrating design, functionality, regulations and technical feasibility."
+    },
+    {
+      "name": "Ecological Design",
+      "desc": "Sustainable architecture that harmonizes with the environment and reduces ecological impact. We innovate using green materials, energy-efficient solutions and responsible practices to create spaces with minimal environmental footprint."
+    },
+    {
+      "name": "Project Development",
+      "desc": "We focus on ensuring that all aspects of the project are carried out in accordance with the approved design, within established timelines and respecting the highest quality standards. Through rigorous control, effective resource management and constant communication with work teams, we ensure the success of each project, minimizing risks and optimizing costs."
+    },
+    {
+      "name": "Project Management",
+      "desc": "We specialize in the planning, coordination, supervision and comprehensive control of all stages of an architectural or construction project. Our commitment is to ensure that each project is executed on time, in form and on budget, maintaining the highest quality standards and always aligned with the client's objectives and vision."
+    },
+    {
+      "name": "Interior Design",
+      "desc": "We transform spaces through design solutions that combine aesthetics, functionality and comfort. Our team works closely with clients to create environments that reflect their identity, optimize space usage and enhance the experience of those who inhabit or visit those places."
+    },
+    {
+      "name": "Consulting and Planning",
+      "desc": "Strategic advice and technical planning to solve complex challenges, evaluate feasibility and guide decision-making. We offer valuable insights at every stage of the project."
+    }
+  ],
+  "ctaText": "Ready to transform your space? Our team of experts is here to bring your vision to life.",
+  "ctaButton": "Contact Us"
+}

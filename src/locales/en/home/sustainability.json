@@ -1,0 +1,22 @@
+{
+  "brand": "DGNL",
+  "sidebarDescription": "Our commitment to eco-friendly innovation drives everything we do.",
+  "title": "Our strength in numbers",
+  "stats": [
+    {
+      "value": "40+",
+      "label": "Completed Projects",
+      "description": "In residential, commercial, hospitality and public sectors—demonstrating our versatility and depth."
+    },
+    {
+      "value": "150+",
+      "label": "Industry Experts",
+      "description": "A multidisciplinary team of experienced architects, designers and engineers, dedicated to innovative and high-quality results."
+    },
+    {
+      "value": "2B+",
+      "label": "Project Value",
+      "description": "Expert management of complex, high-budget designs that deliver maximum value to our clients."
+    }
+  ]
+}

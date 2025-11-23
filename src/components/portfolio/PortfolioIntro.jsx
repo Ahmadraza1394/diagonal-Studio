@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const PortfolioIntro = () => {
+  const { t } = useTranslation("portfolio");
   return (
     <>
       <section className="bg-white py-20 md:py-32 px-4 sm:px-6 lg:px-8">
@@ -14,9 +16,7 @@ const PortfolioIntro = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <p className="font-abc-monument text-base text-pantone-black/80 leading-relaxed">
-              Nuestro portafolio refleja décadas de experiencia desarrollando,
-              gestionando y ejecutando proyectos arquitectónicos e
-              infraestructura en los sectores público y privado.
+              {t("intro.sidebarDescription")}
             </p>
           </motion.div>
           <motion.div
@@ -27,9 +27,7 @@ const PortfolioIntro = () => {
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
           >
             <p className="font-abc-monument text-justify text-3xl md:text-4xl text-pantone-black leading-snug">
-              Desde residencias y edificios comerciales hasta hoteles, clubes y
-              espacios urbanos, cada proyecto es testimonio de nuestra técnica,
-              atención al detalle y compromiso con la satisfacción del cliente.
+              {t("intro.mainDescription")}
             </p>
           </motion.div>
         </div>

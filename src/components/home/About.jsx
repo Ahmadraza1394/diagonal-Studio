@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation("about");
   return (
     <section
       id="about"
@@ -17,13 +19,7 @@ export default function About() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <p className="text-pantone-black font-normal  font-abc-monument text-justify text-lg md:text-xl leading-normal">
-            En
-            <span className="font-supreme px-1 text-pantone-2935 text-base sm:text-lg">
-              DIAGONAL
-            </span>
-            desarrollamos soluciones específicas para cada proyecto, de la mano
-            de personal calificado y con los conocimientos técnicos necesarios
-            para ejercer nuestra actividad de forma confiable.
+            {t("intro")}
           </p>
         </motion.div>
         {/* Right: Main about text */}
@@ -35,16 +31,10 @@ export default function About() {
             transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
           >
             <h2 className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Somos un estudio de arquitectura con más de 40 años de
-              experiencia, con el fin de satisfacer las necesidades del mercado
-              en el desarrollo de proyectos arquitectónicos y la ejecución de
-              obra, tanto pública como privada y de infraestructura con la más
-              alta calidad.
+              {t("title")}
             </h2>
             <p className="text-pantone-black text-justify font-abc-monument text-2xl md:text-4xl leading-snug mb-8 font-semibold">
-              Desarrollamos soluciones específicas para cada proyecto, de la
-              mano de personal calificado y con los conocimientos técnicos
-              necesarios para ejercer nuestra actividad de forma confiable.
+              {t("description")}
             </p>
           </motion.div>
           {/* Button */}
@@ -58,7 +48,7 @@ export default function About() {
               to="/portfolio"
               className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
             >
-              Nuestro Portafolio
+              {t("buttonText")}
               <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
                 <svg
                   className="w-4 h-4"

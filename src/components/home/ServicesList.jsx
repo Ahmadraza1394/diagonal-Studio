@@ -1,45 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const services = [
-  {
-    name: "Diseño Arquitectónico",
-    slug: "architectural-design",
-    description:
-      "Soluciones integrales de diseño desde el concepto hasta la ejecución, creando espacios que inspiran y perduran.",
-  },
-  {
-    name: "Diseño Ecológico",
-    slug: "eco-friendly-design",
-    description:
-      "Arquitectura sustentable que armoniza con el entorno mientras reduce el impacto ecológico.",
-  },
-  {
-    name: "Desarrollo de Proyectos",
-    slug: "project-development",
-    description:
-      "Coordinación integral de proyectos para asegurar una ejecución fluida desde la planificación hasta la entrega final.",
-  },
-  {
-    name: "Gerencia de Proyectos",
-    slug: "project-management",
-    description:
-      "Supervisión y coordinación experta para cumplir tiempos, presupuestos y alcances, garantizando calidad y comunicación en cada etapa.",
-  },
-  {
-    name: "Diseño de Interiores",
-    slug: "interior-styling",
-    description:
-      "Diseño interior que interpreta tu visión y optimiza funcionalidad, materialidad y atmósferas para espacios habitables y expresivos.",
-  },
-  {
-    name: "Consultoría y Planificación",
-    slug: "consulting",
-    description:
-      "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ServicesList() {
+  const { t } = useTranslation("servicesList");
+  const services = t("services", { returnObjects: true });
+
   return (
     <section
       className="w-full bg-white py-16 sm:py-20 md:py-28 overflow-hidden"
@@ -60,14 +26,13 @@ export default function ServicesList() {
                 <span className="">NL</span>
               </span>
               <p className="font-abc-monument text-sm sm:text-base text-pantone-black/80 mb-6 sm:mb-8 leading-relaxed text-justify">
-                Transformando entornos en espacios diseñados con pensamiento,
-                futuristas y que inspiran y perduran.
+                {t("sidebarDescription")}
               </p>
               <Link
                 to="/services"
                 className="inline-flex items-center border border-pantone-black px-6 sm:px-7 py-2.5 sm:py-3 rounded-md font-cardinal font-semibold text-pantone-black text-sm sm:text-base transition-all duration-300 hover:bg-pantone-black hover:text-white group w-fit"
               >
-                EXPLORAR SERVICIOS
+                {t("sidebarButton")}
                 <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
@@ -85,12 +50,10 @@ export default function ServicesList() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="font-monument text-4xl sm:text-5xl md:text-7xl text-pantone-7515 leading-none mb-4 sm:mb-6 font-bold">
-              SERVICIOS
+              {t("title")}
             </h2>
             <p className="font-abc-monument text-base sm:text-lg md:text-xl text-pantone-black/80 max-w-2xl mb-8 sm:mb-10 text-justify">
-              Combinamos experiencia, conocimiento técnico y atención al detalle
-              en cada servicio, desde estudios preliminares y diseño conceptual
-              hasta gestión de obra. Cada solución se adapta a tu proyecto.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -172,7 +135,7 @@ export default function ServicesList() {
               to="/services"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 border border-pantone-black rounded-md transition hover:bg-pantone-black hover:text-white group text-base font-cardinal font-semibold text-pantone-black"
             >
-              EXPLORAR TODOS LOS SERVICIOS
+              {t("viewAllButton")}
               <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
                 →
               </span>

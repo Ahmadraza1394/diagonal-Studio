@@ -1,0 +1,33 @@
+{
+  "brand": "DGNL",
+  "sidebarDescription": "Nuestro objetivo es crear espacios que inspiran, desafíen lo convencional y mejoren la vida de quienes los experimentan.",
+  "mainDescription": "Creemos que la arquitectura va más allá de los edificios—se trata de crear experiencias. Cada proyecto que realizamos está impulsado por la innovación, el diseño atemporal y la sostenibilidad. Nuestra meta es diseñar espacios que despierten emociones, fomenten la conexión y dejen una huella duradera.",
+  "services": [
+    {
+      "name": "Diseño Arquitectónico",
+      "desc": "Nuestro servicio de desarrollo de proyectos arquitectónicos abarca desde la conceptualización inicial, hasta la entrega del proyecto ejecutivo completo, integrando diseño, funcionalidad, normativas y viabilidad técnica."
+    },
+    {
+      "name": "Diseño Ecológico",
+      "desc": "Arquitectura sustentable que armoniza con el entorno y reduce el impacto ecológico. Innovamos utilizando materiales verdes, soluciones energéticamente eficientes y prácticas responsables para crear espacios con una huella ambiental mínima."
+    },
+    {
+      "name": "Desarrollo de Proyectos",
+      "desc": "Nos enfocamos en garantizar que todos los aspectos del proyecto se lleven a cabo conforme al diseño aprobado, dentro de los plazos establecidos y respetando los más altos estándares de calidad. A través de un control riguroso, la gestión efectiva de recursos y una comunicación constante con los equipos de trabajo, aseguramos el éxito de cada proyecto, minimizando riesgos y optimizando costos."
+    },
+    {
+      "name": "Gerencia de Proyectos",
+      "desc": "Nos especializamos en la planificación, coordinación, supervisión y control integral de todas las etapas de un proyecto arquitectónico o de construcción. Nuestro compromiso es garantizar que cada proyecto se ejecute en tiempo, forma y presupuesto, manteniendo los más altos estándares de calidad y siempre alineados con los objetivos y visión del cliente."
+    },
+    {
+      "name": "Diseño de Interiores",
+      "desc": "Transformamos espacios a través de soluciones de diseño que combinan estética, funcionalidad y confort. Nuestro equipo trabaja en estrecha colaboración con los clientes para crear ambientes que reflejen su identidad, optimicen el uso del espacio y mejoren la experiencia de quienes habitan o visitan esos lugares."
+    },
+    {
+      "name": "Consultoría y Planificación",
+      "desc": "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones. Ofrecemos información valiosa en cada etapa del proyecto."
+    }
+  ],
+  "ctaText": "Listo para transformar tu espacio? Nuestro equipo de expertos está aquí para traer tu visión a vida.",
+  "ctaButton": "Contactanos"
+}

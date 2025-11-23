@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 import { EMAILJS_CONFIG } from "../config/emailjs";
 
 export default function Contact() {
+  const { t } = useTranslation("contact");
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -105,12 +107,8 @@ export default function Contact() {
               <span className="italic">DG</span>
               <span className="">NL</span>
             </span>
-            <div className="font-abc-monument-grotesk text-base md:text-lg text-pantone-black/90">
-              Vamos a iniciar una conversación
-              <br />
-              sobre cómo podemos traer
-              <br />
-              tu visión a la vida.
+            <div className="font-abc-monument-grotesk text-base md:text-lg text-pantone-black/90 whitespace-pre-line">
+              {t("sidebarDescription")}
             </div>
           </div>
 
@@ -123,9 +121,7 @@ export default function Contact() {
               (field) => (
                 <div key={field}>
                   <label className="block mb-2 text-pantone-black font-medium capitalize">
-                    {field === "org"
-                      ? "Organization"
-                      : field.replace(/([A-Z])/g, " $1").trim()}
+                    {t(`form.${field}`)}
                     {field !== "org" && "*"}
                   </label>
                   {["region", "subject"].includes(field) ? (
@@ -136,33 +132,30 @@ export default function Contact() {
                       value={form[field]}
                       onChange={handleChange}
                     >
-                      <option value="">{`Selecciona un ${field}`}</option>
-                      {field === "region"
-                        ? ["Asia", "Europe", "America"].map((opt) => (
-                            <option key={opt} value={opt}>
-                              {opt}
-                            </option>
-                          ))
-                        : [
-                            "Consulta General",
-                            "Colaboración",
-                            "Propuesta de Proyecto",
-                          ].map((opt) => (
-                            <option key={opt} value={opt}>
-                              {opt}
-                            </option>
-                          ))}
+                      <option value="">
+                        {t(
+                          `form.select${
+                            field.charAt(0).toUpperCase() + field.slice(1)
+                          }`
+                        )}
+                      </option>
+                      {(field === "region"
+                        ? t("form.regions", { returnObjects: true })
+                        : t("form.subjects", { returnObjects: true })
+                      ).map((opt) => (
+                        <option key={opt} value={opt}>
+                          {opt}
+                        </option>
+                      ))}
                     </select>
                   ) : (
                     <input
                       type={field === "email" ? "email" : "text"}
                       name={field}
                       required={field !== "org"}
-                      placeholder={
-                        field === "email"
-                          ? "tu@email.com"
-                          : `Introduce tu ${field}`
-                      }
+                      placeholder={t(`form.${field}Placeholder`, {
+                        defaultValue: "",
+                      })}
                       className="w-full border-b border-pantone-black bg-transparent text-lg md:text-xl py-2 focus:outline-none placeholder:text-pantone-black/40"
                       value={form[field]}
                       onChange={handleChange}
@@ -174,13 +167,13 @@ export default function Contact() {
 
             <div className="md:col-span-2">
               <label className="block mb-2 text-pantone-black font-medium">
-                Mensaje*
+                {t("form.message")}*
               </label>
               <textarea
                 name="message"
                 required
                 rows={3}
-                placeholder="Mi mensaje es..."
+                placeholder={t("form.messagePlaceholder")}
                 className="w-full border-b border-pantone-black bg-transparent text-lg md:text-xl py-2 focus:outline-none placeholder:text-pantone-black/40 resize-none"
                 value={form.message}
                 onChange={handleChange}
@@ -198,8 +191,7 @@ export default function Contact() {
                   className="mr-3 accent-pantone-719 w-4 h-4 mt-1 md:mt-0"
                 />
                 <span className="font-cardinal-classic">
-                  Estoy de acuerdo con los términos y condiciones y reconozco
-                  que he leído la política de privacidad.
+                  {t("form.agreeText")}
                 </span>
               </label>
               <button
@@ -207,7 +199,9 @@ export default function Contact() {
                 disabled={isSubmitting}
                 className="w-full md:w-auto border border-pantone-black px-5 py-2 md:px-7 md:py-3 rounded font-monument-grotesk font-bold text-pantone-black text-base md:text-lg transition hover:bg-pantone-black hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "SENDING..." : "SEND MY MESSAGE"}
+                {isSubmitting
+                  ? t("form.submittingButton")
+                  : t("form.submitButton")}
               </button>
             </div>
 
@@ -220,8 +214,8 @@ export default function Contact() {
                 }`}
               >
                 {submitStatus === "success"
-                  ? "Gracias! Tu mensaje ha sido enviado correctamente. Recibirás un correo de confirmación pronto."
-                  : "Lo siento, hubo un error al enviar tu mensaje. Por favor, intenta de nuevo o contáctanos directamente."}
+                  ? t("form.successMessage")
+                  : t("form.errorMessage")}
               </div>
             )}
           </form>

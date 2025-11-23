@@ -1,0 +1,33 @@
+{
+  "sidebarDescription": "Transformando entornos en espacios diseñados con pensamiento, futuristas y que inspiran y perduran.",
+  "sidebarButton": "EXPLORAR SERVICIOS",
+  "title": "SERVICIOS",
+  "description": "Combinamos experiencia, conocimiento técnico y atención al detalle en cada servicio, desde estudios preliminares y diseño conceptual hasta gestión de obra. Cada solución se adapta a tu proyecto.",
+  "services": [
+    {
+      "name": "Diseño Arquitectónico",
+      "description": "Soluciones integrales de diseño desde el concepto hasta la ejecución, creando espacios que inspiran y perduran."
+    },
+    {
+      "name": "Diseño Ecológico",
+      "description": "Arquitectura sustentable que armoniza con el entorno mientras reduce el impacto ecológico."
+    },
+    {
+      "name": "Desarrollo de Proyectos",
+      "description": "Coordinación integral de proyectos para asegurar una ejecución fluida desde la planificación hasta la entrega final."
+    },
+    {
+      "name": "Gerencia de Proyectos",
+      "description": "Supervisión y coordinación experta para cumplir tiempos, presupuestos y alcances, garantizando calidad y comunicación en cada etapa."
+    },
+    {
+      "name": "Diseño de Interiores",
+      "description": "Diseño interior que interpreta tu visión y optimiza funcionalidad, materialidad y atmósferas para espacios habitables y expresivos."
+    },
+    {
+      "name": "Consultoría y Planificación",
+      "description": "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones."
+    }
+  ],
+  "viewAllButton": "EXPLORAR TODOS LOS SERVICIOS"
+}

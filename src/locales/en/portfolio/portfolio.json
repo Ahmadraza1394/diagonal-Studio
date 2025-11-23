@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Portfolio"
+  },
+  "intro": {
+    "sidebarDescription": "Our portfolio reflects decades of experience developing, managing and executing architectural projects and infrastructure in the public and private sectors.",
+    "mainDescription": "From residences and commercial buildings to hotels, clubs and urban spaces, each project is a testament to our technique, attention to detail and commitment to customer satisfaction."
+  },
+  "grid": {
+    "filterAll": "All",
+    "filterResidential": "Residential",
+    "filterCommercial": "Commercial",
+    "filterPublicWorks": "Public Works",
+    "viewFeaturedPortfolio": "View our featured portfolio"
+  },
+  "projectCard": {
+    "viewProject": "View Project"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "description": "Let's make your architectural vision a reality with innovative design and exceptional execution",
+    "buttonText": "Contact Us"
+  },
+  "projectDetails": {
+    "backToPortfolio": "Back to Portfolio",
+    "nextProject": "Next Project",
+    "previousProject": "Previous Project",
+    "projectDetails": "Project Details",
+    "concept": "Concept",
+    "description": "Description",
+    "gallery": "Gallery"
+  }
+}

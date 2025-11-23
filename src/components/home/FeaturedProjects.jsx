@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { projects } from "../../data/projects";
 
 const FeaturedProjects = () => {
+  const { t } = useTranslation("featuredProjects");
   // Use exactly these six projects in this specific order
   const desiredOrder = [
     "Casa Bejuco",
@@ -27,7 +29,7 @@ const FeaturedProjects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <h2 className="font-monument uppercase text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-pantone-7515 font-bold">
-          PORTAFOLIO DESTACADO
+          {t("title")}
         </h2>
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end my-8 sm:my-12 md:my-16">
           <div className="mb-8 lg:mb-0 w-full lg:w-1/2">
@@ -45,10 +47,7 @@ const FeaturedProjects = () => {
                 <span className="">NL</span>
               </span>
               <p className="font-abc-monument text-pantone-black/80 text-justify text-sm sm:text-base md:text-lg max-w-xl mb-4">
-                Desarrollamos proyectos integrales con un servicio
-                personalizado, siempre buscando mejorar la calidad de vida de
-                nuestros clientes mediante un diseño y ejecución innovadores y
-                de alta calidad.
+                {t("description")}
               </p>
               <motion.a
                 href="/portfolio"
@@ -59,7 +58,7 @@ const FeaturedProjects = () => {
                 transition={{ duration: 0.85, delay: 0.3, ease: "easeOut" }}
                 whileHover={{ scale: 1.04 }}
               >
-                Ver todos los proyectos
+                {t("buttonText")}
                 <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
                   <svg
                     className="w-4 h-4"
@@ -86,7 +85,7 @@ const FeaturedProjects = () => {
             </span>
             <div className="w-8 sm:w-12 h-px bg-pantone-black"></div>
             <span className="font-cardinal text-pantone-black/70 italic text-sm sm:text-base">
-              Obras Seleccionadas
+              {t("selectedWorks")}
             </span>
           </div>
         </div>
@@ -101,7 +100,10 @@ const FeaturedProjects = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={`/portfolio/${project.slug}`} state={{ from: "featured" }}>
+              <Link
+                to={`/portfolio/${project.slug}`}
+                state={{ from: "featured" }}
+              >
                 <div className="relative overflow-hidden bg-gray-100 aspect-[4/5]">
                   <img
                     src={project.image}

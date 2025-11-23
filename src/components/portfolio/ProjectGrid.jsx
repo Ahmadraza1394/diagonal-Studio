@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { projects } from "../../data/projects";
 
 const ProjectGrid = () => {
+  const { t } = useTranslation("portfolio");
   const [selectedImage, setSelectedImage] = useState(null);
   // Only show the requested projects
   const allowedTitles = [
@@ -38,7 +40,7 @@ const ProjectGrid = () => {
               transition={{ duration: 0.3 }}
               className="inline-flex items-center justify-center mt-2 px-7 py-3 border border-pantone-black rounded transition hover:bg-pantone-black hover:text-white group text-base md:text-lg font-cardinal font-semibold w-fit text-pantone-black"
             >
-              <span className="italic">Ver nuestro portafolio destacado</span>
+              <span className="italic">{t("grid.filterAll")}</span>
             </motion.button>
           </Link>
         </div>

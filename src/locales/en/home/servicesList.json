@@ -1,0 +1,33 @@
+{
+  "sidebarDescription": "Transforming environments into designed spaces with thoughtful, futuristic ideas that inspire and endure.",
+  "sidebarButton": "EXPLORE SERVICES",
+  "title": "SERVICES",
+  "description": "We combine experience, technical knowledge and attention to detail in every service, from preliminary studies and conceptual design to project management. Each solution is tailored to your project.",
+  "services": [
+    {
+      "name": "Architectural Design",
+      "description": "Comprehensive design solutions from concept to execution, creating spaces that inspire and endure."
+    },
+    {
+      "name": "Eco-Friendly Design",
+      "description": "Sustainable architecture that harmonizes with the environment while reducing ecological impact."
+    },
+    {
+      "name": "Project Development",
+      "description": "Comprehensive project coordination to ensure smooth execution from planning to final delivery."
+    },
+    {
+      "name": "Project Management",
+      "description": "Expert supervision and coordination to meet timelines, budgets, and scope, ensuring quality and communication at every stage."
+    },
+    {
+      "name": "Interior Design",
+      "description": "Interior design that interprets your vision and optimizes functionality, materiality, and atmospheres for livable and expressive spaces."
+    },
+    {
+      "name": "Consulting & Planning",
+      "description": "Strategic consulting and technical planning to solve complex challenges, evaluate feasibility, and guide decision-making."
+    }
+  ],
+  "viewAllButton": "EXPLORE ALL SERVICES"
+}

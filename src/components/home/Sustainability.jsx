@@ -1,23 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-const stats = [
-  {
-    value: "40+",
-    label: "Proyectos Completados",
-    desc: "En sectores residenciales, comerciales, de hospitalidad y públicos—demostrando nuestra versatilidad y profundidad.",
-  },
-  {
-    value: "150+",
-    label: "Expertos en la Industria",
-    desc: "Un equipo multidisciplinario de arquitectos, diseñadores e ingenieros experimentados, dedicados a resultados innovadores y de alta calidad.",
-  },
-  {
-    value: "2B+",
-    label: "Valor de los Proyectos",
-    desc: "Administración experta de diseños complejos y de alto presupuesto que brindan el máximo valor a nuestros clientes.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const images = [
   "/assets/Diagonal fotos/Home Page/Last sections pics/2-7bf0cc6b.jpg",
@@ -28,6 +11,8 @@ const images = [
 ];
 
 export default function Sustainability() {
+  const { t } = useTranslation("sustainability");
+  const stats = t("stats", { returnObjects: true });
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
 
   return (
@@ -55,8 +40,7 @@ export default function Sustainability() {
               <span className="">NL</span>
             </span>
             <p className="font-abc-monument text-justify text-sm sm:text-base xl:text-lg text-pantone-black/85 leading-relaxed">
-              Nuestro compromiso con la innovaci n eco-amigable impulsa todo lo
-              que hacemos.
+              {t("sidebarDescription")}
             </p>
           </div>
         </motion.div>
@@ -68,7 +52,7 @@ export default function Sustainability() {
             transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
           >
             <h2 className="font-monument text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-pantone-7515 leading-tight mb-4 tracking-tight font-bold">
-              Nuestra fuerza en números
+              {t("title")}
             </h2>
           </motion.div>
 
@@ -93,7 +77,7 @@ export default function Sustainability() {
                     {item.label}
                   </h4>
                   <p className="font-abc-monument text-justify text-sm sm:text-base xl:text-lg text-pantone-black/80 leading-relaxed">
-                    {item.desc}
+                    {item.description}
                   </p>
                 </div>
               </motion.div>

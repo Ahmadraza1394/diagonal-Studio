@@ -1,64 +1,44 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-const services = [
-  {
-    name: "Diseño Arquitectónico",
-    desc: "Nuestro servicio de desarrollo de proyectos arquitectónicos abarca desde la conceptualización inicial, hasta la entrega del proyecto ejecutivo completo, integrando diseño, funcionalidad, normativas y viabilidad técnica.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of 1-7bf0cc6b.jpg",
-      "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of IMG_2992.JPG",
-      "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of d60148c7-aafa-4bc3-8810-060595e8784c.jpg",
-    ],
-  },
-  {
-    name: "Diseño Ecológico",
-    desc: "Arquitectura sustentable que armoniza con el entorno y reduce el impacto ecológico. Innovamos utilizando materiales verdes, soluciones energéticamente eficientes y prácticas responsables para crear espacios con una huella ambiental mínima.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of _MG_8530-Editar.jpg",
-      "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of ad3.avif",
-      "/assets/Diagonal fotos/Servicios/Diseño sostenible/IMG_3008.JPG",
-    ],
-  },
-  {
-    name: "Desarrollo de Proyectos",
-    desc: "Nos enfocamos en garantizar que todos los aspectos del proyecto se lleven a cabo conforme al diseño aprobado, dentro de los plazos establecidos y respetando los más altos estándares de calidad. A través de un control riguroso, la gestión efectiva de recursos y una comunicación constante con los equipos de trabajo, aseguramos el éxito de cada proyecto, minimizando riesgos y optimizando costos.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/562b6b31.jpg",
-      "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/5998a032-d08e-4abf-b533-4eb762163417.JPG",
-      "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/AEREA.png",
-    ],
-  },
-  {
-    name: "Gerencia de Proyectos",
-    desc: "Nos especializamos en la planificación, coordinación, supervisión y control integral de todas las etapas de un proyecto arquitectónico o de construcción. Nuestro compromiso es garantizar que cada proyecto se ejecute en tiempo, forma y presupuesto, manteniendo los más altos estándares de calidad y siempre alineados con los objetivos y visión del cliente.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Gestion de proyectos/Copy of IMG_9487.jpg",
-      "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG-20250221-WA0041.jpg",
-      "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG_3614.jpg",
-    ],
-  },
-  {
-    name: "Diseño de Interiores",
-    desc: "Transformamos espacios a través de soluciones de diseño que combinan estética, funcionalidad y confort. Nuestro equipo trabaja en estrecha colaboración con los clientes para crear ambientes que reflejen su identidad, optimicen el uso del espacio y mejoren la experiencia de quienes habitan o visitan esos lugares.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Diseño de interiores/27UJO.jpg",
-      "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_2970.JPG",
-      "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_6591.JPG",
-    ],
-  },
-  {
-    name: "Consultoría y Planificación",
-    desc: "Asesoría estratégica y planificación técnica para resolver desafíos complejos, evaluar viabilidad y orientar la toma de decisiones. Ofrecemos información valiosa en cada etapa del proyecto.",
-    images: [
-      "/assets/Diagonal fotos/Servicios/Consultoria/4a187380-2ede-4c8f-b169-4e6a59f07b40.JPG",
-      "/assets/Diagonal fotos/Servicios/Consultoria/33.jpeg",
-      "/assets/Diagonal fotos/Servicios/Consultoria/IMG-20250320-WA0017.jpg",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
+
+const serviceImages = {
+  "Diseño Arquitectónico": [
+    "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of 1-7bf0cc6b.jpg",
+    "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of IMG_2992.JPG",
+    "/assets/Diagonal fotos/Servicios/Diseño arquitectonico/Copy of d60148c7-aafa-4bc3-8810-060595e8784c.jpg",
+  ],
+  "Diseño Ecológico": [
+    "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of _MG_8530-Editar.jpg",
+    "/assets/Diagonal fotos/Servicios/Diseño sostenible/Copy of ad3.avif",
+    "/assets/Diagonal fotos/Servicios/Diseño sostenible/IMG_3008.JPG",
+  ],
+  "Desarrollo de Proyectos": [
+    "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/562b6b31.jpg",
+    "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/5998a032-d08e-4abf-b533-4eb762163417.JPG",
+    "/assets/Diagonal fotos/Servicios/Desarollo de proyectos/AEREA.png",
+  ],
+  "Gerencia de Proyectos": [
+    "/assets/Diagonal fotos/Servicios/Gestion de proyectos/Copy of IMG_9487.jpg",
+    "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG-20250221-WA0041.jpg",
+    "/assets/Diagonal fotos/Servicios/Gestion de proyectos/IMG_3614.jpg",
+  ],
+  "Diseño de Interiores": [
+    "/assets/Diagonal fotos/Servicios/Diseño de interiores/27UJO.jpg",
+    "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_2970.JPG",
+    "/assets/Diagonal fotos/Servicios/Diseño de interiores/IMG_6591.JPG",
+  ],
+  "Consultoría y Planificación": [
+    "/assets/Diagonal fotos/Servicios/Consultoria/4a187380-2ede-4c8f-b169-4e6a59f07b40.JPG",
+    "/assets/Diagonal fotos/Servicios/Consultoria/33.jpeg",
+    "/assets/Diagonal fotos/Servicios/Consultoria/IMG-20250320-WA0017.jpg",
+  ],
+};
 
 export default function ServiceTabs() {
+  const { t } = useTranslation("serviceTabs");
+  const services = t("services", { returnObjects: true });
   const [active, setActive] = useState(0);
 
   return (
@@ -84,8 +64,7 @@ export default function ServiceTabs() {
                 <span className="">NL</span>
               </span>
               <p className="font-abc-monument text-justify text-base sm:text-lg text-pantone-black/80 leading-relaxed">
-                Nuestro objetivo es crear espacios que inspiran, desafíen lo
-                convencional y mejoren la vida de quienes los experimentan.
+                {t("sidebarDescription")}
               </p>
             </motion.div>
             <motion.div
@@ -96,11 +75,7 @@ export default function ServiceTabs() {
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
             >
               <p className="font-abc-monument text-justify text-2xl sm:text-3xl md:text-4xl text-pantone-black leading-snug">
-                Creemos que la arquitectura va más allá de los edificios—se
-                trata de crear experiencias. Cada proyecto que realizamos está
-                impulsado por la innovación, el diseño atemporal y la
-                sostenibilidad. Nuestra meta es diseñar espacios que despierten
-                emociones, fomenten la conexión y dejen una huella duradera.
+                {t("mainDescription")}
               </p>
             </motion.div>
           </div>
@@ -131,7 +106,7 @@ export default function ServiceTabs() {
                     i === active ? "font-bold" : "font-normal font-monument"
                   }`}
                 >
-                  {service.name}
+                  {services[i]?.name}
                 </span>
               </div>
             ))}
@@ -148,17 +123,17 @@ export default function ServiceTabs() {
                 className="space-y-4 sm:space-y-6"
               >
                 <h3 className="font-monument-extended text-xl sm:text-2xl md:text-3xl text-pantone-black font-bold">
-                  {services[active].name}
+                  {services[active]?.name}
                 </h3>
                 <p className="font-abc-monument text-justify text-lg sm:text-xl md:text-2xl lg:text-3xl text-pantone-black/90">
-                  {services[active].desc}
+                  {services[active]?.desc}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-                  {services[active].images.map((img, j) => (
+                  {serviceImages[services[active]?.name]?.map((img, j) => (
                     <motion.img
                       key={img}
                       src={img}
-                      alt={`${services[active].name} ${j + 1}`}
+                      alt={`${services[active]?.name} ${j + 1}`}
                       className="w-full aspect-[4/3] object-cover object-center rounded"
                       initial={{ opacity: 0, y: 30 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -174,8 +149,7 @@ export default function ServiceTabs() {
 
       <div className="flex flex-col items-center mt-12 md:mt-16 lg:mt-20 mb-8 md:mb-12 px-4">
         <p className="font-abc-monument text-base sm:text-lg text-pantone-black/80 mb-4 sm:mb-6 max-w-2xl text-center">
-          Listo para transformar tu espacio? Nuestro equipo de expertos está
-          aquí para traer tu visión a vida.
+          {t("ctaText")}
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <motion.div
@@ -188,7 +162,7 @@ export default function ServiceTabs() {
               to="/contact"
               className="bg-pantone-black text-white py-2 sm:py-3 px-6 sm:px-8 rounded-md font-monument text-base sm:text-lg hover:bg-white hover:text-pantone-black hover:border-pantone-black hover:border transition-colors flex items-center gap-2"
             >
-              Contactanos
+              {t("ctaButton")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

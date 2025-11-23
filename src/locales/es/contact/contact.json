@@ -1,0 +1,27 @@
+{
+  "title": "Contacto",
+  "sidebarDescription": "Vamos a iniciar una conversación\nsobre cómo podemos traer\ntu visión a la vida.",
+  "form": {
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo Electrónico",
+    "org": "Organización",
+    "region": "Región",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "firstNamePlaceholder": "Introduce tu nombre",
+    "lastNamePlaceholder": "Introduce tu apellido",
+    "emailPlaceholder": "tu@email.com",
+    "orgPlaceholder": "Tu organización",
+    "messagePlaceholder": "Mi mensaje es...",
+    "selectRegion": "Selecciona una región",
+    "selectSubject": "Selecciona un asunto",
+    "regions": ["Asia", "Europa", "América"],
+    "subjects": ["Consulta General", "Colaboración", "Propuesta de Proyecto"],
+    "agreeText": "Estoy de acuerdo con los términos y condiciones y reconozco que he leído la política de privacidad.",
+    "submitButton": "ENVIAR MI MENSAJE",
+    "submittingButton": "ENVIANDO...",
+    "successMessage": "¡Gracias! Tu mensaje ha sido enviado correctamente. Recibirás un correo de confirmación pronto.",
+    "errorMessage": "Lo siento, hubo un error al enviar tu mensaje. Por favor, intenta de nuevo o contáctanos directamente."
+  }
+}

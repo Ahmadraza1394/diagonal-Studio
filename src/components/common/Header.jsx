@@ -2,26 +2,29 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
-
-const navLinks = [
-  { name: "Inicio", href: "/" },
-  { name: "Portafolio", href: "portfolio" },
-  { name: "Servicios", href: "services" },
-  { name: "Sobre", href: "about" },
-  { name: "Contacto", href: "contact" },
-];
-
-const menuLinks = [
-  { name: "Inicio", href: "/" },
-  { name: "Portafolio", href: "portfolio" },
-  { name: "Servicios", href: "services" },
-  { name: "Sobre", href: "about" },
-  { name: "Contacto", href: "contact" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const { t } = useTranslation("header");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navLinks = [
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.portfolio"), href: "portfolio" },
+    { name: t("nav.services"), href: "services" },
+    { name: t("nav.about"), href: "about" },
+    { name: t("nav.contact"), href: "contact" },
+  ];
+
+  const menuLinks = [
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.portfolio"), href: "portfolio" },
+    { name: t("nav.services"), href: "services" },
+    { name: t("nav.about"), href: "about" },
+    { name: t("nav.contact"), href: "contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -88,6 +91,10 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+            </div>
+            {/* Language Switcher */}
+            <div className="ml-2">
+              <LanguageSwitcher />
             </div>
             {/* Hamburger (mobile and desktop, matches Aether style) */}
             <button

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation("hero");
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <span className="not-italic block md:inline text-shadow-lg font-supreme">
-            diagonal
+            {t("title")}
           </span>
         </motion.h1>
         <motion.p
@@ -53,7 +55,7 @@ export default function Hero() {
           animate={isLoaded ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          Supermodernist Architecture Office
+          {t("subtitle")}
         </motion.p>
       </div>
     </section>

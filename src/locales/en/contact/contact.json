@@ -1,0 +1,27 @@
+{
+  "title": "Contact",
+  "sidebarDescription": "Let's start a conversation\nabout how we can bring\nyour vision to life.",
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "org": "Organization",
+    "region": "Region",
+    "subject": "Subject",
+    "message": "Message",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNamePlaceholder": "Enter your last name",
+    "emailPlaceholder": "your@email.com",
+    "orgPlaceholder": "Your organization",
+    "messagePlaceholder": "My message is...",
+    "selectRegion": "Select a region",
+    "selectSubject": "Select a subject",
+    "regions": ["Asia", "Europe", "America"],
+    "subjects": ["General Inquiry", "Collaboration", "Project Proposal"],
+    "agreeText": "I agree with the terms and conditions and acknowledge that I have read the privacy policy.",
+    "submitButton": "SEND MY MESSAGE",
+    "submittingButton": "SENDING...",
+    "successMessage": "Thank you! Your message has been sent successfully. You will receive a confirmation email soon.",
+    "errorMessage": "Sorry, there was an error sending your message. Please try again or contact us directly."
+  }
+}

@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation("footer");
+
   const navLinks = [
-    { name: "Inicio", href: "/" },
-    { name: "Portafolio", href: "portfolio" },
-    { name: "Servicios", href: "services" },
-    { name: "Nosotros", href: "about" },
-    { name: "Contacto", href: "contact" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.portfolio"), href: "portfolio" },
+    { name: t("nav.services"), href: "services" },
+    { name: t("nav.about"), href: "about" },
+    { name: t("nav.contact"), href: "contact" },
   ];
 
   const socialLinks = [
-    { name: "Instagram", href: "https://instagram.com/diagonal_studio" },
-    // { name: "Twitter", href: "https://twitter.com/" },
-    // { name: "LinkedIn", href: "https://linkedin.com/company/" },
+    { name: t("instagram"), href: "https://instagram.com/diagonal_studio" },
   ];
 
   return (
@@ -25,19 +26,19 @@ export default function Footer() {
               DIAGONAL
             </div>
             <div className="font-monument-grotesk text-base md:text-lg text-white/90 mb-6">
-              Contáctanos y te responderemos pronto!
+              {t("contactUs")}
             </div>
             <div className="font-abc-monument text-sm text-white/80 space-y-1">
-              <p>hola@diagonalstudio.mx</p>
-              <p>+52 (55)5507 6330</p>
-              <p>Ciudad de México y Riviera Maya</p>
+              <p>{t("email")}</p>
+              <p>{t("phone")}</p>
+              <p>{t("location")}</p>
             </div>
           </div>
           <a
             href="contact"
             className="inline-flex items-center border border-white px-7 py-3 rounded font-monument-grotesk font-medium text-white text-base transition hover:bg-white hover:text-pantone-black group w-fit"
           >
-            CONTÁCTANOS
+            {t("contactButton")}
             <span className="ml-2 group-hover:translate-x-1.5 transition-transform">
               <svg
                 className="w-4 h-4"
@@ -59,7 +60,7 @@ export default function Footer() {
         {/* Navigation Links */}
         <div className="w-full md:w-1/3 flex flex-col gap-1 mt-10 md:mt-0">
           <div className="font-monument-grotesk text-white/60 text-base mb-2">
-            Enlaces Rápidos
+            {t("quickLinks")}
           </div>
           <ul className="font-monument-extended font-bold text-3xl md:text-4xl leading-tight space-y-2">
             {navLinks.map((link) => (
@@ -78,7 +79,7 @@ export default function Footer() {
         {/* Social Links */}
         <div className="w-full md:w-1/3 flex flex-col gap-1 mt-10 md:mt-0">
           <div className="font-monument-grotesk text-white/60 text-base mb-2">
-            Redes Sociales
+            {t("socialLinks")}
           </div>
           <ul className="font-monument-extended font-bold text-2xl md:text-4xl leading-tight space-y-2">
             {socialLinks.map((link) => (
@@ -100,11 +101,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-16 border-t border-white/20 pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-white/80 font-cardinal-classic text-lg">
         <div className="w-full md:w-auto text-left">
-          © {new Date().getFullYear()} Diagonal. Todos los derechos reservados.
+          {t("copyright", { year: new Date().getFullYear() })}
         </div>
         <div className="w-full md:w-auto text-center">
           <Link to="/privacy" className="hover:text-pantone-2935 transition">
-            Política de Privacidad
+            {t("privacyPolicy")}
           </Link>
         </div>
         <div className="w-full md:w-auto text-right flex items-center gap-2">
@@ -112,7 +113,7 @@ export default function Footer() {
             href="#"
             className="hover:text-pantone-2935 font-cardinal-classic transition"
           >
-            Volver arriba
+            {t("backToTop")}
           </a>
           <svg
             className="w-4 h-4 inline-block"
