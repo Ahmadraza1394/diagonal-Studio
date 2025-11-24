@@ -38,17 +38,37 @@ export default function LanguageSwitcher() {
       code: "es",
       name: "Español",
       nativeName: "ES",
-      flag: "🇲🇽",
       fullName: "Spanish",
     },
     {
       code: "en",
       name: "English",
       nativeName: "EN",
-      flag: "🇺🇸",
       fullName: "English",
     },
   ];
+
+  // SVG Flag Components
+  const MexicoFlag = () => (
+    <svg viewBox="0 0 24 16" className="w-6 h-4 rounded-sm overflow-hidden">
+      <rect width="8" height="16" fill="#006847" />
+      <rect x="8" width="8" height="16" fill="#FFFFFF" />
+      <rect x="16" width="8" height="16" fill="#CE1126" />
+    </svg>
+  );
+
+  const USAFlag = () => (
+    <svg viewBox="0 0 24 16" className="w-6 h-4 rounded-sm overflow-hidden">
+      <rect width="24" height="16" fill="#B22234" />
+      <rect y="1.2" width="24" height="1.2" fill="#FFFFFF" />
+      <rect y="3.6" width="24" height="1.2" fill="#FFFFFF" />
+      <rect y="6" width="24" height="1.2" fill="#FFFFFF" />
+      <rect y="8.4" width="24" height="1.2" fill="#FFFFFF" />
+      <rect y="10.8" width="24" height="1.2" fill="#FFFFFF" />
+      <rect y="13.2" width="24" height="1.2" fill="#FFFFFF" />
+      <rect width="10" height="8.4" fill="#3C3B6E" />
+    </svg>
+  );
 
   const currentLang = languages.find((l) => l.code === i18n.language);
 
@@ -126,15 +146,15 @@ export default function LanguageSwitcher() {
                       : "text-pantone-black hover:bg-pantone-2935/5"
                   }`}
                 >
-                  {/* Flag - Using SVG circles for better display */}
+                  {/* Flag - Using SVG for better display */}
                   <div
-                    className={`w-6 h-6 rounded-full flex items-center justify-center text-base ${
+                    className={`flex items-center justify-center border ${
                       i18n.language === language.code
-                        ? "bg-white/20"
-                        : "bg-pantone-719/10"
+                        ? "border-white/30"
+                        : "border-pantone-black/10"
                     }`}
                   >
-                    {language.flag}
+                    {language.code === "es" ? <MexicoFlag /> : <USAFlag />}
                   </div>
 
                   {/* Language Info */}

@@ -47,91 +47,93 @@ const ProjectGrid = () => {
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-          {filteredProjects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              className="group cursor-pointer"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <Link
-                to={`/portfolio/${project.slug}`}
-                state={{ from: "portfolio" }}
+          {filteredProjects.map((project, index) => {
+            const translatedProject = getTranslatedProject(project);
+            return (
+              <motion.div
+                key={project.id}
+                className="group cursor-pointer"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true, amount: 0.2 }}
               >
-                <div className="relative overflow-hidden bg-gray-100 aspect-[4/5] rounded-lg shadow-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setSelectedImage(project.image);
-                    }}
-                  />
+                <Link
+                  to={`/portfolio/${project.slug}`}
+                  state={{ from: "portfolio" }}
+                >
+                  <div className="relative overflow-hidden bg-gray-100 aspect-[4/5] rounded-lg shadow-lg">
+                    <img
+                      src={project.image}
+                      alt={translatedProject.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setSelectedImage(project.image);
+                      }}
+                    />
 
-                  {/* Gradient overlay for better text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    {/* Gradient overlay for better text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
 
-                  {/* Title overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <div className="text-center">
-                      <h3 className="text-white font-supreme uppercase tracking-wide text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
-                        {project.title}
-                      </h3>
+                    {/* Title overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center p-4">
+                      <div className="text-center">
+                        <h3 className="text-white font-supreme uppercase tracking-wide text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
+                          {translatedProject.title}
+                        </h3>
 
-                      {/* Project metadata */}
-                      <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p className="text-white/80 font-cardinal text-xs sm:text-sm italic">
-                          {project.typology} • {project.year}
-                        </p>
-                        {project.location && (
-                          <p className="text-white/70 font-abc-monument text-xs mt-1">
-                            {project.location}
+                        {/* Project metadata */}
+                        <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <p className="text-white/80 font-cardinal text-xs sm:text-sm italic">
+                            {translatedProject.typology} • {project.year}
                           </p>
-                        )}
+                          {project.location && (
+                            <p className="text-white/70 font-abc-monument text-xs mt-1">
+                              {project.location}
+                            </p>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Reference indicator */}
-                  {project.reference && (
-                    <div className="absolute top-3 right-3 w-6 h-6 sm:w-8 sm:h-8 bg-pantone-7515 rounded-full flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
-                      {project.reference.url ? (
-                        <svg
-                          className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                          />
-                        </svg>
-                      ) : (
-                        <svg
-                          className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                          />
-                        </svg>
-                      )}
-                    </div>
-                  )}
-                </div>
-              </Link>
-            </motion.div>
+                    {/* Reference indicator */}
+                    {project.reference && (
+                      <div className="absolute top-3 right-3 w-6 h-6 sm:w-8 sm:h-8 bg-pantone-7515 rounded-full flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
+                        {project.reference.url ? (
+                          <svg
+                            className="w-3 h-3 sm:w-4 sm:h-4 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                            />
+                          </svg>
+                        ) : (
+                          <svg
+                            className="w-3 h-3 sm:w-4 sm:h-4 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                            />
+                          </svg>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </Link>
+              </motion.div>
             );
           })}
         </div>
