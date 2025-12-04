@@ -643,15 +643,19 @@ export const projects = [
     year: "2022",
     area: "Por definir",
     location: "Aldea Zamá, Tulum",
-    image: "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
+    image:
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/504984CF-4AA3-410E-BE14-34DA5EBDB6A4.jpg",
     description:
       "Boutique diseñada con líneas curvas y una paleta suave que aporta calidez y continuidad espacial. El proyecto destaca por sus estanterías flotantes de vidrio, detalles en madera natural y una iluminación indirecta que define ambientes serenos y refinados. La composición orgánica, junto con los volúmenes escultóricos y el uso de materiales naturales, crea una experiencia interior elegante, minimalista y acogedora.",
     concept:
       "Fusionar diseño orgánico con funcionalidad comercial, creando un espacio retail que sea tanto una experiencia sensorial como un punto de venta efectivo.",
     images: [
-      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4109.jpg",
-      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4111.jpg",
-      "/assets/Diagonal fotos/Portafolio/Rogue Zama/IMG_4116.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/504984CF-4AA3-410E-BE14-34DA5EBDB6A4.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/A8128FC4-10DE-4582-8AAB-FC2259EE4460.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/IMG_1893.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/IMG_1906.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/IMG_1934.jpg",
+      "/assets/Diagonal fotos/Portafolio/Rouge Zama Selecciones/IMG_1951_(1).jpg",
     ],
     details: [
       { label: "Client", value: "Rouge" },
