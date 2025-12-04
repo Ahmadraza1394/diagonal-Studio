@@ -122,9 +122,9 @@ export const projectTranslations = {
     },
     // Project ID 15: Kai Hotel
     15: {
-      typology: "Commercial",
+      typology: "Hotel",
       description:
-        "Low-density hotel project that privileges the guest experience: privacy, thermal comfort and direct contact with nature.",
+        "The Kai project encompasses the design, construction, and renovation of key areas of the complex. It includes the creation of a restaurant with a fully equipped general kitchen, a welcoming lobby, and the remodeling of existing villas. Additionally, it contemplates the construction of three new villas designed under contemporary standards that prioritize comfort and connection with the environment. The overall objective is to elevate the quality of the complex, optimize the guest experience, and consolidate a sustainable and high-value development.",
       concept:
         "Sustainable hospitality architecture, with passive solutions and a sophisticated and serene character.",
     },
@@ -162,6 +162,22 @@ export const projectTranslations = {
         "Project to be defined. This is a demonstration text that will be replaced with the actual Prime Burgers information.",
       concept:
         "Concept to be defined. The conceptual proposal will be detailed when available.",
+    },
+    // Project ID 20: Xibak
+    20: {
+      typology: "Hospitality",
+      description:
+        "Hospitality project designed to integrate with the Tulum jungle. The space combines open structures, warm lighting, and natural materials to create an intimate atmosphere. The terrace connects fluidly with the environment thanks to perimeter vegetation and suspended lighting. Inside, the illuminated bar and wooden details define a contemporary, welcoming, and social ambiance.",
+      concept:
+        "Create a hospitality space that dialogues with the jungle nature of Tulum, prioritizing architectural integration and the visitor's sensory experience.",
+    },
+    // Project ID 21: Rouge
+    21: {
+      typology: "Commercial",
+      description:
+        "Boutique designed with curved lines and a soft palette that brings warmth and spatial continuity. The project stands out for its floating glass shelves, natural wood details, and indirect lighting that defines serene and refined environments. The organic composition, along with sculptural volumes and the use of natural materials, creates an elegant, minimalist, and welcoming interior experience.",
+      concept:
+        "Fuse organic design with commercial functionality, creating a retail space that is both a sensory experience and an effective point of sale.",
     },
   },
 };
@@ -212,12 +228,16 @@ export const projectTypologyTranslations = {
     Residential: "Residencial",
     Commercial: "Comercial",
     "Public Works": "Obra Pública",
+    Hospitality: "Hospitalidad",
+    Hotel: "Hotelero",
   },
   en: {
     Residencial: "Residential",
     Comercial: "Commercial",
     "Obra Pública": "Public Works",
     "Residencial–Hotelero": "Residential–Hotel",
+    Hospitalidad: "Hospitality",
+    Hotelero: "Hotel",
     Residential: "Residential",
     Commercial: "Commercial",
   },

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 /**
  * Professional LanguageSwitcher Component
@@ -29,7 +29,14 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem("i18nLanguage", lang);
+    // Safe localStorage access
+    try {
+      if (typeof window !== "undefined") {
+        localStorage.setItem("i18nLanguage", lang);
+      }
+    } catch (error) {
+      console.warn("Error saving language preference:", error);
+    }
     setIsOpen(false);
   };
 

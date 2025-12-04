@@ -20,9 +20,9 @@ const ProjectGrid = () => {
     "UJO",
     "Parque Lineal Rio Mixcoac",
     "Prime Burgers",
-    "Rouge Zama",
-    "Restaurante Xibak",
-    "Kai Hotel & Beach Club",
+    "Xibak",
+    "Rouge",
+    "Kai Hotel",
   ];
   const filteredProjects = projects
     .filter((p) => allowedTitles.includes(p.title))

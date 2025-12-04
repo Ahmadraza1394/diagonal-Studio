@@ -1,9 +1,0 @@
-# robots.txt for diagonalstudio.mx
-User-agent: *
-Allow: /
-
-# Crawl-delay is generally ignored by Google; omit to avoid slowing indexing
-# Crawl-delay: 5
-
-Sitemap: https://diagonalstudio.mx/sitemap.xml
-Host: diagonalstudio.mx

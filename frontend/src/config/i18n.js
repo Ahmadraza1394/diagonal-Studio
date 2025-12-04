@@ -94,16 +94,25 @@ const resources = {
   },
 };
 
-// Get initial language from localStorage or browser
+// Get initial language from localStorage or browser (safe for SSR/build)
 const getInitialLanguage = () => {
-  const saved = localStorage.getItem("i18nLanguage");
-  if (saved && ["es", "en"].includes(saved)) {
-    return saved;
+  // Check if we're in a browser environment
+  if (typeof window === "undefined") {
+    return "es"; // Default to Spanish during build/SSR
   }
 
-  const browserLang = navigator.language.split("-")[0];
-  if (["es", "en"].includes(browserLang)) {
-    return browserLang;
+  try {
+    const saved = localStorage.getItem("i18nLanguage");
+    if (saved && ["es", "en"].includes(saved)) {
+      return saved;
+    }
+
+    const browserLang = navigator.language.split("-")[0];
+    if (["es", "en"].includes(browserLang)) {
+      return browserLang;
+    }
+  } catch (error) {
+    console.warn("Error accessing localStorage or navigator:", error);
   }
 
   return "es"; // Default to Spanish
@@ -133,6 +142,9 @@ i18n.use(initReactI18next).init({
   defaultNS: "hero",
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    useSuspense: false, // Disable suspense for better SSR/build compatibility
   },
 });
 
