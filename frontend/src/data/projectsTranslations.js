@@ -165,9 +165,9 @@ export const projectTranslations = {
     },
     // Project ID 20: Xibak
     20: {
-      typology: "Hospitality",
+      typology: "Commercial",
       description:
-        "Hospitality project designed to integrate with the Tulum jungle. The space combines open structures, warm lighting, and natural materials to create an intimate atmosphere. The terrace connects fluidly with the environment thanks to perimeter vegetation and suspended lighting. Inside, the illuminated bar and wooden details define a contemporary, welcoming, and social ambiance.",
+        "Comprehensive design and construction project for a fine dining steakhouse in Tulum, created to offer a premium gastronomic experience in a natural and sophisticated setting. The concept combines contemporary architecture with organic regional materials, achieving a warm, elegant atmosphere fully integrated with the jungle.",
       concept:
         "Create a hospitality space that dialogues with the jungle nature of Tulum, prioritizing architectural integration and the visitor's sensory experience.",
     },

@@ -95,7 +95,7 @@ export default function Contact() {
             transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <span className="not-italic block md:inline text-shadow-lg font-supreme">
-              Contacto
+              {t("title")}
             </span>
           </motion.h1>
           <p className="font-abc-monument text-lg md:text-xl mt-4 max-w-3xl mx-auto text-white/90 drop-shadow-md">

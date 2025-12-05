@@ -565,7 +565,6 @@ export const projects = [
     images: [
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3823-2.jpg",
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_3888.jpg",
-      "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/Copy of IMG_3614.jpg",
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/IMG_0011.JPG",
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/Captura de Pantalla 2020-03-18 a la(s) 13.10.27.jpg",
       "/assets/Diagonal fotos/Portafolio/PARQUE LINEAL/Captura de Pantalla 2020-03-18 a la(s) 13.10.44.jpg",
@@ -611,14 +610,14 @@ export const projects = [
     id: 20,
     slug: "xibak-tulum",
     title: "Xibak",
-    typology: "Hospitalidad",
+    typology: "Comercial",
     category: "Commercial",
     year: "2020",
     area: "Por definir",
     location: "Tulum",
     image: "/assets/Diagonal fotos/Portafolio/Xibak/xibak.jpeg",
     description:
-      "Proyecto de hospitalidad diseñado para integrarse con la selva de Tulum. El espacio combina estructuras abiertas, iluminación cálida y materiales naturales para crear una atmósfera íntima. La terraza conecta de forma fluida con el entorno gracias a vegetación perimetral y luminarias suspendidas. En el interior, el bar iluminado y los detalles en madera definen un ambiente contemporáneo, acogedor y social.",
+      "Proyecto integral de diseño y construcción de un restaurante de cortes finos en Tulum, creado para ofrecer una experiencia gastronómica premium en un entorno natural y sofisticado. El concepto combina arquitectura contemporánea con materiales orgánicos de la región, logrando un ambiente cálido, elegante y totalmente integrado a la selva.",
     concept:
       "Crear un espacio de hospitalidad que dialogue con la naturaleza selvática de Tulum, priorizando la integración arquitectónica y la experiencia sensorial del visitante.",
     images: [
