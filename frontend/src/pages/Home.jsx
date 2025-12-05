@@ -7,6 +7,7 @@ import Sustainability from "../components/home/Sustainability";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TrustedPartners from "../components/home/TrustedPartners";
+import SEOHead from "../components/common/SEOHead";
 
 export default function Home() {
   const [ref, inView] = useInView({
@@ -27,46 +28,49 @@ export default function Home() {
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={{
-        visible: {
-          transition: {
-            staggerChildren: 0.3,
+    <>
+      <SEOHead page="home" />
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.3,
+            },
           },
-        },
-      }}
-    >
-      <motion.div variants={sectionVariants}>
-        <Hero />
-      </motion.div>
+        }}
+      >
+        <motion.div variants={sectionVariants}>
+          <Hero />
+        </motion.div>
 
-      <motion.div variants={sectionVariants}>
-        <TrustedPartners />
-      </motion.div>
-      <motion.div variants={sectionVariants} ref={ref}>
-        <About />
-      </motion.div>
+        <motion.div variants={sectionVariants}>
+          <TrustedPartners />
+        </motion.div>
+        <motion.div variants={sectionVariants} ref={ref}>
+          <About />
+        </motion.div>
 
-      <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/11.jpg" />
+        <motion.div variants={sectionVariants}>
+          <ShowcaseImage imageUrl="/assets/images/11.jpg" />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <FeaturedProjects />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <ShowcaseImage imageUrl="/assets/images/3rdsection.jpeg" />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <ServicesList />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <ShowcaseImage imageUrl="/assets/images/4thsection.jpg" />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <Sustainability />
+        </motion.div>
       </motion.div>
-      <motion.div variants={sectionVariants}>
-        <FeaturedProjects />
-      </motion.div>
-      <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/3rdsection.jpeg" />
-      </motion.div>
-      <motion.div variants={sectionVariants}>
-        <ServicesList />
-      </motion.div>
-      <motion.div variants={sectionVariants}>
-        <ShowcaseImage imageUrl="/assets/images/4thsection.jpg" />
-      </motion.div>
-      <motion.div variants={sectionVariants}>
-        <Sustainability />
-      </motion.div>
-    </motion.div>
+    </>
   );
 }

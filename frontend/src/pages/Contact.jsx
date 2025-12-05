@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import SEOHead from "../components/common/SEOHead";
+import { getAltText } from "../utils/seoAltText";
 
 export default function Contact() {
-  const { t } = useTranslation("contact");
+  const { t, i18n } = useTranslation("contact");
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -74,10 +76,11 @@ export default function Contact() {
 
   return (
     <div className="w-full bg-white min-h-screen">
+      <SEOHead page="contact" />
       <section className="relative w-full h-screen flex items-center justify-center text-center bg-pantone-black text-white overflow-hidden">
         <motion.img
           src="/assets/images/contactHero.jpg"
-          alt="Diagonal Contacto"
+          alt={getAltText("contactHero", i18n.language)}
           className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-75"
           draggable={false}
           loading="eager"

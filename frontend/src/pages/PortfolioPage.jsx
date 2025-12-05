@@ -4,11 +4,13 @@ import { useTranslation } from "react-i18next";
 import ProjectGrid from "../components/portfolio/ProjectGrid";
 import PortfolioIntro from "../components/portfolio/PortfolioIntro";
 import PortfolioHero from "../components/portfolio/PortfolioHero";
+import SEOHead from "../components/common/SEOHead";
 
 const PortfolioPage = () => {
   const { t } = useTranslation("portfolio");
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead page="portfolio" />
       {/* Hero Section */}
       <PortfolioHero />
 

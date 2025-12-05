@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
+import { getAltText } from "../../utils/seoAltText";
 
 export default function ShowcaseImage({ imageUrl = "/assets/images/3.jpg" }) {
+  const { i18n } = useTranslation();
   const controls = useAnimation();
   const [inView, setInView] = useState(false);
   const [ref, inViewRef] = useInView({
@@ -55,7 +58,7 @@ export default function ShowcaseImage({ imageUrl = "/assets/images/3.jpg" }) {
       >
         <motion.img
           src={imageUrl}
-          alt="Architectural Highlight by Diagonal Studio"
+          alt={getAltText("showcase", i18n.language)}
           className="w-full h-full object-cover object-center"
           draggable={false}
           initial="hidden"

@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { getAltText } from "../../utils/seoAltText";
 
 export default function Hero() {
-  const { t } = useTranslation("hero");
+  const { t, i18n } = useTranslation("hero");
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function Hero() {
         >
           <motion.img
             src="/assets/images/hero.JPG"
-            alt="Diagonal Building"
+            alt={getAltText("hero", i18n.language)}
             className="w-full h-full object-cover object-center"
             style={{ filter: "contrast(1) brightness(1)" }}
             draggable={false}
