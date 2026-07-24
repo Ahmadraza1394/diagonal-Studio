@@ -179,6 +179,14 @@ export const projectTranslations = {
       concept:
         "Fuse organic design with commercial functionality, creating a retail space that is both a sensory experience and an effective point of sale.",
     },
+    // Project ID 22: Casa Muuch
+    22: {
+      typology: "Residential",
+      description:
+        "Contemporary residence located in the Amares development, Tulum. This project combines modern design with the surrounding nature, creating functional and harmonious spaces for a unique living experience in the Riviera Maya.",
+      concept:
+        "Create a home that integrates contemporary architecture with Tulum's natural environment, prioritizing functionality and comfort in every space.",
+    },
   },
 };
 

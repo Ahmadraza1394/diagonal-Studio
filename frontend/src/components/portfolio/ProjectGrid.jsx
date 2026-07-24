@@ -23,6 +23,7 @@ const ProjectGrid = () => {
     "Xibak",
     "Rouge",
     "Kai Hotel",
+    "Casa Muuch",
   ];
   const filteredProjects = projects
     .filter((p) => allowedTitles.includes(p.title))
